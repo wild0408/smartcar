@@ -473,6 +473,7 @@ void vision_find_track_edge(void)
  * @param  无
  * @return 轨道偏差值 (-80 ~ 80)
  */
+/**
 int16 vision_get_deviation(void)
 {
     if (!vision.track_found)
@@ -516,6 +517,76 @@ int16 vision_get_deviation(void)
         uint8 weighted_center = sum_weighted_center / sum_weight;
         vision.error = weighted_center - center_col;
         vision.deviation = (float)vision.error / center_col;  // 归一化偏差值 -1.0 ~ 1.0
+        vision.last_error = vision.error;
+    }
+    else
+    {
+        // 没有有效数据，保持上次偏差
+        vision.error = vision.last_error;
+    }
+    
+    return vision.error;
+}
+
+*/
+int16 vision_get_deviation(void)
+{
+    if (!vision.track_found)
+    {
+        return vision.last_error;
+    }
+    
+    uint8 row;
+    uint8 center_col = IMAGE_WIDTH / 2;
+    uint32 sum_weighted_center = 0;
+    uint32 sum_weight = 0;
+    uint16 valid_row_count = 0;
+    
+    for (row = SCAN_START_ROW; row > SCAN_END_ROW; row -= SCAN_STEP)
+    {
+        if (vision.track.track_width[row] >= TRACK_WIDTH_MIN && 
+            vision.track.track_width[row] <= TRACK_WIDTH_MAX)
+        {
+            uint8 weight;
+            uint16 distance_from_bottom = SCAN_START_ROW - row;
+            
+            // 修复1：使用更大的数据类型避免溢出
+            if (distance_from_bottom < 30)
+                weight = 3;
+            else if (distance_from_bottom < 60)
+                weight = 2;
+            else
+                weight = 1;
+            
+            // 修复2：添加边界检查
+            if (vision.track.center_line[row] < IMAGE_WIDTH)
+            {
+                sum_weighted_center += (uint32)vision.track.center_line[row] * weight;
+                sum_weight += weight;
+                valid_row_count++;
+            }
+        }
+    }
+    
+    if (sum_weight > 0 && valid_row_count > 0)
+    {
+        // 修复3：使用更大的数据类型并添加溢出检查
+        uint32 weighted_center_val = sum_weighted_center / sum_weight;
+        
+        // 修复4：确保在有效范围内
+        if (weighted_center_val >= IMAGE_WIDTH) {
+            weighted_center_val = IMAGE_WIDTH - 1;
+        }
+        
+        // 修复5：使用有符号运算
+        int16 new_error = (int16)weighted_center_val - (int16)center_col;
+        
+        // 修复6：限制误差范围
+        if (new_error < -80) new_error = -80;
+        if (new_error > 80) new_error = 80;
+        
+        vision.error = new_error;
+        vision.deviation = (float)vision.error / center_col;
         vision.last_error = vision.error;
     }
     else
