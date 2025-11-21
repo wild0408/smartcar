@@ -4,59 +4,59 @@
 
 #include "zf_common_headfile.h"
 
-//====================================================å›¾åƒé‡‡é›†åŠé©±åŠ¨ç›¸å…³====================================================
+//====================================================  Í¼Ïñ²É¼¯Ä£¿éÅäÖÃ====================================================
 
-#define USE_MT9V03X                     // ä½¿ç”¨MT9V03Xæ‘„åƒå¤´é©±åŠ¨
+#define USE_MT9V03X          // Ê¹ÓÃMT9V03XÉãÏñÍ·           
 
-//====================================================å›¾åƒå°ºå¯¸====================================================
-#define IMAGE_WIDTH     MT9V03X_W       // å›¾åƒå®½åº¦188åƒç´ 
-#define IMAGE_HEIGHT    MT9V03X_H       // å›¾åƒé«˜åº¦120åƒç´ 
-// å›¾åƒæ•°æ®ç¼“å†²åŒº
+//====================================================Í¼Ïñ³ß´ç¶¨Òå====================================================
+#define IMAGE_WIDTH     MT9V03X_W       // Í¼Ïñ¿í¶È188ÏñËØ
+#define IMAGE_HEIGHT    MT9V03X_H       // Í¼Ïñ¸ß¶È120ÏñËØ
+// Í¼ÏñÊı¾İ»º³åÇø
 extern uint8 image_data[IMAGE_HEIGHT][IMAGE_WIDTH];
 
-//====================================================äºŒå€¼åŒ–é˜ˆå€¼====================================================
-// äºŒå€¼åŒ–æ¨¡å¼
+//====================================================Í¼Ïñ¶şÖµ»¯Ä£Ê½====================================================
+// ¶şÖµ»¯Ä£Ê½Ã¶¾Ù
 typedef enum
 {
-    BINARIZE_FIXED = 0,         // å›ºå®šé˜ˆå€¼
-    BINARIZE_OTSU,              // å…¨å±€OTSU
-    BINARIZE_ADAPTIVE,          // è‡ªé€‚åº”å±€éƒ¨é˜ˆå€¼
-    BINARIZE_OTSU_ADAPTIVE      // OTSU+è‡ªé€‚åº”æ··åˆ
+    BINARIZE_FIXED = 0,         // ¹Ì¶¨ãĞÖµ
+    BINARIZE_OTSU,              // È«¾ÖOTSU
+    BINARIZE_ADAPTIVE,          // ×ÔÊÊÓ¦ãĞÖµ
+    BINARIZE_OTSU_ADAPTIVE      // OTSU+×ÔÊÊÓ¦½áºÏ
 } binarize_mode_enum;
 
-#define BINARIZE_MODE       BINARIZE_OTSU_ADAPTIVE  // å½“å‰ä½¿ç”¨çš„äºŒå€¼åŒ–æ¨¡å¼
-#define THRESHOLD_VALUE     220         // å›ºå®šé˜ˆå€¼æ¨¡å¼çš„é˜ˆå€¼
-#define ADAPTIVE_BLOCK_SIZE 16          // è‡ªé€‚åº”é˜ˆå€¼å—å¤§å°
-#define ADAPTIVE_OFFSET     10          // è‡ªé€‚åº”é˜ˆå€¼åç§»é‡
-#define SCAN_START_ROW      110         // æ‰«æèµ·å§‹è¡Œ
-#define SCAN_END_ROW        30          // æ‰«æç»“æŸè¡Œ
-#define SCAN_STEP           1           // æ‰«ææ­¥é•¿
+#define BINARIZE_MODE       BINARIZE_OTSU_ADAPTIVE  // µ±Ç°Ê¹ÓÃµÄ¶şÖµ»¯Ä£Ê½
+#define THRESHOLD_VALUE     220         // ¹Ì¶¨ãĞÖµµÄãĞÖµ
+#define ADAPTIVE_BLOCK_SIZE 16          // ×ÔÊÊÓ¦ãĞÖµ¿é´óĞ¡
+#define ADAPTIVE_OFFSET     10          // ×ÔÊÊÓ¦ãĞÖµÆ«ÒÆÁ¿
+#define SCAN_START_ROW      110         // É¨ÃèÆğÊ¼ĞĞ
+#define SCAN_END_ROW        30          // É¨Ãè½áÊøĞĞ
+#define SCAN_STEP           1           // É¨Ãè²½½ø
 
-#define TRACK_WIDTH_MIN     40          // è½¨é“å®½åº¦æœ€å°å€¼
-#define TRACK_WIDTH_MAX     188         // è½¨é“å®½åº¦æœ€å¤§å€¼
+#define TRACK_WIDTH_MIN     40          // ¹ì¼£¿í¶È×îĞ¡Öµ
+#define TRACK_WIDTH_MAX     188         // ¹ì¼£¿í¶È×î´óÖµ
 
-// è¾¹ç¼˜æ£€æµ‹ä¼˜åŒ–å‚æ•°
-#define EDGE_JUMP_LIMIT     30          // è¾¹ç¼˜è·³å˜é™åˆ¶ï¼ˆåƒç´ ï¼‰
-#define GRADIENT_THRESHOLD  50          // æ¢¯åº¦é˜ˆå€¼ï¼ˆç”¨äºè¾¹ç¼˜æ£€æµ‹ï¼‰
-#define EDGE_SEARCH_MARGIN  10          // è¾¹ç¼˜æœç´¢è¾¹ç•Œè·ç¦»
+// ±ßÔµÌø±äãĞÖµ
+#define EDGE_JUMP_LIMIT     30          // ±ßÔµÌø±äãĞÖµ£¬ÏñËØ¼¶
+#define GRADIENT_THRESHOLD  50          // Ìİ¶ÈãĞÖµ£¬ÓÃÓÚ±ßÔµÌø±ä
+#define EDGE_SEARCH_MARGIN  10          // ±ßÔµËÑË÷±ß½çÏñËØÊı
 
-//====================================================é€è§†å˜æ¢å‚æ•°====================================================
-// æ‘„åƒå¤´å®‰è£…å‚æ•°ï¼ˆæ ¹æ®å®é™…è½¦è¾†è°ƒæ•´ï¼‰
-#define CAMERA_HEIGHT       20.0f       // æ‘„åƒå¤´é«˜åº¦ (cm)
-#define CAMERA_VIEW_ANGLE   45.0f       // æ‘„åƒå¤´ä¿¯ä»°è§’ (åº¦ï¼Œå‘ä¸‹ä¸ºæ­£)
-#define CAMERA_FOV_H        100.0f      // æ°´å¹³è§†åœºè§’ (åº¦)
-#define CAMERA_FOV_V        75.0f       // å‚ç›´è§†åœºè§’ (åº¦)
+//====================================================ÉãÏñÍ·²ÎÊıÅäÖÃ====================================================
+// ÉãÏñÍ·²ÎÊıÅäÖÃ£¨¸ù¾İÊµ¼Ê³¡¾°µ÷Õû£©
+#define CAMERA_HEIGHT       20.0f       // ÉãÏñÍ·¸ß¶È (cm)
+#define CAMERA_VIEW_ANGLE   45.0f       // ÉãÏñÍ·¸©Ñö½Ç¶È (¶È£¬ÕıÏòÏÂÎªÕı)
+#define CAMERA_FOV_H        100.0f      // ÉãÏñÍ·Ë®Æ½ÊÓ³¡½Ç (¶È)
+#define CAMERA_FOV_V        75.0f       // ÉãÏñÍ·´¹Ö±ÊÓ³¡½Ç (¶È)
 
-//====================================================è½¨é“ä¿¡æ¯ç»“æ„ä½“====================================================
-// è½¨é“ä¿¡æ¯ç»“æ„ä½“
+//====================================================¹ì¼£ĞÅÏ¢½á¹¹Ìå====================================================
+// Ğ¡³µ¹ì¼£ĞÅÏ¢½á¹¹Ìå
 typedef struct
 {
-    uint8 left_edge[IMAGE_HEIGHT];      // è½¨é“å·¦è¾¹ç¼˜ (åƒç´ åæ ‡)
-    uint8 right_edge[IMAGE_HEIGHT];     // è½¨é“å³è¾¹ç¼˜ (åƒç´ åæ ‡)
-    uint8 center_line[IMAGE_HEIGHT];    // è½¨é“ä¸­å¿ƒçº¿ (åƒç´ åæ ‡)
-    uint8 track_width[IMAGE_HEIGHT];    // è½¨é“å®½åº¦ (åƒç´ )
+    uint8 left_edge[IMAGE_HEIGHT];      // ¹ì¼£×ó±ßÔµ (ÏñËØ×ø±ê)
+    uint8 right_edge[IMAGE_HEIGHT];     // ¹ì¼£ÓÒ±ßÔµ (ÏñËØ×ø±ê)
+    uint8 center_line[IMAGE_HEIGHT];    // ¹ì¼£ÖĞĞÄÏß (ÏñËØ×ø±ê)
+    uint8 track_width[IMAGE_HEIGHT];    // ¹ì¼£¿í¶È (ÏñËØ)
     
-    // çœŸå®ä¸–ç•Œåæ ‡ (cm) - ä»¥è½¦å¤´ä¸­å¿ƒä¸ºåŸç‚¹ï¼Œå‰æ–¹ä¸ºYè½´æ­£æ–¹å‘ï¼Œå³ä¾§ä¸ºXè½´æ­£æ–¹å‘
+    // ¹ì¼£Êµ¼Ê×ø±ê (cm) - ÒÔĞ¡³µÖĞĞÄÎªÔ­µã£¬Ç°·½ÎªXÖáÕı·½Ïò£¬×ó²àÎªYÖáÕı·½Ïò
     float left_real_x[IMAGE_HEIGHT];
     float left_real_y[IMAGE_HEIGHT];
     float right_real_x[IMAGE_HEIGHT];
@@ -64,32 +64,32 @@ typedef struct
     float center_real_x[IMAGE_HEIGHT];
     float center_real_y[IMAGE_HEIGHT];
     
-    uint8 valid_rows;                   // æœ‰æ•ˆè¡Œæ•°
+    uint8 valid_rows;                   // ÓĞĞ§ĞĞÊı
 } track_info_t;
 
-// ç€µé‚¦äº£é¶æ¥…å¹’è¤é©æ¥ƒç´’é¾å¯¸ï¿½?å¨´ï½æ‹·
+// ÊÓ¾õ¸ú×Ù½á¹¹Ìå
 typedef struct
 {
-    track_info_t track;                 // è½¨é“ä¿¡æ¯
-    int16 error;                        // åå·®å€¼
-    int16 last_error;                   // ä¸Šæ¬¡åå·®å€¼
-    float deviation;                    // åå·®æ¯”ä¾‹ (-1.0 ~ 1.0)
-    uint8 track_found;                  // æ˜¯å¦æ‰¾åˆ°è½¨é“
-    uint8 image_ready;                  // å›¾åƒæ˜¯å¦å‡†å¤‡å¥½
+    track_info_t track;                 // ¹ì¼£ĞÅÏ¢
+    int16 error;                        // Æ«²îÖµ
+    int16 last_error;                   // ÉÏÒ»´ÎÆ«²îÖµ
+    float deviation;                    // Æ«²î±ÈÀı (-1.0 ~ 1.0)
+    uint8 track_found;                  // ÊÇ·ñÕÒµ½¹ì¼£
+    uint8 image_ready;                  // Í¼ÏñÊÇ·ñ×¼±¸ºÃ
 } vision_track_t;
 
-// å›¾åƒå¤„ç†å…¨å±€å˜é‡
+// ÊÓ¾õÍ¼Ïñ´¦ÀíÈ«¾Ö±äÁ¿
 extern vision_track_t vision;
 
-//====================================================å›¾åƒå¤„ç†====================================================
-void vision_init(void);                                     // å›¾åƒåˆå§‹åŒ–
-void vision_image_process(void);                            // å›¾åƒå¤„ç†
-void vision_find_track_edge(void);                          // å¯»æ‰¾è½¨é“è¾¹ç¼˜
-int16 vision_get_deviation(void);                           // è·å–åå·®å€¼
-void vision_show_image(void);                               // æ˜¾ç¤ºå›¾åƒ
-// å›¾åƒäºŒå€¼åŒ–åŠOTSUé˜ˆå€¼è®¡ç®—
-uint8 otsu_threshold(uint8 *image, uint32 size);           // OTSUé˜ˆå€¼è®¡ç®—
-void image_binarization(uint8 threshold);                   // å›¾åƒäºŒå€¼åŒ–
-void vision_pixel_to_world(uint8 row, uint8 col, float *real_x, float *real_y); // åƒç´ åæ ‡è½¬ä¸–ç•Œåæ ‡
+//====================================================ÊÓ¾õÍ¼Ïñ´¦Àí====================================================
+void vision_init(void);                                     // ÊÓ¾õ³õÊ¼»¯
+void vision_image_process(void);                            // ÊÓ¾õ´¦Àí
+void vision_find_track_edge(void);                          // Ñ°ÕÒ¹ì¼£±ßÔµ
+int16 vision_get_deviation(void);                           // »ñÈ¡Æ«²îÖµ
+void vision_show_image(void);                               // ÏÔÊ¾Í¼Ïñ
+// Í¼Ïñ¶şÖµ»¯ãĞÖµ¼ÆËã
+uint8 otsu_threshold(uint8 *image, uint32 size);           // OTSUãĞÖµ¼ÆËã
+void image_binarization(uint8 threshold);                   // Í¼Ïñ¶şÖµ»¯
+void vision_pixel_to_world(uint8 row, uint8 col, float *real_x, float *real_y); // ÏñËØ×ø±ê×ª»»ÎªÊµ¼Ê×ø±ê
 
 #endif // _VISION_TRACK_H_
