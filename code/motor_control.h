@@ -31,6 +31,11 @@
 #define SERVO_LEFT_MAX      500                 // 舵机最左最大占空比 (1.0ms)
 #define SERVO_RIGHT_MAX     1000                // 舵机最右最大占空比 (2.0ms)
 #define SERVO_MAX_ANGLE     45                  // 舵机最大转角 (+-45度)
+
+// 车辆几何参数 (单位: mm)
+#define CAR_WHEELBASE       200                 // 轴距 (前后轮距离)
+#define CAR_TRACK_WIDTH     160                 // 轮距 (左右轮距离)
+
 //====================================================数据结构====================================================
 // 电机结构体定义（DRV8701驱动模式）
 typedef struct
@@ -79,5 +84,6 @@ void car_stop(void);                                            // 停止
 void car_forward(int16 speed);                                  // 前进
 void car_backward(int16 speed);                                 // 后退
 void car_turn(int16 speed, int16 angle);                        // 转向，speed: 速度, angle: 转向角度
+void car_update_differential_speed(int16 base_speed, int16 angle); // 根据转向角度更新差速
 
 #endif // _MOTOR_CONTROL_H_

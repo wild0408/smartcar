@@ -1,4 +1,5 @@
 #include "motor_control.h"
+#include <math.h>
 
 //====================================================车辆控制结构体====================================================
 car_control_t car;
@@ -16,6 +17,53 @@ static int32 limit(int32 value, int32 min, int32 max)
     if (value < min) return min;
     if (value > max) return max;
     return value;
+}
+
+//====================================================舵机非线性映射====================================================
+// 由于舵机连杆机构的存在，舵机输出轴角度与前轮实际转向角度通常不是线性关系
+// 使用查找表进行分段线性插值，可以大幅提高转向精度
+// 请务必根据实际车辆进行标定：
+// 1. 给定不同的占空比，测量实际的前轮角度
+// 2. 将{角度, 占空比}填入下表
+// 注意：角度必须从小到大排列
+static const struct {
+    int16 angle;    // 期望的前轮角度 (度)
+    int32 duty;     // 对应的舵机占空比 (500-1000)
+} servo_map[] = {
+    {-45, SERVO_LEFT_MAX},      // 左极限角度 (需实测)
+    {-30, 583},                 // 左转30度对应的占空比 (需实测修改)
+    {-15, 666},                 // 左转15度对应的占空比 (需实测修改)
+    {0,   SERVO_CENTER_DUTY},   // 中心 (0度)
+    {15,  833},                 // 右转15度对应的占空比 (需实测修改)
+    {30,  916},                 // 右转30度对应的占空比 (需实测修改)
+    {45,  SERVO_RIGHT_MAX}      // 右极限角度 (需实测)
+};
+#define SERVO_MAP_COUNT (sizeof(servo_map) / sizeof(servo_map[0]))
+
+/**
+ * @brief  根据目标角度查找对应的占空比 (线性插值)
+ * @param  angle 目标角度
+ * @return 占空比
+ */
+static int32 get_duty_from_angle_map(int16 angle)
+{
+    // 范围限制
+    if (angle <= servo_map[0].angle) return servo_map[0].duty;
+    if (angle >= servo_map[SERVO_MAP_COUNT - 1].angle) return servo_map[SERVO_MAP_COUNT - 1].duty;
+
+    // 查找区间
+    for (int i = 0; i < SERVO_MAP_COUNT - 1; i++)
+    {
+        if (angle >= servo_map[i].angle && angle <= servo_map[i+1].angle)
+        {
+            // 线性插值: y = y0 + (x - x0) * (y1 - y0) / (x1 - x0)
+            int32 duty_diff = servo_map[i+1].duty - servo_map[i].duty;
+            int16 angle_diff = servo_map[i+1].angle - servo_map[i].angle;
+            
+            return servo_map[i].duty + (int32)(angle - servo_map[i].angle) * duty_diff / angle_diff;
+        }
+    }
+    return SERVO_CENTER_DUTY;
 }
 
 //====================================================舵机函数实现====================================================
@@ -60,10 +108,8 @@ void servo_set_angle(servo_t *servo, int16 angle)
     angle = limit(angle, -SERVO_MAX_ANGLE, SERVO_MAX_ANGLE);
     servo->current_angle = angle;
     
-    // 计算对应的占空比
-    // 750对应中心位置0度，500对应最左-45度，1000对应最右+45度
-    // duty = 750 + angle * (250 / 45)
-    int32 duty = SERVO_CENTER_DUTY + (angle * (SERVO_RIGHT_MAX - SERVO_CENTER_DUTY)) / SERVO_MAX_ANGLE;
+    // 使用非线性映射计算占空比，解决连杆机构导致的非线性问题
+    int32 duty = get_duty_from_angle_map(angle);
     
     servo_set_duty(servo, (uint32)duty);
 }
@@ -246,6 +292,45 @@ void car_backward(int16 speed)
  */
 void car_turn(int16 speed, int16 angle)
 {
-    car_set_speed(speed, speed);          // 前进: 左右电机速度相同
     car_set_angle(angle);                 // 转向角度设置
+    car_update_differential_speed(speed, angle); // 使用差速控制
+}
+
+/**
+ * @brief  根据转向角度更新差速 (阿克曼转向几何)
+ * @param  base_speed 基础速度
+ * @param  angle      转向角度
+ * @return 无
+ */
+void car_update_differential_speed(int16 base_speed, int16 angle)
+{
+    if (angle == 0)
+    {
+        car_set_speed(base_speed, base_speed);
+        return;
+    }
+
+    // 角度转弧度
+    float theta = (float)angle * 3.14159f / 180.0f;
+    float tan_theta = tanf(theta);
+    
+    // 计算转弯半径 R = L / tan(theta)
+    // 避免除零，虽然angle!=0已判断，但tan_theta可能极小
+    if (fabsf(tan_theta) < 0.001f)
+    {
+        car_set_speed(base_speed, base_speed);
+        return;
+    }
+    
+    // 阿克曼几何差速公式
+    // V_left  = V_center * (1 - W * tan(theta) / (2 * L))
+    // V_right = V_center * (1 + W * tan(theta) / (2 * L))
+    // 其中 W = CAR_TRACK_WIDTH, L = CAR_WHEELBASE
+    
+    float ratio = (float)CAR_TRACK_WIDTH * tan_theta / (2.0f * (float)CAR_WHEELBASE);
+    
+    int16 left_speed = (int16)((float)base_speed * (1.0f - ratio));
+    int16 right_speed = (int16)((float)base_speed * (1.0f + ratio));
+    
+    car_set_speed(left_speed, right_speed);
 }
