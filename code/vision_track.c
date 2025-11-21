@@ -351,10 +351,6 @@ void vision_find_track_edge(void)
                 if (image_data[row][col] > 128 && image_data[row][col-1] < 128)
                 {
                     int16 gradient = calculate_gradient(row, col);
-        
-                if (image_data[row][col] > 128 && image_data[row][col-1] < 128)
-                {
-                    int16 gradient = calculate_gradient(row, col);
                     if (gradient > 50)
                     {
                         max_gradient_col = col;
@@ -364,7 +360,6 @@ void vision_find_track_edge(void)
                 }
             }
         }
-        
         if (left_found)
         {
             vision.track.left_edge[row] = max_gradient_col;
@@ -428,7 +423,7 @@ void vision_find_track_edge(void)
             vision.track.right_edge[row] = last_valid_right;
         }
 
-        }
+        
 
         // 计算轨道宽度
         vision.track.track_width[row] = vision.track.right_edge[row] - vision.track.left_edge[row];
@@ -613,7 +608,7 @@ void vision_image_process(void)
     uint8 threshold = otsu_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH * IMAGE_HEIGHT);
     
     // 使用固定阈值
-    threshold = THRESHOLD_VALUE;
+    //threshold = THRESHOLD_VALUE;
     
     // 图像二值化处理
     image_binarization(threshold);
