@@ -40,14 +40,30 @@ typedef enum
 #define GRADIENT_THRESHOLD  50          // 梯度阈值（用于边缘检测）
 #define EDGE_SEARCH_MARGIN  10          // 边缘搜索边界距离
 
+//====================================================透视变换参数====================================================
+// 摄像头安装参数（根据实际车辆调整）
+#define CAMERA_HEIGHT       20.0f       // 摄像头高度 (cm)
+#define CAMERA_VIEW_ANGLE   45.0f       // 摄像头俯仰角 (度，向下为正)
+#define CAMERA_FOV_H        100.0f      // 水平视场角 (度)
+#define CAMERA_FOV_V        75.0f       // 垂直视场角 (度)
+
 //====================================================轨道信息结构体====================================================
 // 轨道信息结构体
 typedef struct
 {
-    uint8 left_edge[IMAGE_HEIGHT];      // 轨道左边缘
-    uint8 right_edge[IMAGE_HEIGHT];     // 轨道右边缘
-    uint8 center_line[IMAGE_HEIGHT];    // 轨道中心线
-    uint8 track_width[IMAGE_HEIGHT];    // 轨道宽度
+    uint8 left_edge[IMAGE_HEIGHT];      // 轨道左边缘 (像素坐标)
+    uint8 right_edge[IMAGE_HEIGHT];     // 轨道右边缘 (像素坐标)
+    uint8 center_line[IMAGE_HEIGHT];    // 轨道中心线 (像素坐标)
+    uint8 track_width[IMAGE_HEIGHT];    // 轨道宽度 (像素)
+    
+    // 真实世界坐标 (cm) - 以车头中心为原点，前方为Y轴正方向，右侧为X轴正方向
+    float left_real_x[IMAGE_HEIGHT];
+    float left_real_y[IMAGE_HEIGHT];
+    float right_real_x[IMAGE_HEIGHT];
+    float right_real_y[IMAGE_HEIGHT];
+    float center_real_x[IMAGE_HEIGHT];
+    float center_real_y[IMAGE_HEIGHT];
+    
     uint8 valid_rows;                   // 有效行数
 } track_info_t;
 
@@ -74,5 +90,6 @@ void vision_show_image(void);                               // 显示图像
 // 图像二值化及OTSU阈值计算
 uint8 otsu_threshold(uint8 *image, uint32 size);           // OTSU阈值计算
 void image_binarization(uint8 threshold);                   // 图像二值化
+void vision_pixel_to_world(uint8 row, uint8 col, float *real_x, float *real_y); // 像素坐标转世界坐标
 
 #endif // _VISION_TRACK_H_
