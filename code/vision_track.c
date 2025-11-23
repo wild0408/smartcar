@@ -600,7 +600,7 @@ void vision_image_process(void)
     uint8 threshold = otsu_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH * IMAGE_HEIGHT);
     
     // 使用固定阈值
-    //threshold = THRESHOLD_VALUE;
+    threshold = THRESHOLD_VALUE;
     
     // 图像二值化处理
     image_binarization(threshold);

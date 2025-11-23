@@ -48,7 +48,7 @@ typedef struct
 #define SPEED_PID_KI_NORMAL         0.0f        // 正常场景速度PID积分系数
 #define SPEED_PID_KD_NORMAL         0.0f        // 正常场景速度PID微分系数
 
-#define DIRECTION_PID_KP_NORMAL     0.6f        // 正常场景方向PID比例系数
+#define DIRECTION_PID_KP_NORMAL     0.4f        // 正常场景方向PID比例系数
 #define DIRECTION_PID_KI_NORMAL     0.0f       // 正常场景方向PID积分系数
 #define DIRECTION_PID_KD_NORMAL     0.0f        // 正常场景方向PID微分系数
 // 直线场景PID参数配置

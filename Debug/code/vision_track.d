@@ -1,328 +1,328 @@
-code/vision_track.o :	../code/vision_track.c
+vision_track.o :	../code/vision_track.c
 ../code/vision_track.c :
-code/vision_track.o :	../code/vision_track.h
-../code/vision_track.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_headfile.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_headfile.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdio.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdio.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdarg.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdarg.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdint.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdint.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdbool.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdbool.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/string.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/ifxAsclin_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/ifxAsclin_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxAsclin_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxAsclin_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx_TypesReg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/Ifx_TypesReg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Configurations/Ifx_Cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Configurations/Ifx_Cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_Intrinsics.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_Intrinsics.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/Compilers.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/Compilers.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stddef.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stddef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Platform_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Platform_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_IntrinsicsTasking.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu_IntrinsicsTasking.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxCpu_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxCpu_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCpu_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCpu_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCpu_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCpu_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxSrc_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxScu_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxScu_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxScu_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxScu_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxStm_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxStm_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxStm_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxStm_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxScu_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxScu_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxScu_bf.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxScu_bf.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxFlash_bf.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxFlash_bf.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.asm.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.asm.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/IfxCpu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxFlash_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxFlash_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxFlash_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxFlash_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxPort_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxPort_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxPort_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxPort_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxPort_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxPort_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Src/Std/IfxSrc.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Src/Std/IfxSrc.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxSrc_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxSrc_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Stm/Std/IfxStm.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Stm/Std/IfxStm.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxStm_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxStm_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Ccu6/Timer/IfxCcu6_Timer.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Ccu6/Timer/IfxCcu6_Timer.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Ccu6/Std/IfxCcu6.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Ccu6/Std/IfxCcu6.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxCcu6_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxCcu6_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCcu6_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCcu6_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCcu6_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCcu6_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCcu6_bf.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxCcu6_bf.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxCcu6_PinMap.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxCcu6_PinMap.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxCcu6_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxCcu6_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/If/Ccu6If/Timer.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/If/Ccu6If/Timer.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxScu_PinMap.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_typedef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_typedef.h :
-code/vision_track.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_clock.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_clock.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_debug.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_debug.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_interrupt.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_interrupt.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_fifo.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_fifo.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_font.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_font.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_function.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_common/zf_common_function.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/user/isr_config.h
-d:/car/Seekfree_TC264_Opensource_Library/user/isr_config.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_adc.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_adc.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_delay.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_delay.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_dma.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_dma.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Std/IfxDma.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Std/IfxDma.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxDma_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxDma_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxDma_bf.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxDma_bf.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxDma_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxDma_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxDma_regdef.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxDma_regdef.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_exti.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_exti.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuEru.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_encoder.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_encoder.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_exti.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_exti.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_flash.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_flash.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/ifxFlash_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/ifxFlash_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_gpio.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_gpio.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IFXPORT.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IFXPORT.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_pit.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_pit.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_pwm.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_pwm.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_soft_iic.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_soft_iic.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_spi.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_spi.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_soft_spi.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_soft_spi.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_uart.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_uart.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Asclin/Asc/ifxAsclin_Asc.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Asclin/Asc/ifxAsclin_Asc.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Asclin/Std/IfxAsclin.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Asclin/Std/IfxAsclin.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxAsclin_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxAsclin_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxAsclin_reg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Sfr/TC26B/_Reg/IfxAsclin_reg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuCcu.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Scu/Std/IfxScuWdt.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxAsclin_PinMap.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_PinMap/IfxAsclin_PinMap.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxAsclin_cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxAsclin_cfg.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Port/Std/IfxPort.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Lib/DataHandling/Ifx_Fifo.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/_Lib/DataHandling/Ifx_Fifo.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_DPipe.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf_DPipe.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Service/CpuGeneric/StdIf/IfxStdIf.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_Types.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_timer.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_timer.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_absolute_encoder.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_absolute_encoder.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ble6a20.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ble6a20.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_bluetooth_ch9141.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_bluetooth_ch9141.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_gnss.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_gnss.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_camera.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_camera.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_uart.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_driver/zf_driver_uart.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_type.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_type.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_dl1a.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_dl1a.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_dl1b.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_dl1b.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_icm20602.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_icm20602.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu660ra.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu660ra.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu660rb.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu660rb.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu660rx.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu660rx.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu963ra.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_imu963ra.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ips114.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ips114.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ips200.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ips200.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ips200pro.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ips200pro.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_key.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_key.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_menc15a.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_menc15a.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_mpu6050.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_mpu6050.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_mt9v03x.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_mt9v03x.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_oled.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_oled.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ov7725.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_ov7725.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_scc8660.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_scc8660.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_tft180.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_tft180.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_tsl1401.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_tsl1401.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_uart_receiver.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_uart_receiver.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_virtual_oscilloscope.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_virtual_oscilloscope.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_wifi_uart.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_wifi_uart.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_wifi_spi.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_wifi_spi.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_wireless_uart.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_device/zf_device_wireless_uart.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_components/seekfree_assistant.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_components/seekfree_assistant.h :
-code/vision_track.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_components/seekfree_assistant_interface.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/zf_components/seekfree_assistant_interface.h :
+vision_track.o :	..\code\vision_track.h
+..\code\vision_track.h :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\string.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\ifxAsclin_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\ifxAsclin_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxAsclin_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxAsclin_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\Ifx_TypesReg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\Ifx_TypesReg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxCpu_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxCpu_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCpu_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCpu_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCpu_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCpu_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxSrc_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxSrc_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxSrc_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxSrc_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxStm_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxStm_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxStm_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxStm_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxScu_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxScu_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_bf.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxScu_bf.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_bf.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_bf.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.asm.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.asm.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxFlash_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxScu_PinMap.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxScu_PinMap.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxPort_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxPort_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxPort_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Src\Std\IfxSrc.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Src\Std\IfxSrc.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxSrc_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxSrc_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Stm\Std\IfxStm.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Stm\Std\IfxStm.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxStm_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxStm_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer\IfxCcu6_Timer.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Ccu6\\Timer\IfxCcu6_Timer.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Ccu6\Std\IfxCcu6.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Ccu6\Std\IfxCcu6.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxCcu6_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxCcu6_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCcu6_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCcu6_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCcu6_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCcu6_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCcu6_bf.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxCcu6_bf.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxCcu6_PinMap.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxCcu6_PinMap.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxCcu6_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxCcu6_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\If\Ccu6If\Timer.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\If\Ccu6If\Timer.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Scu\\Std\IfxScuEru.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Scu\\Std\IfxScuEru.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxScu_PinMap.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxScu_PinMap.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_typedef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_typedef.h" :
+vision_track.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_clock.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_clock.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_debug.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_debug.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_interrupt.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_interrupt.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_fifo.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_fifo.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_font.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_font.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_function.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_function.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\user\isr_config.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\user\isr_config.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_adc.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_adc.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_delay.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_delay.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_dma.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_dma.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Dma\\Std\IfxDma.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Dma\\Std\IfxDma.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxDma_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxDma_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_bf.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_bf.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_regdef.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxDma_regdef.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_exti.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_exti.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Scu\\Std\IfxScuEru.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Scu\\Std\IfxScuEru.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_encoder.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_encoder.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_exti.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_exti.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_flash.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_flash.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\_Impl\ifxFlash_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\_Impl\ifxFlash_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_gpio.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_gpio.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Port\\Std\IFXPORT.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Port\\Std\IFXPORT.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_pit.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_pit.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_pwm.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_pwm.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_soft_iic.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_soft_iic.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_spi.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_spi.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_soft_spi.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_soft_spi.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_uart.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_uart.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Asclin\\Asc\ifxAsclin_Asc.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Asclin\\Asc\ifxAsclin_Asc.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Asclin\Std\IfxAsclin.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Asclin\Std\IfxAsclin.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxAsclin_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxAsclin_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxAsclin_reg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Sfr\\TC26B\\_Reg\IfxAsclin_reg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuCcu.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Scu\Std\IfxScuWdt.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxAsclin_PinMap.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_PinMap\IfxAsclin_PinMap.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxAsclin_cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Impl\IfxAsclin_cfg.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Port\Std\IfxPort.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Lib\DataHandling\Ifx_Fifo.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\_Lib\DataHandling\Ifx_Fifo.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\StdIf\IfxStdIf_DPipe.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\StdIf\IfxStdIf_DPipe.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\StdIf\IfxStdIf.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Service\\CpuGeneric\StdIf\IfxStdIf.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_timer.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_timer.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_absolute_encoder.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_absolute_encoder.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ble6a20.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ble6a20.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_bluetooth_ch9141.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_bluetooth_ch9141.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_gnss.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_gnss.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_camera.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_camera.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_uart.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_driver\zf_driver_uart.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_type.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_type.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_dl1a.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_dl1a.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_dl1b.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_dl1b.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_icm20602.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_icm20602.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu660ra.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu660ra.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu660rb.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu660rb.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu660rx.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu660rx.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu963ra.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_imu963ra.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ips114.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ips114.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ips200.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ips200.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ips200pro.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ips200pro.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_key.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_key.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_menc15a.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_menc15a.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_mpu6050.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_mpu6050.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_mt9v03x.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_mt9v03x.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_oled.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_oled.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ov7725.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_ov7725.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_scc8660.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_scc8660.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_tft180.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_tft180.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_tsl1401.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_tsl1401.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_uart_receiver.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_uart_receiver.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_virtual_oscilloscope.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_virtual_oscilloscope.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_wifi_uart.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_wifi_uart.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_wifi_spi.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_wifi_spi.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_wireless_uart.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_device\zf_device_wireless_uart.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_components\seekfree_assistant.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_components\seekfree_assistant.h" :
+vision_track.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_components\seekfree_assistant_interface.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_components\seekfree_assistant_interface.h" :

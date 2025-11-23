@@ -1,40 +1,40 @@
-libraries/zf_common/zf_common_function.o :	../libraries/zf_common/zf_common_function.c
+zf_common_function.o :	../libraries/zf_common/zf_common_function.c
 ../libraries/zf_common/zf_common_function.c :
-libraries/zf_common/zf_common_function.o :	../libraries/zf_common/zf_common_debug.h
-../libraries/zf_common/zf_common_debug.h :
-libraries/zf_common/zf_common_function.o :	../libraries/zf_common/zf_common_typedef.h
-../libraries/zf_common/zf_common_typedef.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/math.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/math.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/typeinfo.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdio.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdio.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdarg.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdarg.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdint.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdint.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/string.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/string.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stdlib.h :
-libraries/zf_common/zf_common_function.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/ifx_types.h :
-libraries/zf_common/zf_common_function.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/Compilers.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/Compilers.h :
-libraries/zf_common/zf_common_function.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Configurations/Ifx_Cfg.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Configurations/Ifx_Cfg.h :
-libraries/zf_common/zf_common_function.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.h :
-libraries/zf_common/zf_common_function.o :	d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stddef.h
-d:/Infineon/AURIX-Studio-1.9.12/tools/Compilers/Tasking_1.1r8/ctc/include/stddef.h :
-libraries/zf_common/zf_common_function.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Platform_Types.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Platform_Types.h :
-libraries/zf_common/zf_common_function.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/Ifx_TypesTasking.h :
-libraries/zf_common/zf_common_function.o :	d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H
-d:/car/Seekfree_TC264_Opensource_Library/libraries/infineon_libraries/iLLD/TC26B/Tricore/Cpu/Std/PLATFORM_TYPES.H :
-libraries/zf_common/zf_common_function.o :	../libraries/zf_common/zf_common_interrupt.h
-../libraries/zf_common/zf_common_interrupt.h :
-libraries/zf_common/zf_common_function.o :	../libraries/zf_common/zf_common_function.h
-../libraries/zf_common/zf_common_function.h :
+zf_common_function.o :	..\libraries\zf_common\zf_common_debug.h
+..\libraries\zf_common\zf_common_debug.h :
+zf_common_function.o :	..\libraries\zf_common\zf_common_typedef.h
+..\libraries\zf_common\zf_common_typedef.h :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h" :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h" :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\string.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" :
+zf_common_function.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
+zf_common_function.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+zf_common_function.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+zf_common_function.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+zf_common_function.o :	"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"D:\Infineon\AURIX-Studio-1.10.24\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+zf_common_function.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Platform_Types.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Platform_Types.h" :
+zf_common_function.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
+zf_common_function.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
+"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+zf_common_function.o :	..\libraries\zf_common\zf_common_interrupt.h
+..\libraries\zf_common\zf_common_interrupt.h :
+zf_common_function.o :	..\libraries\zf_common\zf_common_function.h
+..\libraries\zf_common\zf_common_function.h :

@@ -47,7 +47,7 @@ typedef struct
     int16 target_speed;                         // 目标速度，单位为毫米每秒
     int16 current_speed;                        // 当前速度，单位为毫米每秒
     int32 pwm_duty;                             // 当前PWM占空比（速度或制动）
-    uint8 direction;                            // 当前方向，1=前进，0=后退
+    uint8 direction;                            // 当前方向，0=前进，1=后退
 } motor_t;
 
 // 舵机结构体定义

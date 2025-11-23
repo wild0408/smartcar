@@ -272,24 +272,6 @@ void vision_show_image_with_lines_tft180(void)
         }
     }
     
-    // 第三行：轨迹状态指示
-    tft180_show_string(0, 118, "Track:");
-    if (vision.track_found)
-    {
-        tft180_set_color(RGB565_GREEN, RGB565_BLACK);
-        tft180_show_string(50, 118, "OK ");
-        
-        // 显示轨迹质量指示
-        uint8 quality = (vision.track.valid_rows * 100) / (SCAN_START_ROW - SCAN_END_ROW);
-        tft180_set_color(RGB565_CYAN, RGB565_BLACK);
-        tft180_show_int(75, 118, quality, 3);
-        tft180_show_string(100, 118, "%");
-    }
-    else
-    {
-        tft180_set_color(RGB565_RED, RGB565_BLACK);
-        tft180_show_string(50, 118, "LOST");
-    }
 }
 
 /**
