@@ -25,7 +25,7 @@ typedef enum
 } binarize_mode_enum;
 
 #define BINARIZE_MODE       BINARIZE_FIXED  // 当前使用的二值化模式
-#define THRESHOLD_VALUE     220         // 固定阈值的阈值
+#define THRESHOLD_VALUE     210         // 固定阈值的阈值
 #define ADAPTIVE_BLOCK_SIZE 16          // 自适应阈值块大小
 #define ADAPTIVE_OFFSET     10          // 自适应阈值偏移量
 #define SCAN_START_ROW      110         // 扫描起始行

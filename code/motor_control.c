@@ -31,11 +31,7 @@ static const struct {
     int32 duty;     // 对应的舵机占空比 (500-1000)
 } servo_map[] = {
     {-45, SERVO_LEFT_MAX},      // 左极限角度 (需实测)
-    {-30, 583},                 // 左转30度对应的占空比 (需实测修改)
-    {-15, 666},                 // 左转15度对应的占空比 (需实测修改)
     {0,   SERVO_CENTER_DUTY},   // 中心 (0度)
-    {15,  833},                 // 右转15度对应的占空比 (需实测修改)
-    {30,  916},                 // 右转30度对应的占空比 (需实测修改)
     {45,  SERVO_RIGHT_MAX}      // 右极限角度 (需实测)
 };
 #define SERVO_MAP_COUNT (sizeof(servo_map) / sizeof(servo_map[0]))

@@ -10,7 +10,7 @@
 #include "path_planning.h"
 
 #define BASE_SPEED              200        // 基础速度/10ms
-#define MAX_STEER_ANGLE         10          // 最大转向角度
+#define MAX_STEER_ANGLE         45          // 最大转向角度
 
 //====================================================PID参数配置====================================================
 // PID场景枚举
