@@ -114,9 +114,9 @@ void smart_car_control(void)
     }
     
     // 手动控制相关变量初始化
-    int16 scene_base_speed = (int16)smart_car.pid_configs[smart_car.current_pid_scene].base_speed;
-    int16 target_speed_left = scene_base_speed;
-    int16 target_speed_right = scene_base_speed;
+    car.base_speed = (int16)smart_car.pid_configs[smart_car.current_pid_scene].base_speed;
+    int16 target_speed_left = car.base_speed;
+    int16 target_speed_right = car.base_speed;
     int16 manual_steer_angle = 0;       // 手动控制方向角度
     uint8 use_manual_steer = 0;         // 是否使用手动方向控制
     

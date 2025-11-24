@@ -41,7 +41,7 @@ void controller_by_uart(void){
                 switch (i)
                 {
                 case 0: // 通道0 控制电机速度
-                    smart_car.pid_configs[smart_car.current_pid_scene].base_speed = (int16_t)(seekfree_assistant_parameter[i]);
+                    smart_car.pid_configs[smart_car.current_pid_scene].base_speed = (int16)(seekfree_assistant_parameter[i]);
                     /* code */
                     break;
                 case 1: // 通道1 控制电机kp

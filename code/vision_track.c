@@ -292,8 +292,8 @@ void image_binarization(uint8 threshold)
     #endif
     
     // 形态学滤波去噪（可选，根据效果开启）
-    // morphology_erode();   // 腐蚀：去除小噪点
-    // morphology_dilate();  // 膨胀：填充小孔洞
+    morphology_erode();   // 腐蚀：去除小噪点
+    morphology_dilate();  // 膨胀：填充小孔洞
 }
 
 //====================================================图像处理====================================================
@@ -507,7 +507,7 @@ void vision_find_track_edge(void)
     }
     
     // 判断是否成功找到轨道（有效行数不少于50行）
-    vision.track_found = (vision.track.valid_rows >= 50) ? 1 : 0;
+    vision.track_found = (vision.track.valid_rows >= 80) ? 1 : 0;
 }
 
 

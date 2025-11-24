@@ -29,7 +29,7 @@ typedef enum
 #define ADAPTIVE_BLOCK_SIZE 16          // 自适应阈值块大小
 #define ADAPTIVE_OFFSET     10          // 自适应阈值偏移量
 #define SCAN_START_ROW      110         // 扫描起始行
-#define SCAN_END_ROW        30          // 扫描结束行
+#define SCAN_END_ROW        10          // 扫描结束行
 #define SCAN_STEP           1           // 扫描步进
 
 #define TRACK_WIDTH_MIN     40          // 轨迹宽度最小值
