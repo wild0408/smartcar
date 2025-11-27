@@ -46,22 +46,27 @@ void controller_by_uart(void){
                     break;
                 case 1: // 通道1 控制电机kp
                     smart_car.pid_configs[smart_car.current_pid_scene].speed.kp = seekfree_assistant_parameter[i];
-                    /* code */
+                    smart_car.speed_pid_left.kp = seekfree_assistant_parameter[i];
+                    smart_car.speed_pid_right.kp = seekfree_assistant_parameter[i];
                     break;
                 case 2: // 通道2 控制电机ki
                     smart_car.pid_configs[smart_car.current_pid_scene].speed.ki = seekfree_assistant_parameter[i];
-                    /* code */
+                    smart_car.speed_pid_left.ki = seekfree_assistant_parameter[i];
+                    smart_car.speed_pid_right.ki = seekfree_assistant_parameter[i];
                     break;
                 case 3: // 通道3 控制电机kd
                     smart_car.pid_configs[smart_car.current_pid_scene].speed.kd = seekfree_assistant_parameter[i];
-                    /* code */
+                    smart_car.speed_pid_left.kd = seekfree_assistant_parameter[i];
+                    smart_car.speed_pid_right.kd = seekfree_assistant_parameter[i];
                     break;
                 case 4: // 通道4 控制舵机kp
                     smart_car.pid_configs[smart_car.current_pid_scene].direction.kp = seekfree_assistant_parameter[i];
+                    smart_car.direction_pid.kp = seekfree_assistant_parameter[i];
                     /* code */
                     break;
                 case 5: // 通道5 控制舵机kd
                     smart_car.pid_configs[smart_car.current_pid_scene].direction.kd = seekfree_assistant_parameter[i];
+                    smart_car.direction_pid.kd = seekfree_assistant_parameter[i];
                     /* code */
                     break;
                 default:

@@ -342,31 +342,13 @@ display_tft180.o :	..\code\vision_track.h
 ..\code\vision_track.h :
 display_tft180.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-display_tft180.o :	..\code\position_control.h
-..\code\position_control.h :
-display_tft180.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-display_tft180.o :	..\code\pid_control.h
-..\code\pid_control.h :
 display_tft180.o :	..\code\element_recognition.h
 ..\code\element_recognition.h :
 display_tft180.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
 display_tft180.o :	..\code\vision_track.h
 ..\code\vision_track.h :
-display_tft180.o :	..\code\path_planning.h
-..\code\path_planning.h :
-display_tft180.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-display_tft180.o :	..\code\element_recognition.h
-..\code\element_recognition.h :
-display_tft180.o :	..\code\position_control.h
-..\code\position_control.h :
 display_tft180.o :	..\code\vision_track.h
 ..\code\vision_track.h :
-display_tft180.o :	..\code\position_control.h
-..\code\position_control.h :
 display_tft180.o :	..\code\element_recognition.h
 ..\code\element_recognition.h :
-display_tft180.o :	..\code\path_planning.h
-..\code\path_planning.h :

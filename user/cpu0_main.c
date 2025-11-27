@@ -51,9 +51,6 @@ int core0_main(void)
     smart_car_init();
     show_speed_init();
     pit_ms_init(CCU60_CH0, 10);
-
-
-    car_set_angle(5);
     // 此处编写用户代码 例如外设初始化代码等
     cpu_wait_event_ready();         // 等待所有核心初始化完毕
     smart_car_start();

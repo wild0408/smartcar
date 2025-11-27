@@ -338,23 +338,9 @@ smart_car.o :	..\code\vision_track.h
 ..\code\vision_track.h :
 smart_car.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-smart_car.o :	..\code\position_control.h
-..\code\position_control.h :
-smart_car.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-smart_car.o :	..\code\pid_control.h
-..\code\pid_control.h :
 smart_car.o :	..\code\element_recognition.h
 ..\code\element_recognition.h :
 smart_car.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
 smart_car.o :	..\code\vision_track.h
 ..\code\vision_track.h :
-smart_car.o :	..\code\path_planning.h
-..\code\path_planning.h :
-smart_car.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-smart_car.o :	..\code\element_recognition.h
-..\code\element_recognition.h :
-smart_car.o :	..\code\position_control.h
-..\code\position_control.h :

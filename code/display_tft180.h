@@ -18,9 +18,7 @@
 #include "zf_device_tft180.h"
 #include "smart_car.h"
 #include "vision_track.h"
-#include "position_control.h"
 #include "element_recognition.h"
-#include "path_planning.h"
 
 //====================================================函数声明====================================================
 // 注意：基础显示功能请直接使用 zf_device_tft180.h 中的函数

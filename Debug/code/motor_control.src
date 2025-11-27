@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc46112a --dep-file=code/motor_control.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\code -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_common -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_components -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_device -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/motor_control.src ../code/motor_control.c"
+	.compiler_invocation	"ctc -f cc32832a --dep-file=code/motor_control.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\code -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_common -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_components -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_device -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/motor_control.src ../code/motor_control.c"
 	.compiler_name		"ctc"
 	;source	'../code/motor_control.c'
 
@@ -12,190 +12,32 @@ $TC16X
 	.align	2
 	
 ; Function limit
-.L29:
+.L19:
 limit:	.type	func
 	jge	d4,d5,.L2
-.L488:
+.L456:
 	mov	d2,d5
-.L198:
+.L171:
 	j	.L3
 .L2:
 	jge	d6,d4,.L4
-.L489:
+.L457:
 	mov	d2,d6
-.L199:
+.L172:
 	j	.L5
 .L4:
 	mov	d2,d4
-.L200:
+.L173:
 	j	.L6
 .L6:
 .L5:
 .L3:
 	ret
-.L185:
+.L166:
 	
 __limit_function_end:
 	.size	limit,__limit_function_end-limit
-.L131:
-	; End of function
-	
-	.sdecl	'.text.motor_control.get_duty_from_angle_map',code,cluster('get_duty_from_angle_map')
-	.sect	'.text.motor_control.get_duty_from_angle_map'
-	.align	2
-	
-; Function get_duty_from_angle_map
-.L31:
-get_duty_from_angle_map:	.type	func
-	mov	d3,d4
-.L202:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L494:
-	ld.h	d15,[a15]
-.L495:
-	jlt	d15,d3,.L7
-.L496:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L497:
-	ld.w	d2,[a15]2
-.L498:
-	j	.L8
-.L7:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L499:
-	ld.h	d15,[a15]36
-.L500:
-	jlt	d3,d15,.L9
-.L501:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L502:
-	ld.w	d2,[a15]38
-.L503:
-	j	.L10
-.L9:
-	mov	d4,#0
-.L201:
-	j	.L11
-.L12:
-	mul	d15,d4,#6
-.L504:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L505:
-	addsc.a	a15,a15,d15,#0
-.L506:
-	ld.h	d0,[a15]
-.L507:
-	jlt	d3,d0,.L13
-.L508:
-	add	d15,d4,#1
-.L509:
-	mul	d15,d15,#6
-.L510:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L511:
-	addsc.a	a15,a15,d15,#0
-.L512:
-	ld.h	d0,[a15]
-.L513:
-	jlt	d0,d3,.L14
-.L193:
-	add	d15,d4,#1
-.L514:
-	mul	d15,d15,#6
-.L515:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L516:
-	addsc.a	a15,a15,d15,#0
-.L517:
-	ld.w	d0,[a15]2
-.L518:
-	mul	d15,d4,#6
-.L519:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L520:
-	addsc.a	a15,a15,d15,#0
-.L521:
-	ld.w	d1,[a15]2
-.L204:
-	sub	d0,d1
-.L522:
-	add	d15,d4,#1
-.L523:
-	mul	d15,d15,#6
-.L524:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L525:
-	addsc.a	a15,a15,d15,#0
-.L526:
-	ld.h	d1,[a15]
-.L527:
-	mul	d15,d4,#6
-.L528:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L529:
-	addsc.a	a15,a15,d15,#0
-.L530:
-	ld.h	d15,[a15]
-.L531:
-	sub	d1,d15
-	extr	d1,d1,#0,#16
-.L206:
-	mul	d15,d4,#6
-.L532:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L533:
-	addsc.a	a15,a15,d15,#0
-.L534:
-	ld.w	d2,[a15]2
-.L535:
-	mul	d15,d4,#6
-.L536:
-	movh.a	a15,#@his(servo_map)
-	lea	a15,[a15]@los(servo_map)
-.L537:
-	addsc.a	a15,a15,d15,#0
-.L538:
-	ld.h	d15,[a15]
-.L539:
-	sub	d3,d15
-.L203:
-	mul	d3,d0
-.L540:
-	div	e0,d3,d1
-.L205:
-	add	d2,d0
-.L541:
-	j	.L15
-.L14:
-.L13:
-	add	d4,#1
-.L11:
-	jlt.u	d4,#6,.L12
-.L191:
-	mov	d2,#750
-.L542:
-	j	.L16
-.L16:
-.L15:
-.L10:
-.L8:
-	ret
-.L189:
-	
-__get_duty_from_angle_map_function_end:
-	.size	get_duty_from_angle_map,__get_duty_from_angle_map_function_end-get_duty_from_angle_map
-.L136:
+.L119:
 	; End of function
 	
 	.sdecl	'.text.motor_control.servo_init',code,cluster('servo_init')
@@ -204,21 +46,21 @@ __get_duty_from_angle_map_function_end:
 	
 	.global	servo_init
 ; Function servo_init
-.L33:
+.L21:
 servo_init:	.type	func
 	mov	d4,#63
-.L390:
+.L357:
 	mov	d5,#50
-.L391:
-	mov	d6,#750
+.L358:
+	mov	d6,#725
 	call	pwm_init
-.L392:
+.L359:
 	ret
-.L148:
+.L129:
 	
 __servo_init_function_end:
 	.size	servo_init,__servo_init_function_end-servo_init
-.L81:
+.L69:
 	; End of function
 	
 	.sdecl	'.text.motor_control.servo_set_duty',code,cluster('servo_set_duty')
@@ -227,37 +69,37 @@ __servo_init_function_end:
 	
 	.global	servo_set_duty
 ; Function servo_set_duty
-.L35:
+.L23:
 servo_set_duty:	.type	func
 	mov	d5,d4
-.L209:
-	mov	d15,#500
-.L402:
-	jge.u	d5,d15,.L17
-.L403:
-	mov	d5,#500
-.L207:
-	j	.L18
-.L17:
-	mov	d15,#1000
-.L404:
-	jge.u	d15,d5,.L19
-.L405:
-	mov	d5,#1000
-.L19:
-.L18:
+.L176:
+	mov	d15,#605
+.L370:
+	jge.u	d5,d15,.L7
+.L371:
+	mov	d5,#605
+.L174:
+	j	.L8
+.L7:
+	mov	d15,#845
+.L372:
+	jge.u	d15,d5,.L9
+.L373:
+	mov	d5,#845
+.L9:
+.L8:
 	st.w	[a4]4,d5
-.L406:
+.L374:
 	ld.bu	d4,[a4]
-.L407:
+.L375:
 	call	pwm_set_duty
-.L208:
+.L175:
 	ret
-.L156:
+.L137:
 	
 __servo_set_duty_function_end:
 	.size	servo_set_duty,__servo_set_duty_function_end-servo_set_duty
-.L91:
+.L79:
 	; End of function
 	
 	.sdecl	'.text.motor_control.servo_set_angle',code,cluster('servo_set_angle')
@@ -266,33 +108,36 @@ __servo_set_duty_function_end:
 	
 	.global	servo_set_angle
 ; Function servo_set_angle
-.L37:
+.L25:
 servo_set_angle:	.type	func
 	mov.aa	a15,a4
-.L211:
+.L178:
 	mov	d5,#-45
-.L397:
+.L364:
 	mov	d6,#45
 	call	limit
-.L210:
-	extr	d4,d2,#0,#16
-.L212:
-	st.h	[a15]2,d4
-.L154:
-	call	get_duty_from_angle_map
-.L213:
+.L177:
+	extr	d15,d2,#0,#16
+.L179:
+	st.h	[a15]2,d15
+.L135:
+	mul	d0,d15,#70
+.L365:
+	mov	d15,#45
+.L180:
+	div	e0,d0,d15
+	addi	d4,d0,#725
+.L181:
 	mov.aa	a4,a15
-.L215:
-	mov	d4,d2
-.L216:
+.L183:
 	call	servo_set_duty
-.L214:
+.L182:
 	ret
-.L149:
+.L130:
 	
 __servo_set_angle_function_end:
 	.size	servo_set_angle,__servo_set_angle_function_end-servo_set_angle
-.L86:
+.L74:
 	; End of function
 	
 	.sdecl	'.text.motor_control.motor_init',code,cluster('motor_init')
@@ -301,209 +146,209 @@ __servo_set_angle_function_end:
 	
 	.global	motor_init
 ; Function motor_init
-.L39:
+.L27:
 motor_init:	.type	func
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L259:
+.L226:
 	mov	d15,#43
-.L260:
+.L227:
 	st.b	[a15],d15
+.L228:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L229:
+	mov	d15,#70
+.L230:
+	st.h	[a15]2,d15
+.L231:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L232:
+	mov	d15,#3
+.L233:
+	st.b	[a15]4,d15
+.L234:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L235:
+	mov	d15,#0
+.L236:
+	st.h	[a15]6,d15
+.L237:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L238:
+	mov	d15,#0
+.L239:
+	st.h	[a15]8,d15
+.L240:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L241:
+	mov	d15,#0
+.L242:
+	st.h	[a15]10,d15
+.L243:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L244:
+	mov	d15,#0
+.L245:
+	st.w	[a15]12,d15
+.L246:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L247:
+	mov	d15,#0
+.L248:
+	st.b	[a15]16,d15
+.L249:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L250:
+	mov	d15,#35
+.L251:
+	st.b	[a15]20,d15
+.L252:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L253:
+	mov	d15,#68
+.L254:
+	st.h	[a15]22,d15
+.L255:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L256:
+	mov	d15,#4
+.L257:
+	st.b	[a15]24,d15
+.L258:
+	movh.a	a15,#@his(car)
+	lea	a15,[a15]@los(car)
+.L259:
+	mov	d15,#0
+.L260:
+	st.h	[a15]26,d15
 .L261:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L262:
-	mov	d15,#70
+	mov	d15,#0
 .L263:
-	st.h	[a15]2,d15
+	st.h	[a15]28,d15
 .L264:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L265:
-	mov	d15,#3
+	mov	d15,#0
 .L266:
-	st.b	[a15]4,d15
+	st.h	[a15]30,d15
 .L267:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L268:
 	mov	d15,#0
 .L269:
-	st.h	[a15]6,d15
+	st.w	[a15]32,d15
 .L270:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L271:
 	mov	d15,#0
 .L272:
-	st.h	[a15]8,d15
+	st.b	[a15]36,d15
 .L273:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L274:
-	mov	d15,#0
+	mov	d15,#63
 .L275:
-	st.h	[a15]10,d15
+	st.b	[a15]40,d15
 .L276:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L277:
 	mov	d15,#0
 .L278:
-	st.w	[a15]12,d15
+	st.h	[a15]42,d15
 .L279:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L280:
-	mov	d15,#0
+	mov	d15,#725
 .L281:
-	st.b	[a15]16,d15
+	st.w	[a15]44,d15
 .L282:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L283:
-	mov	d15,#35
+	mov	d15,#0
 .L284:
-	st.b	[a15]20,d15
+	st.h	[a15]48,d15
 .L285:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
 .L286:
-	mov	d15,#68
+	mov	d15,#0
 .L287:
-	st.h	[a15]22,d15
-.L288:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L289:
-	mov	d15,#4
-.L290:
-	st.b	[a15]24,d15
-.L291:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L292:
-	mov	d15,#0
-.L293:
-	st.h	[a15]26,d15
-.L294:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L295:
-	mov	d15,#0
-.L296:
-	st.h	[a15]28,d15
-.L297:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L298:
-	mov	d15,#0
-.L299:
-	st.h	[a15]30,d15
-.L300:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L301:
-	mov	d15,#0
-.L302:
-	st.w	[a15]32,d15
-.L303:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L304:
-	mov	d15,#0
-.L305:
-	st.b	[a15]36,d15
-.L306:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L307:
-	mov	d15,#63
-.L308:
-	st.b	[a15]40,d15
-.L309:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L310:
-	mov	d15,#0
-.L311:
-	st.h	[a15]42,d15
-.L312:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L313:
-	mov	d15,#750
-.L314:
-	st.w	[a15]44,d15
-.L315:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L316:
-	mov	d15,#0
-.L317:
-	st.h	[a15]48,d15
-.L318:
-	movh.a	a15,#@his(car)
-	lea	a15,[a15]@los(car)
-.L319:
-	mov	d15,#0
-.L320:
 	st.h	[a15]50,d15
-.L321:
+.L288:
 	mov	d4,#43
-.L322:
+.L289:
 	mov	d5,#17000
-.L323:
+.L290:
 	mov	d6,#0
 	call	pwm_init
-.L324:
+.L291:
 	mov	d4,#35
-.L325:
+.L292:
 	mov	d5,#17000
-.L326:
+.L293:
 	mov	d6,#0
 	call	pwm_init
-.L327:
+.L294:
 	mov	d4,#70
-.L328:
+.L295:
 	mov	d5,#1
-.L329:
+.L296:
 	mov	d6,#0
-.L330:
+.L297:
 	mov	d7,#3
 	call	gpio_init
-.L331:
+.L298:
 	mov	d4,#68
-.L332:
+.L299:
 	mov	d5,#1
-.L333:
+.L300:
 	mov	d6,#0
-.L334:
+.L301:
 	mov	d7,#3
 	call	gpio_init
-.L335:
+.L302:
 	call	servo_init
-.L336:
+.L303:
 	mov	d4,#3
-.L337:
+.L304:
 	mov	d5,#5
-.L338:
+.L305:
 	mov	d6,#6
 	call	encoder_dir_init
-.L339:
+.L306:
 	mov	d4,#4
-.L340:
+.L307:
 	mov	d5,#6
-.L341:
+.L308:
 	mov	d6,#7
 	call	encoder_dir_init
-.L342:
+.L309:
 	ret
-.L141:
+.L122:
 	
 __motor_init_function_end:
 	.size	motor_init,__motor_init_function_end-motor_init
-.L66:
+.L54:
 	; End of function
 	
 	.sdecl	'.text.motor_control.motor_set_duty',code,cluster('motor_set_duty')
@@ -512,71 +357,71 @@ __motor_init_function_end:
 	
 	.global	motor_set_duty
 ; Function motor_set_duty
-.L41:
+.L29:
 motor_set_duty:	.type	func
 	mov.aa	a15,a4
-.L218:
+.L185:
 	mov	d5,#-8000
-.L347:
+.L314:
 	mov	d6,#8000
 	call	limit
-.L217:
+.L184:
 	mov	d15,d2
-.L220:
+.L187:
 	st.w	[a15]12,d15
-.L348:
-	jlt	d15,#1,.L20
-.L349:
+.L315:
+	jlt	d15,#1,.L10
+.L316:
 	ld.h	d4,[a15]2
-.L350:
+.L317:
 	mov	d5,#1
 	call	gpio_set_level
-.L219:
+.L186:
 	mov	d0,#0
-.L351:
+.L318:
 	st.b	[a15]16,d0
-.L352:
+.L319:
 	ld.bu	d4,[a15]
-.L353:
+.L320:
 	mov	d5,d15
-.L221:
+.L188:
 	call	pwm_set_duty
-.L222:
-	j	.L21
-.L20:
-	jge	d15,#0,.L22
-.L354:
+.L189:
+	j	.L11
+.L10:
+	jge	d15,#0,.L12
+.L321:
 	ld.h	d4,[a15]2
-.L355:
+.L322:
 	mov	d5,#0
 	call	gpio_set_level
-.L223:
+.L190:
 	mov	d0,#1
-.L356:
+.L323:
 	st.b	[a15]16,d0
-.L357:
+.L324:
 	ld.bu	d4,[a15]
-.L358:
+.L325:
 	rsub	d15,#0
-.L359:
+.L326:
 	mov	d5,d15
-.L224:
+.L191:
 	call	pwm_set_duty
-.L225:
-	j	.L23
-.L22:
+.L192:
+	j	.L13
+.L12:
 	ld.bu	d4,[a15]
-.L360:
+.L327:
 	mov	d5,#0
 	call	pwm_set_duty
-.L23:
-.L21:
+.L13:
+.L11:
 	ret
-.L142:
+.L123:
 	
 __motor_set_duty_function_end:
 	.size	motor_set_duty,__motor_set_duty_function_end-motor_set_duty
-.L71:
+.L59:
 	; End of function
 	
 	.sdecl	'.text.motor_control.motor_update_speed',code,cluster('motor_update_speed')
@@ -585,70 +430,70 @@ __motor_set_duty_function_end:
 	
 	.global	motor_update_speed
 ; Function motor_update_speed
-.L43:
+.L31:
 motor_update_speed:	.type	func
 	movh.a	a12,#@his(car)
 	lea	a12,[a12]@los(car)
-.L365:
+.L332:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L366:
+.L333:
 	ld.bu	d4,[a15]4
 	call	encoder_get_count
-.L367:
+.L334:
 	st.h	[a12]6,d2
-.L368:
+.L335:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L369:
+.L336:
 	movh.a	a2,#@his(car)
 	lea	a2,[a2]@los(car)
-.L370:
+.L337:
 	ld.bu	d4,[a2]24
 	call	encoder_get_count
-.L371:
+.L338:
 	rsub	d2,#0
-.L372:
+.L339:
 	st.h	[a15]26,d2
-.L373:
+.L340:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L374:
+.L341:
 	movh.a	a2,#@his(car)
 	lea	a2,[a2]@los(car)
-.L375:
+.L342:
 	ld.h	d15,[a2]6
-.L376:
+.L343:
 	st.h	[a15]10,d15
-.L377:
+.L344:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L378:
+.L345:
 	movh.a	a2,#@his(car)
 	lea	a2,[a2]@los(car)
-.L379:
+.L346:
 	ld.h	d15,[a2]26
-.L380:
+.L347:
 	st.h	[a15]30,d15
-.L381:
+.L348:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L382:
+.L349:
 	ld.bu	d4,[a15]4
 	call	encoder_clear_count
-.L383:
+.L350:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L384:
+.L351:
 	ld.bu	d4,[a15]24
 	call	encoder_clear_count
-.L385:
+.L352:
 	ret
-.L147:
+.L128:
 	
 __motor_update_speed_function_end:
 	.size	motor_update_speed,__motor_update_speed_function_end-motor_update_speed
-.L76:
+.L64:
 	; End of function
 	
 	.sdecl	'.text.motor_control.car_set_speed',code,cluster('car_set_speed')
@@ -657,40 +502,40 @@ __motor_update_speed_function_end:
 	
 	.global	car_set_speed
 ; Function car_set_speed
-.L45:
+.L33:
 car_set_speed:	.type	func
 	mov	d15,d5
-.L227:
+.L194:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L412:
+.L380:
 	st.h	[a15]8,d4
-.L413:
+.L381:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L414:
+.L382:
 	st.h	[a15]28,d15
-.L415:
+.L383:
 	movh.a	a4,#@his(car)
 	lea	a4,[a4]@los(car)
-.L416:
+.L384:
 	call	motor_set_duty
-.L226:
+.L193:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L417:
+.L385:
 	lea	a4,[a15]20
-.L418:
+.L386:
 	mov	d4,d15
-.L228:
+.L195:
 	call	motor_set_duty
-.L229:
+.L196:
 	ret
-.L160:
+.L141:
 	
 __car_set_speed_function_end:
 	.size	car_set_speed,__car_set_speed_function_end-car_set_speed
-.L96:
+.L84:
 	; End of function
 	
 	.sdecl	'.text.motor_control.car_set_angle',code,cluster('car_set_angle')
@@ -699,26 +544,26 @@ __car_set_speed_function_end:
 	
 	.global	car_set_angle
 ; Function car_set_angle
-.L47:
+.L35:
 car_set_angle:	.type	func
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L423:
+.L391:
 	st.h	[a15]50,d4
-.L424:
+.L392:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L425:
+.L393:
 	lea	a4,[a15]40
-.L426:
+.L394:
 	call	servo_set_angle
-.L230:
+.L197:
 	ret
-.L163:
+.L144:
 	
 __car_set_angle_function_end:
 	.size	car_set_angle,__car_set_angle_function_end-car_set_angle
-.L101:
+.L89:
 	; End of function
 	
 	.sdecl	'.text.motor_control.car_stop',code,cluster('car_stop')
@@ -727,42 +572,42 @@ __car_set_angle_function_end:
 	
 	.global	car_stop
 ; Function car_stop
-.L49:
+.L37:
 car_stop:	.type	func
 	movh.a	a4,#@his(car)
 	lea	a4,[a4]@los(car)
-.L431:
+.L399:
 	mov	d4,#0
 	call	motor_set_duty
-.L432:
+.L400:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L433:
+.L401:
 	lea	a4,[a15]20
-.L434:
+.L402:
 	mov	d4,#0
 	call	motor_set_duty
-.L435:
+.L403:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L436:
+.L404:
 	mov	d15,#0
-.L437:
+.L405:
 	st.h	[a15]8,d15
-.L438:
+.L406:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L439:
+.L407:
 	mov	d15,#0
-.L440:
+.L408:
 	st.h	[a15]28,d15
-.L441:
+.L409:
 	ret
-.L165:
+.L146:
 	
 __car_stop_function_end:
 	.size	car_stop,__car_stop_function_end-car_stop
-.L106:
+.L94:
 	; End of function
 	
 	.sdecl	'.text.motor_control.car_forward',code,cluster('car_forward')
@@ -771,26 +616,26 @@ __car_stop_function_end:
 	
 	.global	car_forward
 ; Function car_forward
-.L51:
+.L39:
 car_forward:	.type	func
 	mov	d5,d4
-.L232:
+.L199:
 	call	car_set_speed
-.L231:
+.L198:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L446:
+.L414:
 	lea	a4,[a15]40
-.L447:
+.L415:
 	mov	d4,#0
 	call	servo_set_angle
-.L448:
+.L416:
 	ret
-.L166:
+.L147:
 	
 __car_forward_function_end:
 	.size	car_forward,__car_forward_function_end-car_forward
-.L111:
+.L99:
 	; End of function
 	
 	.sdecl	'.text.motor_control.car_backward',code,cluster('car_backward')
@@ -799,34 +644,34 @@ __car_forward_function_end:
 	
 	.global	car_backward
 ; Function car_backward
-.L53:
+.L41:
 car_backward:	.type	func
 	mov	d15,d4
-.L234:
+.L201:
 	rsub	d15,#0
-.L233:
+.L200:
 	extr	d15,d15,#0,#16
-.L235:
+.L202:
 	rsub	d4,#0
 	extr	d5,d4,#0,#16
 	mov	d4,d15
-.L236:
+.L203:
 	call	car_set_speed
-.L453:
+.L421:
 	movh.a	a15,#@his(car)
 	lea	a15,[a15]@los(car)
-.L454:
+.L422:
 	lea	a4,[a15]40
-.L455:
+.L423:
 	mov	d4,#0
 	call	servo_set_angle
-.L456:
+.L424:
 	ret
-.L168:
+.L149:
 	
 __car_backward_function_end:
 	.size	car_backward,__car_backward_function_end-car_backward
-.L116:
+.L104:
 	; End of function
 	
 	.sdecl	'.text.motor_control.car_turn',code,cluster('car_turn')
@@ -835,25 +680,25 @@ __car_backward_function_end:
 	
 	.global	car_turn
 ; Function car_turn
-.L55:
+.L43:
 car_turn:	.type	func
 	mov	d15,d4
-.L238:
+.L205:
 	mov	d8,d5
-.L239:
+.L206:
 	mov	d4,d8
-.L237:
+.L204:
 	call	car_set_angle
-.L240:
+.L207:
 	mov	e4,d8,d15
 	call	car_update_differential_speed
-.L461:
+.L429:
 	ret
-.L170:
+.L151:
 	
 __car_turn_function_end:
 	.size	car_turn,__car_turn_function_end-car_turn
-.L121:
+.L109:
 	; End of function
 	
 	.sdecl	'.text.motor_control.car_update_differential_speed',code,cluster('car_update_differential_speed')
@@ -862,85 +707,85 @@ __car_turn_function_end:
 	
 	.global	car_update_differential_speed
 ; Function car_update_differential_speed
-.L57:
+.L45:
 car_update_differential_speed:	.type	func
 	mov	d8,d4
-.L242:
-	jne	d5,#0,.L24
-.L466:
+.L209:
+	jne	d5,#0,.L14
+.L434:
 	mov	e4,d8,d8
-.L241:
+.L208:
 	call	car_set_speed
-.L467:
-	j	.L25
-.L24:
+.L435:
+	j	.L15
+.L14:
 	itof	d15,d5
-.L468:
+.L436:
 	mov	d0,#4048
 	addih	d0,d0,#16457
-.L469:
+.L437:
 	mul.f	d15,d15,d0
-.L470:
+.L438:
 	movh	d0,#17204
-.L471:
+.L439:
 	div.f	d4,d15,d0
-.L244:
+.L211:
 	call	tanf
-.L243:
+.L210:
 	insert	d15,d2,#0,#31,#1
-.L472:
+.L440:
 	mov	d0,#4719
 	addih	d0,d0,#14979
-.L473:
+.L441:
 	cmp.f	d15,d15,d0
-	jnz.t	d15:0,.L26
-.L180:
+	jnz.t	d15:0,.L16
+.L161:
 	movh	d15,#17184
-.L474:
+.L442:
 	mul.f	d15,d2,d15
-.L475:
+.L443:
 	movh	d0,#17352
-.L476:
+.L444:
 	div.f	d15,d15,d0
-.L246:
+.L213:
 	itof	d0,d8
-.L477:
+.L445:
 	movh	d1,#16256
-.L478:
+.L446:
 	sub.f	d1,d1,d15
-.L479:
+.L447:
 	mul.f	d4,d0,d1
-.L480:
+.L448:
 	call	__f_ftos
-.L245:
+.L212:
 	mov	d9,d2
-.L248:
+.L215:
 	itof	d0,d8
-.L481:
+.L449:
 	movh	d1,#16256
-.L482:
+.L450:
 	add.f	d15,d15,d1
-.L247:
+.L214:
 	mul.f	d4,d0,d15
-.L483:
+.L451:
 	call	__f_ftos
-.L249:
+.L216:
 	mov	e4,d2,d9
-.L250:
+.L217:
 	call	car_set_speed
-.L181:
-	j	.L27
-.L26:
+.L162:
+	j	.L17
+.L16:
 	mov	e4,d8,d8
 	call	car_set_speed
-.L27:
-.L25:
+.L17:
+.L15:
 	ret
-.L173:
+.L154:
 	
 __car_update_differential_speed_function_end:
 	.size	car_update_differential_speed,__car_update_differential_speed_function_end-car_update_differential_speed
-.L126:
+.L114:
 	; End of function
 	
 	.sdecl	'.bss.motor_control.car',data,cluster('car')
@@ -950,30 +795,10 @@ __car_update_differential_speed_function_end:
 car:	.type	object
 	.size	car,52
 	.space	52
-	.sdecl	'.rodata.motor_control.servo_map',data,rom,cluster('servo_map')
-	.sect	'.rodata.motor_control.servo_map'
-	.align	2
-servo_map:	.type	object
-	.size	servo_map,42
-	.half	-45
-	.word	500
-	.half	-30
-	.word	583
-	.half	-15
-	.word	666
-	.space	2
-	.word	750
-	.half	15
-	.word	833
-	.half	30
-	.word	916
-	.half	45
-	.word	1000
 	.calls	'car_update_differential_speed','__f_ftos'
 	.calls	'servo_init','pwm_init'
 	.calls	'servo_set_duty','pwm_set_duty'
 	.calls	'servo_set_angle','limit'
-	.calls	'servo_set_angle','get_duty_from_angle_map'
 	.calls	'servo_set_angle','servo_set_duty'
 	.calls	'motor_init','pwm_init'
 	.calls	'motor_init','gpio_init'
@@ -996,7 +821,6 @@ servo_map:	.type	object
 	.calls	'car_update_differential_speed','car_set_speed'
 	.calls	'car_update_differential_speed','tanf'
 	.calls	'limit','',0
-	.calls	'get_duty_from_angle_map','',0
 	.calls	'servo_init','',0
 	.calls	'servo_set_duty','',0
 	.calls	'servo_set_angle','',0
@@ -1021,17 +845,17 @@ servo_map:	.type	object
 	.calls	'car_update_differential_speed','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L59:
-	.word	145345
+.L47:
+	.word	145296
 	.half	3
-	.word	.L60
+	.word	.L48
 	.byte	4
-.L58:
+.L46:
 	.byte	1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L61
+	.word	.L49
 	.byte	2,1,1,3
 	.word	200
 	.byte	4
@@ -1040,7 +864,7 @@ servo_map:	.type	object
 	.word	203
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L176:
+.L157:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
@@ -1068,7 +892,7 @@ servo_map:	.type	object
 	.word	346
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7
-.L145:
+.L126:
 	.byte	7
 	.byte	'int',0,4,5,7
 	.byte	'unsigned int',0,4,7,10
@@ -2642,7 +2466,7 @@ servo_map:	.type	object
 	.byte	'enabled',0,8,168,7,50
 	.word	639
 	.byte	6,0
-.L158:
+.L139:
 	.byte	7
 	.byte	'unsigned long int',0,4,7,8
 	.byte	'IfxCpu_getPerformanceCounter',0,3,8,161,6,19
@@ -6068,7 +5892,7 @@ servo_map:	.type	object
 	.byte	'alti',0,17,191,18,82
 	.word	32207
 	.byte	6,0
-.L152:
+.L133:
 	.byte	7
 	.byte	'short int',0,2,5,7
 	.byte	'long int',0,4,5,20,19,60,9,12,13
@@ -6945,7 +6769,7 @@ servo_map:	.type	object
 	.byte	'direction',0
 	.word	639
 	.byte	1,2,35,16,0
-.L143:
+.L124:
 	.byte	3
 	.word	40005
 	.byte	20,24,54,9,8,13
@@ -6958,7 +6782,7 @@ servo_map:	.type	object
 	.byte	'current_duty',0
 	.word	10520
 	.byte	4,2,35,4,0
-.L150:
+.L131:
 	.byte	3
 	.word	40172
 	.byte	31
@@ -20538,7 +20362,7 @@ servo_map:	.type	object
 	.byte	31
 	.byte	'servo_t',0,24,59,3
 	.word	40172
-.L196:
+.L170:
 	.byte	20,24,62,9,52,13
 	.byte	'left_motor',0
 	.word	40005
@@ -20557,22 +20381,10 @@ servo_map:	.type	object
 	.byte	2,2,35,50,0,31
 	.byte	'car_control_t',0,24,69,3
 	.word	145164
-	.byte	20,25,29,14,6,13
-	.byte	'angle',0
-	.word	32499
-	.byte	2,2,35,0,13
-	.byte	'duty',0
-	.word	480
-	.byte	4,2,35,2,0,15,42
-	.word	145299
-	.byte	16,6,0
-.L197:
-	.byte	33
-	.word	145334
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L60:
+.L48:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -20586,12 +20398,12 @@ servo_map:	.type	object
 	.byte	0,36,21,1,73,19,54,15,39,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L61:
-	.word	.L252-.L251
-.L251:
+.L49:
+	.word	.L219-.L218
+.L218:
 	.half	3
-	.word	.L254-.L253
-.L253:
+	.word	.L221-.L220
+.L220:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg',0
 	.byte	'D:\\Infineon\\AURIX-Studio-1.10.24\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -20677,1746 +20489,1503 @@ servo_map:	.type	object
 	.byte	'zf_device_wifi_uart.h',0,8,0,0
 	.byte	'zf_device_wifi_spi.h',0,8,0,0
 	.byte	'seekfree_assistant.h',0,9,0,0,0
-.L254:
-.L252:
+.L221:
+.L219:
 	.sdecl	'.debug_info',debug,cluster('motor_init')
 	.sect	'.debug_info'
-.L62:
+.L50:
 	.word	246
 	.half	3
-	.word	.L63
+	.word	.L51
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L65,.L64
+	.word	.L53,.L52
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'motor_init',0,1,122,6,1,1,1
-	.word	.L39,.L141,.L38
+	.byte	'motor_init',0,1,74,6,1,1,1
+	.word	.L27,.L122,.L26
 	.byte	4
-	.word	.L39,.L141
+	.word	.L27,.L122
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('motor_init')
 	.sect	'.debug_abbrev'
-.L63:
+.L51:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('motor_init')
 	.sect	'.debug_line'
-.L64:
-	.word	.L256-.L255
-.L255:
+.L52:
+	.word	.L223-.L222
+.L222:
 	.half	3
-	.word	.L258-.L257
-.L257:
+	.word	.L225-.L224
+.L224:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L258:
+.L225:
 	.byte	5,5,7,0,5,2
-	.word	.L39
-	.byte	3,252,0,1,5,36,9
-	.half	.L259-.L39
+	.word	.L27
+	.byte	3,204,0,1,5,36,9
+	.half	.L226-.L27
 	.byte	1,5,34,9
+	.half	.L227-.L226
+	.byte	1,5,5,9
+	.half	.L228-.L227
+	.byte	3,1,1,5,36,9
+	.half	.L229-.L228
+	.byte	1,5,34,9
+	.half	.L230-.L229
+	.byte	1,5,5,9
+	.half	.L231-.L230
+	.byte	3,1,1,5,36,9
+	.half	.L232-.L231
+	.byte	1,5,34,9
+	.half	.L233-.L232
+	.byte	1,5,5,9
+	.half	.L234-.L233
+	.byte	3,1,1,5,36,9
+	.half	.L235-.L234
+	.byte	1,5,34,9
+	.half	.L236-.L235
+	.byte	1,5,5,9
+	.half	.L237-.L236
+	.byte	3,1,1,5,36,9
+	.half	.L238-.L237
+	.byte	1,5,34,9
+	.half	.L239-.L238
+	.byte	1,5,5,9
+	.half	.L240-.L239
+	.byte	3,1,1,5,36,9
+	.half	.L241-.L240
+	.byte	1,5,34,9
+	.half	.L242-.L241
+	.byte	1,5,5,9
+	.half	.L243-.L242
+	.byte	3,1,1,5,36,9
+	.half	.L244-.L243
+	.byte	1,5,34,9
+	.half	.L245-.L244
+	.byte	1,5,5,9
+	.half	.L246-.L245
+	.byte	3,1,1,5,36,9
+	.half	.L247-.L246
+	.byte	1,5,34,9
+	.half	.L248-.L247
+	.byte	1,5,5,9
+	.half	.L249-.L248
+	.byte	3,3,1,5,37,9
+	.half	.L250-.L249
+	.byte	1,5,35,9
+	.half	.L251-.L250
+	.byte	1,5,5,9
+	.half	.L252-.L251
+	.byte	3,1,1,5,37,9
+	.half	.L253-.L252
+	.byte	1,5,35,9
+	.half	.L254-.L253
+	.byte	1,5,5,9
+	.half	.L255-.L254
+	.byte	3,1,1,5,37,9
+	.half	.L256-.L255
+	.byte	1,5,35,9
+	.half	.L257-.L256
+	.byte	1,5,5,9
+	.half	.L258-.L257
+	.byte	3,1,1,5,37,9
+	.half	.L259-.L258
+	.byte	1,5,35,9
 	.half	.L260-.L259
 	.byte	1,5,5,9
 	.half	.L261-.L260
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,37,9
 	.half	.L262-.L261
-	.byte	1,5,34,9
+	.byte	1,5,35,9
 	.half	.L263-.L262
 	.byte	1,5,5,9
 	.half	.L264-.L263
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,37,9
 	.half	.L265-.L264
-	.byte	1,5,34,9
+	.byte	1,5,35,9
 	.half	.L266-.L265
 	.byte	1,5,5,9
 	.half	.L267-.L266
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,37,9
 	.half	.L268-.L267
-	.byte	1,5,34,9
+	.byte	1,5,35,9
 	.half	.L269-.L268
 	.byte	1,5,5,9
 	.half	.L270-.L269
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,37,9
 	.half	.L271-.L270
-	.byte	1,5,34,9
+	.byte	1,5,35,9
 	.half	.L272-.L271
 	.byte	1,5,5,9
 	.half	.L273-.L272
-	.byte	3,1,1,5,36,9
+	.byte	3,3,1,5,39,9
 	.half	.L274-.L273
-	.byte	1,5,34,9
+	.byte	1,5,37,9
 	.half	.L275-.L274
 	.byte	1,5,5,9
 	.half	.L276-.L275
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,40,9
 	.half	.L277-.L276
-	.byte	1,5,34,9
+	.byte	1,5,38,9
 	.half	.L278-.L277
 	.byte	1,5,5,9
 	.half	.L279-.L278
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,40,9
 	.half	.L280-.L279
-	.byte	1,5,34,9
+	.byte	1,5,38,9
 	.half	.L281-.L280
 	.byte	1,5,5,9
 	.half	.L282-.L281
-	.byte	3,3,1,5,37,9
+	.byte	3,3,1,5,24,9
 	.half	.L283-.L282
-	.byte	1,5,35,9
+	.byte	1,5,22,9
 	.half	.L284-.L283
 	.byte	1,5,5,9
 	.half	.L285-.L284
-	.byte	3,1,1,5,37,9
-	.half	.L286-.L285
-	.byte	1,5,35,9
-	.half	.L287-.L286
-	.byte	1,5,5,9
-	.half	.L288-.L287
-	.byte	3,1,1,5,37,9
-	.half	.L289-.L288
-	.byte	1,5,35,9
-	.half	.L290-.L289
-	.byte	1,5,5,9
-	.half	.L291-.L290
-	.byte	3,1,1,5,37,9
-	.half	.L292-.L291
-	.byte	1,5,35,9
-	.half	.L293-.L292
-	.byte	1,5,5,9
-	.half	.L294-.L293
-	.byte	3,1,1,5,37,9
-	.half	.L295-.L294
-	.byte	1,5,35,9
-	.half	.L296-.L295
-	.byte	1,5,5,9
-	.half	.L297-.L296
-	.byte	3,1,1,5,37,9
-	.half	.L298-.L297
-	.byte	1,5,35,9
-	.half	.L299-.L298
-	.byte	1,5,5,9
-	.half	.L300-.L299
-	.byte	3,1,1,5,37,9
-	.half	.L301-.L300
-	.byte	1,5,35,9
-	.half	.L302-.L301
-	.byte	1,5,5,9
-	.half	.L303-.L302
-	.byte	3,1,1,5,37,9
-	.half	.L304-.L303
-	.byte	1,5,35,9
-	.half	.L305-.L304
-	.byte	1,5,5,9
-	.half	.L306-.L305
-	.byte	3,3,1,5,39,9
-	.half	.L307-.L306
-	.byte	1,5,37,9
-	.half	.L308-.L307
-	.byte	1,5,5,9
-	.half	.L309-.L308
-	.byte	3,1,1,5,40,9
-	.half	.L310-.L309
-	.byte	1,5,38,9
-	.half	.L311-.L310
-	.byte	1,5,5,9
-	.half	.L312-.L311
-	.byte	3,1,1,5,40,9
-	.half	.L313-.L312
-	.byte	1,5,38,9
-	.half	.L314-.L313
-	.byte	1,5,5,9
-	.half	.L315-.L314
-	.byte	3,3,1,5,24,9
-	.half	.L316-.L315
-	.byte	1,5,22,9
-	.half	.L317-.L316
-	.byte	1,5,5,9
-	.half	.L318-.L317
 	.byte	3,1,1,5,24,9
-	.half	.L319-.L318
+	.half	.L286-.L285
 	.byte	1,5,22,9
-	.half	.L320-.L319
+	.half	.L287-.L286
 	.byte	1,5,14,9
-	.half	.L321-.L320
+	.half	.L288-.L287
 	.byte	3,4,1,5,30,9
-	.half	.L322-.L321
+	.half	.L289-.L288
 	.byte	1,5,46,9
-	.half	.L323-.L322
+	.half	.L290-.L289
 	.byte	1,5,14,9
-	.half	.L324-.L323
+	.half	.L291-.L290
 	.byte	3,1,1,5,31,9
-	.half	.L325-.L324
+	.half	.L292-.L291
 	.byte	1,5,47,9
-	.half	.L326-.L325
+	.half	.L293-.L292
 	.byte	1,5,15,9
-	.half	.L327-.L326
+	.half	.L294-.L293
 	.byte	3,3,1,5,31,9
-	.half	.L328-.L327
+	.half	.L295-.L294
 	.byte	1,5,36,9
-	.half	.L329-.L328
+	.half	.L296-.L295
 	.byte	1,5,46,9
-	.half	.L330-.L329
+	.half	.L297-.L296
 	.byte	1,5,15,9
-	.half	.L331-.L330
+	.half	.L298-.L297
 	.byte	3,1,1,5,32,9
-	.half	.L332-.L331
+	.half	.L299-.L298
 	.byte	1,5,37,9
-	.half	.L333-.L332
+	.half	.L300-.L299
 	.byte	1,5,47,9
-	.half	.L334-.L333
+	.half	.L301-.L300
 	.byte	1,5,15,9
-	.half	.L335-.L334
+	.half	.L302-.L301
 	.byte	3,3,1,5,22,9
-	.half	.L336-.L335
+	.half	.L303-.L302
 	.byte	3,3,1,5,36,9
-	.half	.L337-.L336
+	.half	.L304-.L303
 	.byte	1,5,54,9
-	.half	.L338-.L337
+	.half	.L305-.L304
 	.byte	1,5,22,9
-	.half	.L339-.L338
+	.half	.L306-.L305
 	.byte	3,1,1,5,37,9
-	.half	.L340-.L339
+	.half	.L307-.L306
 	.byte	1,5,56,9
-	.half	.L341-.L340
+	.half	.L308-.L307
 	.byte	1,5,1,9
-	.half	.L342-.L341
+	.half	.L309-.L308
 	.byte	3,1,1,7,9
-	.half	.L66-.L342
+	.half	.L54-.L309
 	.byte	0,1,1
-.L256:
+.L223:
 	.sdecl	'.debug_ranges',debug,cluster('motor_init')
 	.sect	'.debug_ranges'
-.L65:
-	.word	-1,.L39,0,.L66-.L39,0,0
+.L53:
+	.word	-1,.L27,0,.L54-.L27,0,0
 	.sdecl	'.debug_info',debug,cluster('motor_set_duty')
 	.sect	'.debug_info'
-.L67:
+.L55:
 	.word	288
 	.half	3
-	.word	.L68
+	.word	.L56
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L70,.L69
+	.word	.L58,.L57
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'motor_set_duty',0,1,177,1,6,1,1,1
-	.word	.L41,.L142,.L40
+	.byte	'motor_set_duty',0,1,129,1,6,1,1,1
+	.word	.L29,.L123,.L28
 	.byte	4
-	.byte	'motor',0,1,177,1,30
-	.word	.L143,.L144
+	.byte	'motor',0,1,129,1,30
+	.word	.L124,.L125
 	.byte	4
-	.byte	'duty',0,1,177,1,43
-	.word	.L145,.L146
+	.byte	'duty',0,1,129,1,43
+	.word	.L126,.L127
 	.byte	5
-	.word	.L41,.L142
+	.word	.L29,.L123
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('motor_set_duty')
 	.sect	'.debug_abbrev'
-.L68:
+.L56:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('motor_set_duty')
 	.sect	'.debug_line'
-.L69:
-	.word	.L344-.L343
-.L343:
+.L57:
+	.word	.L311-.L310
+.L310:
 	.half	3
-	.word	.L346-.L345
-.L345:
+	.word	.L313-.L312
+.L312:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L346:
+.L313:
 	.byte	5,6,7,0,5,2
-	.word	.L41
-	.byte	3,176,1,1,5,24,9
-	.half	.L218-.L41
+	.word	.L29
+	.byte	3,128,1,1,5,24,9
+	.half	.L185-.L29
 	.byte	3,3,1,5,41,9
-	.half	.L347-.L218
+	.half	.L314-.L185
 	.byte	1,5,10,9
-	.half	.L217-.L347
+	.half	.L184-.L314
 	.byte	1,5,21,9
-	.half	.L220-.L217
+	.half	.L187-.L184
 	.byte	3,1,1,5,5,9
-	.half	.L348-.L220
+	.half	.L315-.L187
 	.byte	3,2,1,5,29,7,9
-	.half	.L349-.L348
+	.half	.L316-.L315
 	.byte	3,3,1,5,40,9
-	.half	.L350-.L349
+	.half	.L317-.L316
 	.byte	1,5,28,9
-	.half	.L219-.L350
+	.half	.L186-.L317
 	.byte	3,1,1,5,26,9
-	.half	.L351-.L219
+	.half	.L318-.L186
 	.byte	1,5,27,9
-	.half	.L352-.L351
+	.half	.L319-.L318
 	.byte	3,1,1,5,38,9
-	.half	.L353-.L352
+	.half	.L320-.L319
 	.byte	1,5,50,9
-	.half	.L222-.L353
+	.half	.L189-.L320
 	.byte	3,126,1,5,10,9
-	.half	.L20-.L222
+	.half	.L10-.L189
 	.byte	3,4,1,5,29,7,9
-	.half	.L354-.L20
+	.half	.L321-.L10
 	.byte	3,3,1,5,40,9
-	.half	.L355-.L354
+	.half	.L322-.L321
 	.byte	1,5,28,9
-	.half	.L223-.L355
+	.half	.L190-.L322
 	.byte	3,1,1,5,26,9
-	.half	.L356-.L223
+	.half	.L323-.L190
 	.byte	1,5,27,9
-	.half	.L357-.L356
+	.half	.L324-.L323
 	.byte	3,1,1,5,47,9
-	.half	.L358-.L357
+	.half	.L325-.L324
 	.byte	1,5,38,9
-	.half	.L359-.L358
+	.half	.L326-.L325
 	.byte	1,5,49,9
-	.half	.L225-.L359
+	.half	.L192-.L326
 	.byte	3,126,1,5,27,9
-	.half	.L22-.L225
+	.half	.L12-.L192
 	.byte	3,7,1,5,38,9
-	.half	.L360-.L22
+	.half	.L327-.L12
 	.byte	1,5,1,9
-	.half	.L21-.L360
+	.half	.L11-.L327
 	.byte	3,2,1,7,9
-	.half	.L71-.L21
+	.half	.L59-.L11
 	.byte	0,1,1
-.L344:
+.L311:
 	.sdecl	'.debug_ranges',debug,cluster('motor_set_duty')
 	.sect	'.debug_ranges'
-.L70:
-	.word	-1,.L41,0,.L71-.L41,0,0
+.L58:
+	.word	-1,.L29,0,.L59-.L29,0,0
 	.sdecl	'.debug_info',debug,cluster('motor_update_speed')
 	.sect	'.debug_info'
-.L72:
+.L60:
 	.word	255
 	.half	3
-	.word	.L73
+	.word	.L61
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L75,.L74
+	.word	.L63,.L62
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'motor_update_speed',0,1,210,1,6,1,1,1
-	.word	.L43,.L147,.L42
+	.byte	'motor_update_speed',0,1,162,1,6,1,1,1
+	.word	.L31,.L128,.L30
 	.byte	4
-	.word	.L43,.L147
+	.word	.L31,.L128
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('motor_update_speed')
 	.sect	'.debug_abbrev'
-.L73:
+.L61:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('motor_update_speed')
 	.sect	'.debug_line'
-.L74:
-	.word	.L362-.L361
-.L361:
+.L62:
+	.word	.L329-.L328
+.L328:
 	.half	3
-	.word	.L364-.L363
-.L363:
+	.word	.L331-.L330
+.L330:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L364:
+.L331:
 	.byte	5,5,7,0,5,2
-	.word	.L43
-	.byte	3,212,1,1,5,54,9
-	.half	.L365-.L43
+	.word	.L31
+	.byte	3,164,1,1,5,54,9
+	.half	.L332-.L31
 	.byte	1,5,68,9
-	.half	.L366-.L365
+	.half	.L333-.L332
 	.byte	1,5,34,9
-	.half	.L367-.L366
+	.half	.L334-.L333
 	.byte	1,5,5,9
-	.half	.L368-.L367
+	.half	.L335-.L334
 	.byte	3,1,1,5,56,9
-	.half	.L369-.L368
+	.half	.L336-.L335
 	.byte	1,5,71,9
-	.half	.L370-.L369
+	.half	.L337-.L336
 	.byte	1,5,37,9
-	.half	.L371-.L370
+	.half	.L338-.L337
 	.byte	1,5,35,9
-	.half	.L372-.L371
+	.half	.L339-.L338
 	.byte	1,5,5,9
-	.half	.L373-.L372
+	.half	.L340-.L339
 	.byte	3,3,1,5,36,9
-	.half	.L374-.L373
+	.half	.L341-.L340
 	.byte	1,5,50,9
-	.half	.L375-.L374
+	.half	.L342-.L341
 	.byte	1,5,34,9
-	.half	.L376-.L375
+	.half	.L343-.L342
 	.byte	1,5,5,9
-	.half	.L377-.L376
+	.half	.L344-.L343
 	.byte	3,1,1,5,37,9
-	.half	.L378-.L377
+	.half	.L345-.L344
 	.byte	1,5,52,9
-	.half	.L379-.L378
+	.half	.L346-.L345
 	.byte	1,5,35,9
-	.half	.L380-.L379
+	.half	.L347-.L346
 	.byte	1,5,25,9
-	.half	.L381-.L380
+	.half	.L348-.L347
 	.byte	3,3,1,5,39,9
-	.half	.L382-.L381
+	.half	.L349-.L348
 	.byte	1,5,25,9
-	.half	.L383-.L382
+	.half	.L350-.L349
 	.byte	3,1,1,5,40,9
-	.half	.L384-.L383
+	.half	.L351-.L350
 	.byte	1,5,1,9
-	.half	.L385-.L384
+	.half	.L352-.L351
 	.byte	3,1,1,7,9
-	.half	.L76-.L385
+	.half	.L64-.L352
 	.byte	0,1,1
-.L362:
+.L329:
 	.sdecl	'.debug_ranges',debug,cluster('motor_update_speed')
 	.sect	'.debug_ranges'
-.L75:
-	.word	-1,.L43,0,.L76-.L43,0,0
+.L63:
+	.word	-1,.L31,0,.L64-.L31,0,0
 	.sdecl	'.debug_info',debug,cluster('servo_init')
 	.sect	'.debug_info'
-.L77:
+.L65:
 	.word	246
 	.half	3
-	.word	.L78
+	.word	.L66
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L80,.L79
+	.word	.L68,.L67
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'servo_init',0,1,75,6,1,1,1
-	.word	.L33,.L148,.L32
+	.byte	'servo_init',0,1,28,6,1,1,1
+	.word	.L21,.L129,.L20
 	.byte	4
-	.word	.L33,.L148
+	.word	.L21,.L129
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('servo_init')
 	.sect	'.debug_abbrev'
-.L78:
+.L66:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('servo_init')
 	.sect	'.debug_line'
-.L79:
-	.word	.L387-.L386
-.L386:
+.L67:
+	.word	.L354-.L353
+.L353:
 	.half	3
-	.word	.L389-.L388
-.L388:
+	.word	.L356-.L355
+.L355:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L389:
+.L356:
 	.byte	5,14,7,0,5,2
-	.word	.L33
-	.byte	3,205,0,1,5,29,9
-	.half	.L390-.L33
+	.word	.L21
+	.byte	3,30,1,5,29,9
+	.half	.L357-.L21
 	.byte	1,5,45,9
-	.half	.L391-.L390
+	.half	.L358-.L357
 	.byte	1,5,1,9
-	.half	.L392-.L391
+	.half	.L359-.L358
 	.byte	3,1,1,7,9
-	.half	.L81-.L392
+	.half	.L69-.L359
 	.byte	0,1,1
-.L387:
+.L354:
 	.sdecl	'.debug_ranges',debug,cluster('servo_init')
 	.sect	'.debug_ranges'
-.L80:
-	.word	-1,.L33,0,.L81-.L33,0,0
+.L68:
+	.word	-1,.L21,0,.L69-.L21,0,0
 	.sdecl	'.debug_info',debug,cluster('servo_set_angle')
 	.sect	'.debug_info'
-.L82:
+.L70:
 	.word	315
 	.half	3
-	.word	.L83
+	.word	.L71
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L85,.L84
+	.word	.L73,.L72
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'servo_set_angle',0,1,105,6,1,1,1
-	.word	.L37,.L149,.L36
+	.byte	'servo_set_angle',0,1,58,6,1,1,1
+	.word	.L25,.L130,.L24
 	.byte	4
-	.byte	'servo',0,1,105,31
-	.word	.L150,.L151
+	.byte	'servo',0,1,58,31
+	.word	.L131,.L132
 	.byte	4
-	.byte	'angle',0,1,105,44
-	.word	.L152,.L153
+	.byte	'angle',0,1,58,44
+	.word	.L133,.L134
 	.byte	5
-	.word	.L37,.L149
+	.word	.L25,.L130
 	.byte	5
-	.word	.L154,.L149
+	.word	.L135,.L130
 	.byte	6
-	.byte	'duty',0,1,112,11
-	.word	.L145,.L155
+	.byte	'duty',0,1,64,11
+	.word	.L126,.L136
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('servo_set_angle')
 	.sect	'.debug_abbrev'
-.L83:
+.L71:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('servo_set_angle')
 	.sect	'.debug_line'
-.L84:
-	.word	.L394-.L393
-.L393:
+.L72:
+	.word	.L361-.L360
+.L360:
 	.half	3
-	.word	.L396-.L395
-.L395:
+	.word	.L363-.L362
+.L362:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L396:
+.L363:
 	.byte	5,6,7,0,5,2
-	.word	.L37
-	.byte	3,232,0,1,5,26,9
-	.half	.L211-.L37
+	.word	.L25
+	.byte	3,57,1,5,26,9
+	.half	.L178-.L25
 	.byte	3,3,1,5,44,9
-	.half	.L397-.L211
+	.half	.L364-.L178
 	.byte	1,5,18,9
-	.half	.L210-.L397
+	.half	.L177-.L364
 	.byte	1,5,26,9
-	.half	.L212-.L210
-	.byte	3,1,1,5,42,9
-	.half	.L154-.L212
-	.byte	3,3,1,5,27,9
-	.half	.L213-.L154
+	.half	.L179-.L177
+	.byte	3,1,1,5,72,9
+	.half	.L135-.L179
+	.byte	3,2,1,5,78,9
+	.half	.L365-.L135
+	.byte	1,5,77,9
+	.half	.L180-.L365
+	.byte	1,5,27,9
+	.half	.L181-.L180
 	.byte	3,2,1,5,1,9
-	.half	.L214-.L213
+	.half	.L182-.L181
 	.byte	3,1,1,7,9
-	.half	.L86-.L214
+	.half	.L74-.L182
 	.byte	0,1,1
-.L394:
+.L361:
 	.sdecl	'.debug_ranges',debug,cluster('servo_set_angle')
 	.sect	'.debug_ranges'
-.L85:
-	.word	-1,.L37,0,.L86-.L37,0,0
+.L73:
+	.word	-1,.L25,0,.L74-.L25,0,0
 	.sdecl	'.debug_info',debug,cluster('servo_set_duty')
 	.sect	'.debug_info'
-.L87:
+.L75:
 	.word	285
 	.half	3
-	.word	.L88
+	.word	.L76
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L90,.L89
+	.word	.L78,.L77
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'servo_set_duty',0,1,87,6,1,1,1
-	.word	.L35,.L156,.L34
+	.byte	'servo_set_duty',0,1,40,6,1,1,1
+	.word	.L23,.L137,.L22
 	.byte	4
-	.byte	'servo',0,1,87,30
-	.word	.L150,.L157
+	.byte	'servo',0,1,40,30
+	.word	.L131,.L138
 	.byte	4
-	.byte	'duty',0,1,87,44
-	.word	.L158,.L159
+	.byte	'duty',0,1,40,44
+	.word	.L139,.L140
 	.byte	5
-	.word	.L35,.L156
+	.word	.L23,.L137
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('servo_set_duty')
 	.sect	'.debug_abbrev'
-.L88:
+.L76:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('servo_set_duty')
 	.sect	'.debug_line'
-.L89:
-	.word	.L399-.L398
-.L398:
+.L77:
+	.word	.L367-.L366
+.L366:
 	.half	3
-	.word	.L401-.L400
-.L400:
+	.word	.L369-.L368
+.L368:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L401:
+.L369:
 	.byte	5,6,7,0,5,2
-	.word	.L35
-	.byte	3,214,0,1,5,16,9
-	.half	.L209-.L35
+	.word	.L23
+	.byte	3,39,1,5,16,9
+	.half	.L176-.L23
 	.byte	3,3,1,5,5,9
-	.half	.L402-.L209
+	.half	.L370-.L176
 	.byte	1,5,14,7,9
-	.half	.L403-.L402
+	.half	.L371-.L370
 	.byte	3,1,1,5,30,9
-	.half	.L207-.L403
+	.half	.L174-.L371
 	.byte	1,5,21,9
-	.half	.L17-.L207
+	.half	.L7-.L174
 	.byte	3,1,1,5,10,9
-	.half	.L404-.L17
+	.half	.L372-.L7
 	.byte	1,5,14,7,9
-	.half	.L405-.L404
+	.half	.L373-.L372
 	.byte	3,1,1,5,25,9
-	.half	.L18-.L405
+	.half	.L8-.L373
 	.byte	3,2,1,5,23,9
-	.half	.L406-.L18
+	.half	.L374-.L8
 	.byte	3,1,1,5,34,9
-	.half	.L407-.L406
+	.half	.L375-.L374
 	.byte	1,5,1,9
-	.half	.L208-.L407
+	.half	.L175-.L375
 	.byte	3,1,1,7,9
-	.half	.L91-.L208
+	.half	.L79-.L175
 	.byte	0,1,1
-.L399:
+.L367:
 	.sdecl	'.debug_ranges',debug,cluster('servo_set_duty')
 	.sect	'.debug_ranges'
-.L90:
-	.word	-1,.L35,0,.L91-.L35,0,0
+.L78:
+	.word	-1,.L23,0,.L79-.L23,0,0
 	.sdecl	'.debug_info',debug,cluster('car_set_speed')
 	.sect	'.debug_info'
-.L92:
+.L80:
 	.word	299
 	.half	3
-	.word	.L93
+	.word	.L81
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L95,.L94
+	.word	.L83,.L82
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'car_set_speed',0,1,231,1,6,1,1,1
-	.word	.L45,.L160,.L44
+	.byte	'car_set_speed',0,1,183,1,6,1,1,1
+	.word	.L33,.L141,.L32
 	.byte	4
-	.byte	'left_speed',0,1,231,1,26
-	.word	.L152,.L161
+	.byte	'left_speed',0,1,183,1,26
+	.word	.L133,.L142
 	.byte	4
-	.byte	'right_speed',0,1,231,1,44
-	.word	.L152,.L162
+	.byte	'right_speed',0,1,183,1,44
+	.word	.L133,.L143
 	.byte	5
-	.word	.L45,.L160
+	.word	.L33,.L141
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('car_set_speed')
 	.sect	'.debug_abbrev'
-.L93:
+.L81:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('car_set_speed')
 	.sect	'.debug_line'
-.L94:
-	.word	.L409-.L408
-.L408:
+.L82:
+	.word	.L377-.L376
+.L376:
 	.half	3
-	.word	.L411-.L410
-.L410:
+	.word	.L379-.L378
+.L378:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L411:
+.L379:
 	.byte	5,6,7,0,5,2
-	.word	.L45
-	.byte	3,230,1,1,5,5,9
-	.half	.L227-.L45
+	.word	.L33
+	.byte	3,182,1,1,5,5,9
+	.half	.L194-.L33
 	.byte	3,2,1,5,33,9
-	.half	.L412-.L227
+	.half	.L380-.L194
 	.byte	1,5,5,9
-	.half	.L413-.L412
+	.half	.L381-.L380
 	.byte	3,1,1,5,34,9
-	.half	.L414-.L413
+	.half	.L382-.L381
 	.byte	1,5,21,9
-	.half	.L415-.L414
+	.half	.L383-.L382
 	.byte	3,1,1,5,37,9
-	.half	.L416-.L415
+	.half	.L384-.L383
 	.byte	1,5,21,9
-	.half	.L226-.L416
+	.half	.L193-.L384
 	.byte	3,1,1,5,24,9
-	.half	.L417-.L226
+	.half	.L385-.L193
 	.byte	1,5,38,9
-	.half	.L418-.L417
+	.half	.L386-.L385
 	.byte	1,5,1,9
-	.half	.L229-.L418
+	.half	.L196-.L386
 	.byte	3,1,1,7,9
-	.half	.L96-.L229
+	.half	.L84-.L196
 	.byte	0,1,1
-.L409:
+.L377:
 	.sdecl	'.debug_ranges',debug,cluster('car_set_speed')
 	.sect	'.debug_ranges'
-.L95:
-	.word	-1,.L45,0,.L96-.L45,0,0
+.L83:
+	.word	-1,.L33,0,.L84-.L33,0,0
 	.sdecl	'.debug_info',debug,cluster('car_set_angle')
 	.sect	'.debug_info'
-.L97:
+.L85:
 	.word	269
 	.half	3
-	.word	.L98
+	.word	.L86
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L100,.L99
+	.word	.L88,.L87
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'car_set_angle',0,1,244,1,6,1,1,1
-	.word	.L47,.L163,.L46
+	.byte	'car_set_angle',0,1,196,1,6,1,1,1
+	.word	.L35,.L144,.L34
 	.byte	4
-	.byte	'angle',0,1,244,1,26
-	.word	.L152,.L164
+	.byte	'angle',0,1,196,1,26
+	.word	.L133,.L145
 	.byte	5
-	.word	.L47,.L163
+	.word	.L35,.L144
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('car_set_angle')
 	.sect	'.debug_abbrev'
-.L98:
+.L86:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('car_set_angle')
 	.sect	'.debug_line'
-.L99:
-	.word	.L420-.L419
-.L419:
+.L87:
+	.word	.L388-.L387
+.L387:
 	.half	3
-	.word	.L422-.L421
-.L421:
+	.word	.L390-.L389
+.L389:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L422:
+.L390:
 	.byte	5,5,7,0,5,2
-	.word	.L47
-	.byte	3,245,1,1,5,22,9
-	.half	.L423-.L47
+	.word	.L35
+	.byte	3,197,1,1,5,22,9
+	.half	.L391-.L35
 	.byte	1,9
-	.half	.L424-.L423
+	.half	.L392-.L391
 	.byte	3,1,1,5,25,9
-	.half	.L425-.L424
+	.half	.L393-.L392
 	.byte	1,5,42,9
-	.half	.L426-.L425
+	.half	.L394-.L393
 	.byte	1,5,1,9
-	.half	.L230-.L426
+	.half	.L197-.L394
 	.byte	3,1,1,7,9
-	.half	.L101-.L230
+	.half	.L89-.L197
 	.byte	0,1,1
-.L420:
+.L388:
 	.sdecl	'.debug_ranges',debug,cluster('car_set_angle')
 	.sect	'.debug_ranges'
-.L100:
-	.word	-1,.L47,0,.L101-.L47,0,0
+.L88:
+	.word	-1,.L35,0,.L89-.L35,0,0
 	.sdecl	'.debug_info',debug,cluster('car_stop')
 	.sect	'.debug_info'
-.L102:
+.L90:
 	.word	245
 	.half	3
-	.word	.L103
+	.word	.L91
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L105,.L104
+	.word	.L93,.L92
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'car_stop',0,1,255,1,6,1,1,1
-	.word	.L49,.L165,.L48
+	.byte	'car_stop',0,1,207,1,6,1,1,1
+	.word	.L37,.L146,.L36
 	.byte	4
-	.word	.L49,.L165
+	.word	.L37,.L146
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('car_stop')
 	.sect	'.debug_abbrev'
-.L103:
+.L91:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('car_stop')
 	.sect	'.debug_line'
-.L104:
-	.word	.L428-.L427
-.L427:
+.L92:
+	.word	.L396-.L395
+.L395:
 	.half	3
-	.word	.L430-.L429
-.L429:
+	.word	.L398-.L397
+.L397:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L430:
+.L398:
 	.byte	5,21,7,0,5,2
-	.word	.L49
-	.byte	3,128,2,1,5,37,9
-	.half	.L431-.L49
+	.word	.L37
+	.byte	3,208,1,1,5,37,9
+	.half	.L399-.L37
 	.byte	1,5,21,9
-	.half	.L432-.L431
+	.half	.L400-.L399
 	.byte	3,1,1,5,24,9
-	.half	.L433-.L432
+	.half	.L401-.L400
 	.byte	1,5,38,9
-	.half	.L434-.L433
+	.half	.L402-.L401
 	.byte	1,5,5,9
-	.half	.L435-.L434
+	.half	.L403-.L402
 	.byte	3,2,1,5,35,9
-	.half	.L436-.L435
+	.half	.L404-.L403
 	.byte	1,5,33,9
-	.half	.L437-.L436
+	.half	.L405-.L404
 	.byte	1,5,5,9
-	.half	.L438-.L437
+	.half	.L406-.L405
 	.byte	3,1,1,5,36,9
-	.half	.L439-.L438
+	.half	.L407-.L406
 	.byte	1,5,34,9
-	.half	.L440-.L439
+	.half	.L408-.L407
 	.byte	1,5,1,9
-	.half	.L441-.L440
+	.half	.L409-.L408
 	.byte	3,2,1,7,9
-	.half	.L106-.L441
+	.half	.L94-.L409
 	.byte	0,1,1
-.L428:
+.L396:
 	.sdecl	'.debug_ranges',debug,cluster('car_stop')
 	.sect	'.debug_ranges'
-.L105:
-	.word	-1,.L49,0,.L106-.L49,0,0
+.L93:
+	.word	-1,.L37,0,.L94-.L37,0,0
 	.sdecl	'.debug_info',debug,cluster('car_forward')
 	.sect	'.debug_info'
-.L107:
+.L95:
 	.word	267
 	.half	3
-	.word	.L108
+	.word	.L96
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L110,.L109
+	.word	.L98,.L97
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'car_forward',0,1,142,2,6,1,1,1
-	.word	.L51,.L166,.L50
+	.byte	'car_forward',0,1,222,1,6,1,1,1
+	.word	.L39,.L147,.L38
 	.byte	4
-	.byte	'speed',0,1,142,2,24
-	.word	.L152,.L167
+	.byte	'speed',0,1,222,1,24
+	.word	.L133,.L148
 	.byte	5
-	.word	.L51,.L166
+	.word	.L39,.L147
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('car_forward')
 	.sect	'.debug_abbrev'
-.L108:
+.L96:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('car_forward')
 	.sect	'.debug_line'
-.L109:
-	.word	.L443-.L442
-.L442:
+.L97:
+	.word	.L411-.L410
+.L410:
 	.half	3
-	.word	.L445-.L444
-.L444:
+	.word	.L413-.L412
+.L412:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L445:
+.L413:
 	.byte	5,26,7,0,5,2
-	.word	.L51
-	.byte	3,143,2,1,5,22,9
-	.half	.L231-.L51
+	.word	.L39
+	.byte	3,223,1,1,5,22,9
+	.half	.L198-.L39
 	.byte	3,1,1,5,25,9
-	.half	.L446-.L231
+	.half	.L414-.L198
 	.byte	1,5,42,9
-	.half	.L447-.L446
+	.half	.L415-.L414
 	.byte	1,5,1,9
-	.half	.L448-.L447
+	.half	.L416-.L415
 	.byte	3,1,1,7,9
-	.half	.L111-.L448
+	.half	.L99-.L416
 	.byte	0,1,1
-.L443:
+.L411:
 	.sdecl	'.debug_ranges',debug,cluster('car_forward')
 	.sect	'.debug_ranges'
-.L110:
-	.word	-1,.L51,0,.L111-.L51,0,0
+.L98:
+	.word	-1,.L39,0,.L99-.L39,0,0
 	.sdecl	'.debug_info',debug,cluster('car_backward')
 	.sect	'.debug_info'
-.L112:
+.L100:
 	.word	268
 	.half	3
-	.word	.L113
+	.word	.L101
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L115,.L114
+	.word	.L103,.L102
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'car_backward',0,1,153,2,6,1,1,1
-	.word	.L53,.L168,.L52
+	.byte	'car_backward',0,1,233,1,6,1,1,1
+	.word	.L41,.L149,.L40
 	.byte	4
-	.byte	'speed',0,1,153,2,25
-	.word	.L152,.L169
+	.byte	'speed',0,1,233,1,25
+	.word	.L133,.L150
 	.byte	5
-	.word	.L53,.L168
+	.word	.L41,.L149
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('car_backward')
 	.sect	'.debug_abbrev'
-.L113:
+.L101:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('car_backward')
 	.sect	'.debug_line'
-.L114:
-	.word	.L450-.L449
-.L449:
+.L102:
+	.word	.L418-.L417
+.L417:
 	.half	3
-	.word	.L452-.L451
-.L451:
+	.word	.L420-.L419
+.L419:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L452:
+.L420:
 	.byte	5,20,7,0,5,2
-	.word	.L53
-	.byte	3,154,2,1,5,19,9
-	.half	.L234-.L53
+	.word	.L41
+	.byte	3,234,1,1,5,19,9
+	.half	.L201-.L41
 	.byte	1,5,27,9
-	.half	.L235-.L234
+	.half	.L202-.L201
 	.byte	1,5,22,9
-	.half	.L453-.L235
+	.half	.L421-.L202
 	.byte	3,1,1,5,25,9
-	.half	.L454-.L453
+	.half	.L422-.L421
 	.byte	1,5,42,9
-	.half	.L455-.L454
+	.half	.L423-.L422
 	.byte	1,5,1,9
-	.half	.L456-.L455
+	.half	.L424-.L423
 	.byte	3,1,1,7,9
-	.half	.L116-.L456
+	.half	.L104-.L424
 	.byte	0,1,1
-.L450:
+.L418:
 	.sdecl	'.debug_ranges',debug,cluster('car_backward')
 	.sect	'.debug_ranges'
-.L115:
-	.word	-1,.L53,0,.L116-.L53,0,0
+.L103:
+	.word	-1,.L41,0,.L104-.L41,0,0
 	.sdecl	'.debug_info',debug,cluster('car_turn')
 	.sect	'.debug_info'
-.L117:
+.L105:
 	.word	283
 	.half	3
-	.word	.L118
+	.word	.L106
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L120,.L119
+	.word	.L108,.L107
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'car_turn',0,1,165,2,6,1,1,1
-	.word	.L55,.L170,.L54
+	.byte	'car_turn',0,1,245,1,6,1,1,1
+	.word	.L43,.L151,.L42
 	.byte	4
-	.byte	'speed',0,1,165,2,21
-	.word	.L152,.L171
+	.byte	'speed',0,1,245,1,21
+	.word	.L133,.L152
 	.byte	4
-	.byte	'angle',0,1,165,2,34
-	.word	.L152,.L172
+	.byte	'angle',0,1,245,1,34
+	.word	.L133,.L153
 	.byte	5
-	.word	.L55,.L170
+	.word	.L43,.L151
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('car_turn')
 	.sect	'.debug_abbrev'
-.L118:
+.L106:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('car_turn')
 	.sect	'.debug_line'
-.L119:
-	.word	.L458-.L457
-.L457:
+.L107:
+	.word	.L426-.L425
+.L425:
 	.half	3
-	.word	.L460-.L459
-.L459:
+	.word	.L428-.L427
+.L427:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L460:
+.L428:
 	.byte	5,6,7,0,5,2
-	.word	.L55
-	.byte	3,164,2,1,5,19,9
-	.half	.L239-.L55
+	.word	.L43
+	.byte	3,244,1,1,5,19,9
+	.half	.L206-.L43
 	.byte	3,2,1,5,42,9
-	.half	.L240-.L239
+	.half	.L207-.L206
 	.byte	3,1,1,5,1,9
-	.half	.L461-.L240
+	.half	.L429-.L207
 	.byte	3,1,1,7,9
-	.half	.L121-.L461
+	.half	.L109-.L429
 	.byte	0,1,1
-.L458:
+.L426:
 	.sdecl	'.debug_ranges',debug,cluster('car_turn')
 	.sect	'.debug_ranges'
-.L120:
-	.word	-1,.L55,0,.L121-.L55,0,0
+.L108:
+	.word	-1,.L43,0,.L109-.L43,0,0
 	.sdecl	'.debug_info',debug,cluster('car_update_differential_speed')
 	.sect	'.debug_info'
-.L122:
+.L110:
 	.word	436
 	.half	3
-	.word	.L123
+	.word	.L111
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L125,.L124
+	.word	.L113,.L112
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
-	.byte	'car_update_differential_speed',0,1,177,2,6,1,1,1
-	.word	.L57,.L173,.L56
+	.byte	'car_update_differential_speed',0,1,129,2,6,1,1,1
+	.word	.L45,.L154,.L44
 	.byte	4
-	.byte	'base_speed',0,1,177,2,42
-	.word	.L152,.L174
+	.byte	'base_speed',0,1,129,2,42
+	.word	.L133,.L155
 	.byte	4
-	.byte	'angle',0,1,177,2,60
-	.word	.L152,.L175
+	.byte	'angle',0,1,129,2,60
+	.word	.L133,.L156
 	.byte	5
-	.word	.L57,.L173
+	.word	.L45,.L154
 	.byte	5
-	.word	.L24,.L173
+	.word	.L14,.L154
 	.byte	6
-	.byte	'theta',0,1,186,2,11
-	.word	.L176,.L177
+	.byte	'theta',0,1,138,2,11
+	.word	.L157,.L158
 	.byte	6
-	.byte	'tan_theta',0,1,187,2,11
-	.word	.L176,.L178
+	.byte	'tan_theta',0,1,139,2,11
+	.word	.L157,.L159
 	.byte	7
-	.word	.L179
+	.word	.L160
 	.byte	6
-	.byte	'ratio',0,1,202,2,11
-	.word	.L176,.L182
+	.byte	'ratio',0,1,154,2,11
+	.word	.L157,.L163
 	.byte	6
-	.byte	'left_speed',0,1,204,2,11
-	.word	.L152,.L183
+	.byte	'left_speed',0,1,156,2,11
+	.word	.L133,.L164
 	.byte	6
-	.byte	'right_speed',0,1,205,2,11
-	.word	.L152,.L184
+	.byte	'right_speed',0,1,157,2,11
+	.word	.L133,.L165
 	.byte	0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('car_update_differential_speed')
 	.sect	'.debug_abbrev'
-.L123:
+.L111:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,1,85,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('car_update_differential_speed')
 	.sect	'.debug_line'
-.L124:
-	.word	.L463-.L462
-.L462:
+.L112:
+	.word	.L431-.L430
+.L430:
 	.half	3
-	.word	.L465-.L464
-.L464:
+	.word	.L433-.L432
+.L432:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L465:
+.L433:
 	.byte	5,6,7,0,5,2
-	.word	.L57
-	.byte	3,176,2,1,5,5,9
-	.half	.L242-.L57
+	.word	.L45
+	.byte	3,128,2,1,5,5,9
+	.half	.L209-.L45
 	.byte	3,2,1,5,35,7,9
-	.half	.L466-.L242
+	.half	.L434-.L209
 	.byte	3,2,1,5,9,9
-	.half	.L467-.L466
+	.half	.L435-.L434
 	.byte	3,1,1,5,19,9
-	.half	.L24-.L467
+	.half	.L14-.L435
 	.byte	3,4,1,5,34,9
-	.half	.L468-.L24
+	.half	.L436-.L14
 	.byte	1,5,32,9
-	.half	.L469-.L468
+	.half	.L437-.L436
 	.byte	1,5,45,9
-	.half	.L470-.L469
+	.half	.L438-.L437
 	.byte	1,5,43,9
-	.half	.L471-.L470
+	.half	.L439-.L438
 	.byte	1,5,28,9
-	.half	.L244-.L471
+	.half	.L211-.L439
 	.byte	3,1,1,5,9,9
-	.half	.L243-.L244
+	.half	.L210-.L211
 	.byte	3,4,1,5,28,9
-	.half	.L472-.L243
+	.half	.L440-.L210
 	.byte	1,5,5,9
-	.half	.L473-.L472
+	.half	.L441-.L440
 	.byte	1,5,19,9
-	.half	.L180-.L473
+	.half	.L161-.L441
 	.byte	3,11,1,5,44,9
-	.half	.L474-.L180
+	.half	.L442-.L161
 	.byte	1,5,62,9
-	.half	.L475-.L474
+	.half	.L443-.L442
 	.byte	1,5,54,9
-	.half	.L476-.L475
+	.half	.L444-.L443
 	.byte	1,5,32,9
-	.half	.L246-.L476
+	.half	.L213-.L444
 	.byte	3,2,1,5,53,9
-	.half	.L477-.L246
+	.half	.L445-.L213
 	.byte	1,5,58,9
-	.half	.L478-.L477
+	.half	.L446-.L445
 	.byte	1,5,50,9
-	.half	.L479-.L478
+	.half	.L447-.L446
 	.byte	1,5,24,9
-	.half	.L480-.L479
+	.half	.L448-.L447
 	.byte	1,5,22,9
-	.half	.L245-.L480
+	.half	.L212-.L448
 	.byte	1,5,33,9
-	.half	.L248-.L245
+	.half	.L215-.L212
 	.byte	3,1,1,5,54,9
-	.half	.L481-.L248
+	.half	.L449-.L215
 	.byte	1,5,59,9
-	.half	.L482-.L481
+	.half	.L450-.L449
 	.byte	1,5,51,9
-	.half	.L247-.L482
+	.half	.L214-.L450
 	.byte	1,5,25,9
-	.half	.L483-.L247
+	.half	.L451-.L214
 	.byte	1,5,31,9
-	.half	.L249-.L483
+	.half	.L216-.L451
 	.byte	3,2,1,5,9,9
-	.half	.L181-.L249
+	.half	.L162-.L216
 	.byte	3,115,1,5,35,9
-	.half	.L26-.L181
+	.half	.L16-.L162
 	.byte	3,127,1,5,1,9
-	.half	.L25-.L26
+	.half	.L15-.L16
 	.byte	3,15,1,7,9
-	.half	.L126-.L25
+	.half	.L114-.L15
 	.byte	0,1,1
-.L463:
+.L431:
 	.sdecl	'.debug_ranges',debug,cluster('car_update_differential_speed')
 	.sect	'.debug_ranges'
-.L125:
-	.word	-1,.L57,0,.L126-.L57,0,0
-.L179:
-	.word	-1,.L57,.L180-.L57,.L181-.L57,.L25-.L57,.L173-.L57,0,0
+.L113:
+	.word	-1,.L45,0,.L114-.L45,0,0
+.L160:
+	.word	-1,.L45,.L161-.L45,.L162-.L45,.L15-.L45,.L154-.L45,0,0
 	.sdecl	'.debug_info',debug,cluster('limit')
 	.sect	'.debug_info'
-.L127:
+.L115:
 	.word	294
 	.half	3
-	.word	.L128
+	.word	.L116
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L130,.L129
+	.word	.L118,.L117
 	.byte	2
-	.word	.L58
+	.word	.L46
 	.byte	3
 	.byte	'limit',0,1,15,14
-	.word	.L145
+	.word	.L126
 	.byte	1,1
-	.word	.L29,.L185,.L28
+	.word	.L19,.L166,.L18
 	.byte	4
 	.byte	'value',0,1,15,26
-	.word	.L145,.L186
+	.word	.L126,.L167
 	.byte	4
 	.byte	'min',0,1,15,39
-	.word	.L145,.L187
+	.word	.L126,.L168
 	.byte	4
 	.byte	'max',0,1,15,50
-	.word	.L145,.L188
+	.word	.L126,.L169
 	.byte	5
-	.word	.L29,.L185
+	.word	.L19,.L166
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('limit')
 	.sect	'.debug_abbrev'
-.L128:
+.L116:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('limit')
 	.sect	'.debug_line'
-.L129:
-	.word	.L485-.L484
-.L484:
+.L117:
+	.word	.L453-.L452
+.L452:
 	.half	3
-	.word	.L487-.L486
-.L486:
+	.word	.L455-.L454
+.L454:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/motor_control.c',0,0,0,0,0
-.L487:
+.L455:
 	.byte	5,5,7,0,5,2
-	.word	.L29
+	.word	.L19
 	.byte	3,16,1,5,22,7,9
-	.half	.L488-.L29
+	.half	.L456-.L19
 	.byte	1,5,5,9
-	.half	.L2-.L488
+	.half	.L2-.L456
 	.byte	3,1,1,5,22,7,9
-	.half	.L489-.L2
+	.half	.L457-.L2
 	.byte	1,5,5,9
-	.half	.L4-.L489
+	.half	.L4-.L457
 	.byte	3,1,1,5,1,9
 	.half	.L3-.L4
 	.byte	3,1,1,7,9
-	.half	.L131-.L3
+	.half	.L119-.L3
 	.byte	0,1,1
-.L485:
+.L453:
 	.sdecl	'.debug_ranges',debug,cluster('limit')
 	.sect	'.debug_ranges'
-.L130:
-	.word	-1,.L29,0,.L131-.L29,0,0
-	.sdecl	'.debug_info',debug,cluster('get_duty_from_angle_map')
-	.sect	'.debug_info'
-.L132:
-	.word	360
-	.half	3
-	.word	.L133
-	.byte	4,1
-	.byte	'../code/motor_control.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1
-	.word	.L135,.L134
-	.byte	2
-	.word	.L58
-	.byte	3
-	.byte	'get_duty_from_angle_map',0,1,48,14
-	.word	.L145
-	.byte	1,1
-	.word	.L31,.L189,.L30
-	.byte	4
-	.byte	'angle',0,1,48,44
-	.word	.L152,.L190
-	.byte	5
-	.word	.L31,.L189
-	.byte	5
-	.word	.L9,.L191
-	.byte	6
-	.byte	'i',0,1,55,14
-	.word	.L145,.L192
-	.byte	5
-	.word	.L193,.L13
-	.byte	6
-	.byte	'duty_diff',0,1,60,19
-	.word	.L145,.L194
-	.byte	6
-	.byte	'angle_diff',0,1,61,19
-	.word	.L152,.L195
-	.byte	0,0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('get_duty_from_angle_map')
-	.sect	'.debug_abbrev'
-.L133:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
-	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('get_duty_from_angle_map')
-	.sect	'.debug_line'
-.L134:
-	.word	.L491-.L490
-.L490:
-	.half	3
-	.word	.L493-.L492
-.L492:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/motor_control.c',0,0,0,0,0
-.L493:
-	.byte	5,14,7,0,5,2
-	.word	.L31
-	.byte	3,47,1,5,18,9
-	.half	.L202-.L31
-	.byte	3,3,1,5,30,9
-	.half	.L494-.L202
-	.byte	1,5,5,9
-	.half	.L495-.L494
-	.byte	1,5,45,7,9
-	.half	.L496-.L495
-	.byte	1,5,57,9
-	.half	.L497-.L496
-	.byte	1,5,38,9
-	.half	.L498-.L497
-	.byte	1,5,18,9
-	.half	.L7-.L498
-	.byte	3,1,1,5,48,9
-	.half	.L499-.L7
-	.byte	1,5,5,9
-	.half	.L500-.L499
-	.byte	1,5,63,7,9
-	.half	.L501-.L500
-	.byte	1,5,93,9
-	.half	.L502-.L501
-	.byte	1,5,56,9
-	.half	.L503-.L502
-	.byte	1,5,16,9
-	.half	.L9-.L503
-	.byte	3,3,1,5,44,9
-	.half	.L201-.L9
-	.byte	1,5,31,9
-	.half	.L12-.L201
-	.byte	3,2,1,5,22,9
-	.half	.L504-.L12
-	.byte	1,5,31,9
-	.half	.L505-.L504
-	.byte	1,5,34,9
-	.half	.L506-.L505
-	.byte	1,5,13,9
-	.half	.L507-.L506
-	.byte	1,5,64,7,9
-	.half	.L508-.L507
-	.byte	1,5,62,9
-	.half	.L509-.L508
-	.byte	1,5,53,9
-	.half	.L510-.L509
-	.byte	1,5,62,9
-	.half	.L511-.L510
-	.byte	1,5,67,9
-	.half	.L512-.L511
-	.byte	1,5,50,9
-	.half	.L513-.L512
-	.byte	1,5,42,7,9
-	.half	.L193-.L513
-	.byte	3,3,1,5,40,9
-	.half	.L514-.L193
-	.byte	1,5,31,9
-	.half	.L515-.L514
-	.byte	1,5,40,9
-	.half	.L516-.L515
-	.byte	1,5,45,9
-	.half	.L517-.L516
-	.byte	1,5,62,9
-	.half	.L518-.L517
-	.byte	1,5,53,9
-	.half	.L519-.L518
-	.byte	1,5,62,9
-	.half	.L520-.L519
-	.byte	1,5,65,9
-	.half	.L521-.L520
-	.byte	1,5,51,9
-	.half	.L204-.L521
-	.byte	1,5,43,9
-	.half	.L522-.L204
-	.byte	3,1,1,5,41,9
-	.half	.L523-.L522
-	.byte	1,5,32,9
-	.half	.L524-.L523
-	.byte	1,5,41,9
-	.half	.L525-.L524
-	.byte	1,5,46,9
-	.half	.L526-.L525
-	.byte	1,5,64,9
-	.half	.L527-.L526
-	.byte	1,5,55,9
-	.half	.L528-.L527
-	.byte	1,5,64,9
-	.half	.L529-.L528
-	.byte	1,5,67,9
-	.half	.L530-.L529
-	.byte	1,5,53,9
-	.half	.L531-.L530
-	.byte	1,5,29,9
-	.half	.L206-.L531
-	.byte	3,2,1,5,20,9
-	.half	.L532-.L206
-	.byte	1,5,29,9
-	.half	.L533-.L532
-	.byte	1,5,32,9
-	.half	.L534-.L533
-	.byte	1,5,65,9
-	.half	.L535-.L534
-	.byte	1,5,56,9
-	.half	.L536-.L535
-	.byte	1,5,65,9
-	.half	.L537-.L536
-	.byte	1,5,68,9
-	.half	.L538-.L537
-	.byte	1,5,54,9
-	.half	.L539-.L538
-	.byte	1,5,76,9
-	.half	.L203-.L539
-	.byte	1,5,88,9
-	.half	.L540-.L203
-	.byte	1,5,38,9
-	.half	.L205-.L540
-	.byte	1,5,13,9
-	.half	.L541-.L205
-	.byte	1,5,47,9
-	.half	.L13-.L541
-	.byte	3,120,1,5,44,9
-	.half	.L11-.L13
-	.byte	1,5,12,7,9
-	.half	.L191-.L11
-	.byte	3,11,1,5,5,9
-	.half	.L542-.L191
-	.byte	1,5,1,9
-	.half	.L8-.L542
-	.byte	3,1,1,7,9
-	.half	.L136-.L8
-	.byte	0,1,1
-.L491:
-	.sdecl	'.debug_ranges',debug,cluster('get_duty_from_angle_map')
-	.sect	'.debug_ranges'
-.L135:
-	.word	-1,.L31,0,.L136-.L31,0,0
+.L118:
+	.word	-1,.L19,0,.L119-.L19,0,0
 	.sdecl	'.debug_info',debug,cluster('car')
 	.sect	'.debug_info'
-.L137:
+.L120:
 	.word	217
 	.half	3
-	.word	.L138
+	.word	.L121
 	.byte	4,1
 	.byte	'../code/motor_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1,2
-	.word	.L58
+	.word	.L46
 	.byte	3
 	.byte	'car',0,25,5,15
-	.word	.L196
+	.word	.L170
 	.byte	1,5,3
 	.word	car
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('car')
 	.sect	'.debug_abbrev'
-.L138:
+.L121:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('servo_map')
-	.sect	'.debug_info'
-.L139:
-	.word	222
-	.half	3
-	.word	.L140
-	.byte	4,1
-	.byte	'../code/motor_control.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\Debug\\',0,12,1,2
-	.word	.L58
-	.byte	3
-	.byte	'servo_map',0,25,32,3
-	.word	.L197
-	.byte	5,3
-	.word	servo_map
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('servo_map')
-	.sect	'.debug_abbrev'
-.L140:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
 	.sdecl	'.debug_loc',debug,cluster('car_backward')
 	.sect	'.debug_loc'
-.L52:
-	.word	-1,.L53,0,.L168-.L53
+.L40:
+	.word	-1,.L41,0,.L149-.L41
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L169:
-	.word	-1,.L53,0,.L233-.L53
+.L150:
+	.word	-1,.L41,0,.L200-.L41
 	.half	1
 	.byte	84
-	.word	.L234-.L53,.L235-.L53
+	.word	.L201-.L41,.L202-.L41
 	.half	1
 	.byte	95
-	.word	.L235-.L53,.L236-.L53
+	.word	.L202-.L41,.L203-.L41
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('car_forward')
 	.sect	'.debug_loc'
-.L50:
-	.word	-1,.L51,0,.L166-.L51
+.L38:
+	.word	-1,.L39,0,.L147-.L39
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L167:
-	.word	-1,.L51,0,.L231-.L51
+.L148:
+	.word	-1,.L39,0,.L198-.L39
 	.half	1
 	.byte	84
-	.word	.L232-.L51,.L231-.L51
+	.word	.L199-.L39,.L198-.L39
 	.half	1
 	.byte	85
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('car_set_angle')
 	.sect	'.debug_loc'
-.L164:
-	.word	-1,.L47,0,.L230-.L47
+.L145:
+	.word	-1,.L35,0,.L197-.L35
 	.half	1
 	.byte	84
 	.word	0,0
-.L46:
-	.word	-1,.L47,0,.L163-.L47
+.L34:
+	.word	-1,.L35,0,.L144-.L35
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('car_set_speed')
 	.sect	'.debug_loc'
-.L44:
-	.word	-1,.L45,0,.L160-.L45
+.L32:
+	.word	-1,.L33,0,.L141-.L33
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L161:
-	.word	-1,.L45,0,.L226-.L45
+.L142:
+	.word	-1,.L33,0,.L193-.L33
 	.half	1
 	.byte	84
 	.word	0,0
-.L162:
-	.word	-1,.L45,0,.L226-.L45
+.L143:
+	.word	-1,.L33,0,.L193-.L33
 	.half	1
 	.byte	85
-	.word	.L227-.L45,.L160-.L45
+	.word	.L194-.L33,.L141-.L33
 	.half	1
 	.byte	95
-	.word	.L228-.L45,.L229-.L45
+	.word	.L195-.L33,.L196-.L33
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('car_stop')
 	.sect	'.debug_loc'
-.L48:
-	.word	-1,.L49,0,.L165-.L49
+.L36:
+	.word	-1,.L37,0,.L146-.L37
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('car_turn')
 	.sect	'.debug_loc'
-.L172:
-	.word	-1,.L55,0,.L237-.L55
+.L153:
+	.word	-1,.L43,0,.L204-.L43
 	.half	1
 	.byte	85
-	.word	.L239-.L55,.L170-.L55
+	.word	.L206-.L43,.L151-.L43
 	.half	1
 	.byte	88
-	.word	.L237-.L55,.L240-.L55
+	.word	.L204-.L43,.L207-.L43
 	.half	1
 	.byte	84
 	.word	0,0
-.L54:
-	.word	-1,.L55,0,.L170-.L55
+.L42:
+	.word	-1,.L43,0,.L151-.L43
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L171:
-	.word	-1,.L55,0,.L237-.L55
+.L152:
+	.word	-1,.L43,0,.L204-.L43
 	.half	1
 	.byte	84
-	.word	.L238-.L55,.L170-.L55
+	.word	.L205-.L43,.L151-.L43
 	.half	1
 	.byte	95
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('car_update_differential_speed')
 	.sect	'.debug_loc'
-.L175:
-	.word	-1,.L57,0,.L241-.L57
+.L156:
+	.word	-1,.L45,0,.L208-.L45
 	.half	1
 	.byte	85
-	.word	.L24-.L57,.L243-.L57
+	.word	.L14-.L45,.L210-.L45
 	.half	1
 	.byte	85
 	.word	0,0
-.L174:
-	.word	-1,.L57,0,.L241-.L57
+.L155:
+	.word	-1,.L45,0,.L208-.L45
 	.half	1
 	.byte	84
-	.word	.L242-.L57,.L173-.L57
+	.word	.L209-.L45,.L154-.L45
 	.half	1
 	.byte	88
-	.word	.L24-.L57,.L244-.L57
+	.word	.L14-.L45,.L211-.L45
 	.half	1
 	.byte	84
 	.word	0,0
-.L56:
-	.word	-1,.L57,0,.L173-.L57
+.L44:
+	.word	-1,.L45,0,.L154-.L45
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L183:
-	.word	-1,.L57,.L245-.L57,.L248-.L57
+.L164:
+	.word	-1,.L45,.L212-.L45,.L215-.L45
 	.half	1
 	.byte	82
-	.word	.L248-.L57,.L26-.L57
+	.word	.L215-.L45,.L16-.L45
 	.half	1
 	.byte	89
 	.word	0,0
-.L182:
-	.word	-1,.L57,.L246-.L57,.L247-.L57
+.L163:
+	.word	-1,.L45,.L213-.L45,.L214-.L45
 	.half	1
 	.byte	95
 	.word	0,0
-.L184:
-	.word	-1,.L57,.L249-.L57,.L250-.L57
+.L165:
+	.word	-1,.L45,.L216-.L45,.L217-.L45
 	.half	1
 	.byte	82
 	.word	0,0
-.L178:
-	.word	-1,.L57,.L243-.L57,.L245-.L57
+.L159:
+	.word	-1,.L45,.L210-.L45,.L212-.L45
 	.half	1
 	.byte	82
-	.word	.L26-.L57,.L25-.L57
+	.word	.L16-.L45,.L15-.L45
 	.half	1
 	.byte	82
 	.word	0,0
-.L177:
-	.word	-1,.L57,.L244-.L57,.L243-.L57
-	.half	1
-	.byte	84
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('get_duty_from_angle_map')
-	.sect	'.debug_loc'
-.L190:
-	.word	-1,.L31,0,.L201-.L31
-	.half	1
-	.byte	84
-	.word	.L202-.L31,.L203-.L31
-	.half	1
-	.byte	83
-	.word	.L13-.L31,.L8-.L31
-	.half	1
-	.byte	83
-	.word	0,0
-.L195:
-	.word	-1,.L31,.L206-.L31,.L205-.L31
-	.half	1
-	.byte	81
-	.word	0,0
-.L194:
-	.word	-1,.L31,.L204-.L31,.L205-.L31
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L30:
-	.word	-1,.L31,0,.L189-.L31
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L192:
-	.word	-1,.L31,.L201-.L31,.L8-.L31
+.L158:
+	.word	-1,.L45,.L211-.L45,.L210-.L45
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('limit')
 	.sect	'.debug_loc'
-.L28:
-	.word	-1,.L29,0,.L185-.L29
+.L18:
+	.word	-1,.L19,0,.L166-.L19
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L188:
-	.word	-1,.L29,0,.L185-.L29
+.L169:
+	.word	-1,.L19,0,.L166-.L19
 	.half	1
 	.byte	86
-	.word	.L199-.L29,.L4-.L29
+	.word	.L172-.L19,.L4-.L19
 	.half	1
 	.byte	82
 	.word	0,0
-.L187:
-	.word	-1,.L29,0,.L185-.L29
+.L168:
+	.word	-1,.L19,0,.L166-.L19
 	.half	1
 	.byte	85
-	.word	.L198-.L29,.L2-.L29
+	.word	.L171-.L19,.L2-.L19
 	.half	1
 	.byte	82
 	.word	0,0
-.L186:
-	.word	-1,.L29,0,.L185-.L29
+.L167:
+	.word	-1,.L19,0,.L166-.L19
 	.half	1
 	.byte	84
-	.word	.L200-.L29,.L3-.L29
+	.word	.L173-.L19,.L3-.L19
 	.half	1
 	.byte	82
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('motor_init')
 	.sect	'.debug_loc'
-.L38:
-	.word	-1,.L39,0,.L141-.L39
+.L26:
+	.word	-1,.L27,0,.L122-.L27
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('motor_set_duty')
 	.sect	'.debug_loc'
-.L146:
-	.word	-1,.L41,0,.L217-.L41
+.L127:
+	.word	-1,.L29,0,.L184-.L29
 	.half	1
 	.byte	84
-	.word	.L217-.L41,.L219-.L41
+	.word	.L184-.L29,.L186-.L29
 	.half	1
 	.byte	82
-	.word	.L220-.L41,.L142-.L41
+	.word	.L187-.L29,.L123-.L29
 	.half	1
 	.byte	95
-	.word	.L221-.L41,.L222-.L41
+	.word	.L188-.L29,.L189-.L29
 	.half	1
 	.byte	85
-	.word	.L20-.L41,.L223-.L41
+	.word	.L10-.L29,.L190-.L29
 	.half	1
 	.byte	82
-	.word	.L224-.L41,.L225-.L41
+	.word	.L191-.L29,.L192-.L29
 	.half	1
 	.byte	85
-	.word	.L22-.L41,.L21-.L41
+	.word	.L12-.L29,.L11-.L29
 	.half	1
 	.byte	82
 	.word	0,0
-.L144:
-	.word	-1,.L41,0,.L217-.L41
+.L125:
+	.word	-1,.L29,0,.L184-.L29
 	.half	1
 	.byte	100
-	.word	.L218-.L41,.L142-.L41
+	.word	.L185-.L29,.L123-.L29
 	.half	1
 	.byte	111
 	.word	0,0
-.L40:
-	.word	-1,.L41,0,.L142-.L41
+.L28:
+	.word	-1,.L29,0,.L123-.L29
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('motor_update_speed')
 	.sect	'.debug_loc'
-.L42:
-	.word	-1,.L43,0,.L147-.L43
+.L30:
+	.word	-1,.L31,0,.L128-.L31
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('servo_init')
 	.sect	'.debug_loc'
-.L32:
-	.word	-1,.L33,0,.L148-.L33
+.L20:
+	.word	-1,.L21,0,.L129-.L21
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('servo_set_angle')
 	.sect	'.debug_loc'
-.L153:
-	.word	-1,.L37,0,.L210-.L37
+.L134:
+	.word	-1,.L25,0,.L177-.L25
 	.half	1
 	.byte	84
-	.word	.L212-.L37,.L213-.L37
+	.word	.L179-.L25,.L180-.L25
+	.half	1
+	.byte	95
+	.word	0,0
+.L136:
+	.word	-1,.L25,.L181-.L25,.L182-.L25
 	.half	1
 	.byte	84
 	.word	0,0
-.L155:
-	.word	-1,.L37,.L213-.L37,.L214-.L37
-	.half	1
-	.byte	82
-	.word	.L216-.L37,.L214-.L37
-	.half	1
-	.byte	84
-	.word	0,0
-.L151:
-	.word	-1,.L37,0,.L210-.L37
+.L132:
+	.word	-1,.L25,0,.L177-.L25
 	.half	1
 	.byte	100
-	.word	.L211-.L37,.L149-.L37
+	.word	.L178-.L25,.L130-.L25
 	.half	1
 	.byte	111
-	.word	.L215-.L37,.L214-.L37
+	.word	.L183-.L25,.L182-.L25
 	.half	1
 	.byte	100
 	.word	0,0
-.L36:
-	.word	-1,.L37,0,.L149-.L37
+.L24:
+	.word	-1,.L25,0,.L130-.L25
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('servo_set_duty')
 	.sect	'.debug_loc'
-.L159:
-	.word	-1,.L35,0,.L207-.L35
+.L140:
+	.word	-1,.L23,0,.L174-.L23
 	.half	1
 	.byte	84
-	.word	.L209-.L35,.L208-.L35
+	.word	.L176-.L23,.L175-.L23
 	.half	1
 	.byte	85
-	.word	.L17-.L35,.L18-.L35
+	.word	.L7-.L23,.L8-.L23
 	.half	1
 	.byte	84
 	.word	0,0
-.L157:
-	.word	-1,.L35,0,.L208-.L35
+.L138:
+	.word	-1,.L23,0,.L175-.L23
 	.half	1
 	.byte	100
 	.word	0,0
-.L34:
-	.word	-1,.L35,0,.L156-.L35
+.L22:
+	.word	-1,.L23,0,.L137-.L23
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L543:
+.L458:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -22424,63 +21993,58 @@ servo_map:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('limit')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L543,.L29,.L185-.L29
-	.byte	8,18,8,19,8,20,8,21,8,22,8,23
-	.sdecl	'.debug_frame',debug,cluster('get_duty_from_angle_map')
-	.sect	'.debug_frame'
-	.word	24
-	.word	.L543,.L31,.L189-.L31
+	.word	.L458,.L19,.L166-.L19
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('servo_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L33,.L148-.L33
+	.word	.L458,.L21,.L129-.L21
 	.sdecl	'.debug_frame',debug,cluster('servo_set_duty')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L35,.L156-.L35
+	.word	.L458,.L23,.L137-.L23
 	.sdecl	'.debug_frame',debug,cluster('servo_set_angle')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L37,.L149-.L37
+	.word	.L458,.L25,.L130-.L25
 	.sdecl	'.debug_frame',debug,cluster('motor_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L39,.L141-.L39
+	.word	.L458,.L27,.L122-.L27
 	.sdecl	'.debug_frame',debug,cluster('motor_set_duty')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L41,.L142-.L41
+	.word	.L458,.L29,.L123-.L29
 	.sdecl	'.debug_frame',debug,cluster('motor_update_speed')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L43,.L147-.L43
+	.word	.L458,.L31,.L128-.L31
 	.sdecl	'.debug_frame',debug,cluster('car_set_speed')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L45,.L160-.L45
+	.word	.L458,.L33,.L141-.L33
 	.sdecl	'.debug_frame',debug,cluster('car_set_angle')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L47,.L163-.L47
+	.word	.L458,.L35,.L144-.L35
 	.sdecl	'.debug_frame',debug,cluster('car_stop')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L49,.L165-.L49
+	.word	.L458,.L37,.L146-.L37
 	.sdecl	'.debug_frame',debug,cluster('car_forward')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L51,.L166-.L51
+	.word	.L458,.L39,.L147-.L39
 	.sdecl	'.debug_frame',debug,cluster('car_backward')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L53,.L168-.L53
+	.word	.L458,.L41,.L149-.L41
 	.sdecl	'.debug_frame',debug,cluster('car_turn')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L55,.L170-.L55
+	.word	.L458,.L43,.L151-.L43
 	.sdecl	'.debug_frame',debug,cluster('car_update_differential_speed')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L543,.L57,.L173-.L57
+	.word	.L458,.L45,.L154-.L45
 	; Module end

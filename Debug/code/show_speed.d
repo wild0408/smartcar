@@ -350,32 +350,14 @@ show_speed.o :	..\code\pid_control.h
 ..\code\pid_control.h :
 show_speed.o :	..\code\vision_track.h
 ..\code\vision_track.h :
-show_speed.o :	..\code\position_control.h
-..\code\position_control.h :
-show_speed.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-show_speed.o :	..\code\pid_control.h
-..\code\pid_control.h :
 show_speed.o :	..\code\element_recognition.h
 ..\code\element_recognition.h :
 show_speed.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
 show_speed.o :	..\code\vision_track.h
 ..\code\vision_track.h :
-show_speed.o :	..\code\path_planning.h
-..\code\path_planning.h :
-show_speed.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
 show_speed.o :	..\code\element_recognition.h
 ..\code\element_recognition.h :
-show_speed.o :	..\code\position_control.h
-..\code\position_control.h :
-show_speed.o :	..\code\position_control.h
-..\code\position_control.h :
-show_speed.o :	..\code\element_recognition.h
-..\code\element_recognition.h :
-show_speed.o :	..\code\path_planning.h
-..\code\path_planning.h :
 show_speed.o :	..\code\display_tft180.h
 ..\code\display_tft180.h :
 show_speed.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
@@ -384,11 +366,7 @@ show_speed.o :	..\code\smart_car.h
 ..\code\smart_car.h :
 show_speed.o :	..\code\vision_track.h
 ..\code\vision_track.h :
-show_speed.o :	..\code\position_control.h
-..\code\position_control.h :
 show_speed.o :	..\code\element_recognition.h
 ..\code\element_recognition.h :
-show_speed.o :	..\code\path_planning.h
-..\code\path_planning.h :
 show_speed.o :	..\code\show_speed.h
 ..\code\show_speed.h :

@@ -50,16 +50,6 @@ void smart_car_display_info_tft180(void)
     // 偏差显示
     tft180_show_string(0, 88, "Error:");
     tft180_show_int(60, 88, vision_get_deviation(), 4);
-    
-    // 位置控制使能显示
-    if (smart_car.position_control_enable)
-    {
-        tft180_show_string(0, 104, "Dist:");
-        tft180_show_float(50, 104, position_get_current_distance(), 2, 2);
-        tft180_show_string(110, 104, "m");
-    }
-    
-
 }
 
 /**
@@ -272,77 +262,6 @@ void vision_show_image_with_lines_tft180(void)
         }
     }
     
-}
-
-/**
- * @brief  显示FT180路径规划信息函数
- * @param  无
- * @return 无
- */
-void display_path_info_tft180(void)
-{
-    if (!smart_car.path_planning_enable)
-    {
-        return;
-    }
-    
-    tft180_set_font(TFT180_8X16_FONT);
-    tft180_set_color(RGB565_CYAN, RGB565_BLACK);
-    
-    // 路径规划标题
-    tft180_show_string(0, 0, "Path Planning");
-    
-    // 路径状态
-    tft180_show_string(0, 20, "State:");
-    switch(path_planner.state)
-    {
-        case PATH_STATE_IDLE:
-            tft180_show_string(60, 20, "IDLE    ");
-            break;
-        case PATH_STATE_PLANNING:
-            tft180_show_string(60, 20, "PLAN    ");
-            break;
-        case PATH_STATE_EXECUTING:
-            tft180_show_string(60, 20, "EXEC    ");
-            break;
-        case PATH_STATE_COMPLETED:
-            tft180_show_string(60, 20, "COMPLETE");
-            break;
-        default:
-            tft180_show_string(60, 20, "FAILED  ");
-            break;
-    }
-    
-    // 显示路径节点数
-    tft180_show_string(0, 40, "Nodes:");
-    tft180_show_int(60, 40, path_planner.node_count, 2);
-    
-    tft180_show_string(0, 56, "Current:");
-    tft180_show_int(80, 56, path_planner.current_node, 2);
-    
-    // 显示路径进度
-    tft180_show_string(0, 72, "Progress:");
-    tft180_show_int(90, 72, path_get_progress(), 3);
-    tft180_show_string(120, 72, "%");
-    
-    // 显示当前路径节点类型
-    if (path_planner.current_node < path_planner.node_count)
-    {
-        path_node_t* node = &path_planner.nodes[path_planner.current_node];
-        tft180_show_string(0, 88, "Type:");
-        const char* type_name = path_get_type_name(node->type);
-        tft180_show_string(50, 88, type_name);
-    }
-    
-    // 轨迹统计信息
-    tft180_show_string(0, 104, "Circle:");
-    tft180_show_int(70, 104, path_planner.circle_count, 2);
-    
-    tft180_show_string(0, 120, "Cross:");
-    tft180_show_int(60, 120, path_planner.cross_count, 2);
-    
-    tft180_show_string(90, 120, "Obs:");
-    tft180_show_int(130, 120, path_planner.obstacle_count, 2);
 }
 
 /**

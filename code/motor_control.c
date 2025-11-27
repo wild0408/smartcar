@@ -19,49 +19,6 @@ static int32 limit(int32 value, int32 min, int32 max)
     return value;
 }
 
-//====================================================舵机非线性映射====================================================
-// 由于舵机连杆机构的存在，舵机输出轴角度与前轮实际转向角度通常不是线性关系
-// 使用查找表进行分段线性插值，可以大幅提高转向精度
-// 请务必根据实际车辆进行标定：
-// 1. 给定不同的占空比，测量实际的前轮角度
-// 2. 将{角度, 占空比}填入下表
-// 注意：角度必须从小到大排列
-static const struct {
-    int16 angle;    // 期望的前轮角度 (度)
-    int32 duty;     // 对应的舵机占空比 (500-1000)
-} servo_map[] = {
-    {-45, SERVO_LEFT_MAX},      // 左极限角度 (需实测)
-    {0,   SERVO_CENTER_DUTY},   // 中心 (0度)
-    {45,  SERVO_RIGHT_MAX}      // 右极限角度 (需实测)
-};
-#define SERVO_MAP_COUNT (sizeof(servo_map) / sizeof(servo_map[0]))
-
-/**
- * @brief  根据目标角度查找对应的占空比 (线性插值)
- * @param  angle 目标角度
- * @return 占空比
- */
-static int32 get_duty_from_angle_map(int16 angle)
-{
-    // 范围限制
-    if (angle <= servo_map[0].angle) return servo_map[0].duty;
-    if (angle >= servo_map[SERVO_MAP_COUNT - 1].angle) return servo_map[SERVO_MAP_COUNT - 1].duty;
-
-    // 查找区间
-    for (int i = 0; i < SERVO_MAP_COUNT - 1; i++)
-    {
-        if (angle >= servo_map[i].angle && angle <= servo_map[i+1].angle)
-        {
-            // 线性插值: y = y0 + (x - x0) * (y1 - y0) / (x1 - x0)
-            int32 duty_diff = servo_map[i+1].duty - servo_map[i].duty;
-            int16 angle_diff = servo_map[i+1].angle - servo_map[i].angle;
-            
-            return servo_map[i].duty + (int32)(angle - servo_map[i].angle) * duty_diff / angle_diff;
-        }
-    }
-    return SERVO_CENTER_DUTY;
-}
-
 //====================================================舵机函数实现====================================================
 /**
  * @brief  舵机初始化
@@ -104,8 +61,7 @@ void servo_set_angle(servo_t *servo, int16 angle)
     angle = limit(angle, -SERVO_MAX_ANGLE, SERVO_MAX_ANGLE);
     servo->current_angle = angle;
     
-    // 使用非线性映射计算占空比，解决连杆机构导致的非线性问题
-    int32 duty = get_duty_from_angle_map(angle);
+    int32 duty = SERVO_CENTER_DUTY+(SERVO_RIGHT_MAX-SERVO_CENTER_DUTY)*angle/45;
     
     servo_set_duty(servo, (uint32)duty);
 }

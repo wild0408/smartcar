@@ -12,9 +12,7 @@
 #include "pid_control.h"
 #include "vision_track.h"
 #include "smart_car.h"
-#include "position_control.h"
 #include "element_recognition.h"
-#include "path_planning.h"
 #include "display_tft180.h"
 #include "show_speed.h"
 

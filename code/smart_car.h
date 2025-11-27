@@ -5,9 +5,7 @@
 #include "motor_control.h"
 #include "pid_control.h"
 #include "vision_track.h"
-#include "position_control.h"
 #include "element_recognition.h"
-#include "path_planning.h"
 
 #define BASE_SPEED              200        // 基础速度/10ms
 #define MAX_STEER_ANGLE         45          // 最大转向角度
@@ -48,7 +46,7 @@ typedef struct
 #define SPEED_PID_KI_NORMAL         0.0f        // 正常场景速度PID积分系数
 #define SPEED_PID_KD_NORMAL         0.0f        // 正常场景速度PID微分系数
 
-#define DIRECTION_PID_KP_NORMAL     0.4f        // 正常场景方向PID比例系数
+#define DIRECTION_PID_KP_NORMAL     0.5f        // 正常场景方向PID比例系数
 #define DIRECTION_PID_KI_NORMAL     0.0f       // 正常场景方向PID积分系数
 #define DIRECTION_PID_KD_NORMAL     0.0f        // 正常场景方向PID微分系数
 // 直线场景PID参数配置
@@ -126,21 +124,11 @@ void smart_car_stop(void);                                      // 停止智能小车
 void smart_car_pause(void);                                     // 暂停智能小车
 void smart_car_debug_mode(void);                                // 智能小车调试模式
 
-// 位置控制使能
-void smart_car_enable_position_control(void);                   // 位置控制使能
-void smart_car_disable_position_control(void);                  // 位置控制使能
-void smart_car_set_target_distance(float distance);             // 设置目标距离
-
 // 元素识别使能
 void smart_car_enable_element_recognition(void);                // 元素识别使能
 void smart_car_disable_element_recognition(void);               // 元素识别使能
 element_type_enum smart_car_get_current_element(void);          // 获取当前元素类型
 
-// 路径规划使能
-void smart_car_enable_path_planning(void);                      // 路径规划使能
-void smart_car_disable_path_planning(void);                     // 路径规划使能
-void smart_car_set_decision_mode(decision_mode_enum mode);      // 设置决策模式
-void smart_car_print_current_path(void);                        // 打印当前路径
 
 // PID设置相关
 void smart_car_set_pid_scene(pid_scene_enum scene);             // 设置PID场景

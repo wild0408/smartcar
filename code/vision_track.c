@@ -4,13 +4,26 @@
 #ifndef PI
 #define PI 3.1415926535f
 #endif
+// 双最长白列算法全局变量
+int Longest_White_Column_Left[2];    // [0]长度，[1]列号
+int Longest_White_Column_Right[2];   // [0]长度，[1]列号
+int White_Column[IMAGE_WIDTH];       // 每列白点数量
+uint8 Left_Lost_Flag[IMAGE_HEIGHT];  // 左丢线标志
+uint8 Right_Lost_Flag[IMAGE_HEIGHT]; // 右丢线标志
+int Left_Lost_Time;                  // 左丢线次数
+int Right_Lost_Time;                 // 右丢线次数
+int Both_Lost_Time;                  // 双边丢线次数
+int Boundry_Start_Left;              // 左边界起始行
+int Boundry_Start_Right;             // 右边界起始行
+int Search_Stop_Line;                // 搜索截止行
 
+// 环岛相关标志（如果项目中使用）
+uint8 Right_Island_Flag;             // 右环岛标志
+uint8 Left_Island_Flag;              // 左环岛标志
+uint8 Island_State;                  // 环岛状态
 vision_track_t vision;
 
 uint8 image_data[IMAGE_HEIGHT][IMAGE_WIDTH];
-// 积分图缓冲区，用于快速计算局部均值 (约90KB)
-// integral_image[y][x] 存储 (0,0) 到 (x,y) 矩形区域的像素和
-static uint32 integral_image[IMAGE_HEIGHT][IMAGE_WIDTH];
 
 //====================================================图像处理====================================================
 /**
@@ -19,6 +32,64 @@ static uint32 integral_image[IMAGE_HEIGHT][IMAGE_WIDTH];
  * @param  size   图像数据大小
  * @return 阈值
  */
+
+ int my_adapt_threshold(uint8 *image, uint16 col, uint16 row)   //注意计算阈值的一定要是原图像
+{
+    #define GrayScale 256
+    uint16 width = col;
+    uint16 height = row;
+    int pixelCount[GrayScale];
+    float pixelPro[GrayScale];
+    int i, j;
+    int pixelSum = width * height/4;
+    int threshold = 0;
+    uint8* data = image;  //指向像素数据的指针
+    for (i = 0; i < GrayScale; i++)
+    {
+        pixelCount[i] = 0;
+        pixelPro[i] = 0;
+    }
+    uint32 gray_sum=0;
+    //统计灰度级中每个像素在整幅图像中的个数
+    for (i = 0; i < height; i+=2)
+    {
+        for (j = 0; j < width; j+=2)
+        {
+            pixelCount[(int)data[i * width + j]]++;  //将当前的点的像素值作为计数数组的下标
+            gray_sum+=(int)data[i * width + j];       //灰度值总和
+        }
+    }
+    //计算每个像素值的点在整幅图像中的比例
+    for (i = 0; i < GrayScale; i++)
+    {
+        pixelPro[i] = (float)pixelCount[i] / pixelSum;
+    }
+    //遍历灰度级[0,255]
+    float w0, w1, u0tmp, u1tmp, u0, u1, u, deltaTmp, deltaMax = 0;
+    w0 = w1 = u0tmp = u1tmp = u0 = u1 = u = deltaTmp = 0;
+    for (j = 0; j < GrayScale; j++)
+    {
+        w0 += pixelPro[j];  //背景部分每个灰度值的像素点所占比例之和   即背景部分的比例
+        u0tmp += j * pixelPro[j];  //背景部分 每个灰度值的点的比例 *灰度值
+        w1=1-w0;
+        u1tmp=gray_sum/pixelSum-u0tmp;
+        u0 = u0tmp / w0;              //背景平均灰度
+        u1 = u1tmp / w1;              //前景平均灰度
+        u = u0tmp + u1tmp;            //全局平均灰度
+        deltaTmp = w0 * pow((u0 - u), 2) + w1 * pow((u1 - u), 2);
+        if (deltaTmp > deltaMax)
+        {
+            deltaMax = deltaTmp;
+            threshold = j;
+        }
+        if (deltaTmp < deltaMax)
+        {
+            break;
+        }
+    }
+    return threshold;
+}
+
 uint8 otsu_threshold(uint8 *image, uint32 size)
 {
     uint32 histogram[256] = {0};
@@ -67,103 +138,6 @@ uint8 otsu_threshold(uint8 *image, uint32 size)
     }
     
     return threshold;
-}
-
-/**
- * @brief  计算积分图
- * @param  无 (使用全局 mt9v03x_image)
- * @return 无 (结果存入 integral_image)
- */
-static void calculate_integral_image(void)
-{
-    uint8 r, c;
-    uint32 sum_row;
-
-    // 第一行
-    sum_row = 0;
-    for (c = 0; c < IMAGE_WIDTH; c++)
-    {
-        sum_row += mt9v03x_image[0][c];
-        integral_image[0][c] = sum_row;
-    }
-
-    // 后续行
-    for (r = 1; r < IMAGE_HEIGHT; r++)
-    {
-        sum_row = 0;
-        for (c = 0; c < IMAGE_WIDTH; c++)
-        {
-            sum_row += mt9v03x_image[r][c];
-            integral_image[r][c] = integral_image[r-1][c] + sum_row;
-        }
-    }
-}
-
-/**
- * @brief  使用积分图快速获取局部区域像素和
- * @param  r1, c1  左上角坐标
- * @param  r2, c2  右下角坐标
- * @return 区域像素和
- */
-static uint32 get_region_sum(uint8 r1, uint8 c1, uint8 r2, uint8 c2)
-{
-    // 边界保护
-    if (r2 >= IMAGE_HEIGHT) r2 = IMAGE_HEIGHT - 1;
-    if (c2 >= IMAGE_WIDTH) c2 = IMAGE_WIDTH - 1;
-    
-    uint32 A = (r1 > 0 && c1 > 0) ? integral_image[r1-1][c1-1] : 0;
-    uint32 B = (r1 > 0) ? integral_image[r1-1][c2] : 0;
-    uint32 C = (c1 > 0) ? integral_image[r2][c1-1] : 0;
-    uint32 D = integral_image[r2][c2];
-
-    return D - B - C + A;
-}
-
-/**
- * @brief  自适应局部阈值二值化（积分图加速版）
- * @param  无
- * @return 无
- * @note   使用局部均值作为阈值，适应光照变化。时间复杂度 O(W*H)。
- */
-static void adaptive_threshold_binarization(void)
-{
-    uint8 r, c_idx;
-    uint8 block_size = ADAPTIVE_BLOCK_SIZE;
-    uint8 half_size = block_size / 2;
-    
-    // 1. 计算积分图
-    calculate_integral_image();
-
-    // 2. 遍历图像进行二值化
-    for (r = 0; r < IMAGE_HEIGHT; r++)
-    {
-        for (c_idx = 0; c_idx < IMAGE_WIDTH; c_idx++)
-        {
-            // 确定局部窗口边界
-            uint8 r1 = (r > half_size) ? (r - half_size) : 0;
-            uint8 r2 = (r + half_size < IMAGE_HEIGHT) ? (r + half_size) : (IMAGE_HEIGHT - 1);
-            uint8 c1 = (c_idx > half_size) ? (c_idx - half_size) : 0;
-            uint8 c2 = (c_idx + half_size < IMAGE_WIDTH) ? (c_idx + half_size) : (IMAGE_WIDTH - 1);
-
-            // 快速计算局部均值
-            uint32 sum = get_region_sum(r1, c1, r2, c2);
-            uint16 count = (r2 - r1 + 1) * (c2 - c1 + 1);
-            uint8 mean = sum / count;
-            
-            // 添加偏移量
-            uint8 threshold = (mean > ADAPTIVE_OFFSET) ? (mean - ADAPTIVE_OFFSET) : 0;
-
-            // 二值化
-            if (mt9v03x_image[r][c_idx] > threshold)
-            {
-                image_data[r][c_idx] = 255;
-            }
-            else
-            {
-                image_data[r][c_idx] = 0;
-            }
-        }
-    }
 }
 
 /**
@@ -235,62 +209,22 @@ static void morphology_dilate(void)
 }
 
 /**
- * @brief  图像二值化处理（优化版，支持多种模式）
- * @param  threshold  阈值（固定阈值模式使用）
+ * @brief  图像二值化处理
+ * @param  threshold  阈值
  * @return 无
  */
 void image_binarization(uint8 threshold)
 {
     uint8 row, col;
     
-    #if (BINARIZE_MODE == BINARIZE_FIXED)
-        // 模式1：固定阈值二值化
-        for (row = 0; row < IMAGE_HEIGHT; row++)
+    // 固定阈值二值化
+    for (row = 0; row < IMAGE_HEIGHT; row++)
+    {
+        for (col = 0; col < IMAGE_WIDTH; col++)
         {
-            for (col = 0; col < IMAGE_WIDTH; col++)
-            {
-                image_data[row][col] = (mt9v03x_image[row][col] > threshold) ? 255 : 0;
-            }
+            image_data[row][col] = (mt9v03x_image[row][col] > threshold) ? 255 : 0;
         }
-        
-    #elif (BINARIZE_MODE == BINARIZE_OTSU)
-        // 模式2：OTSU全局阈值
-        for (row = 0; row < IMAGE_HEIGHT; row++)
-        {
-            for (col = 0; col < IMAGE_WIDTH; col++)
-            {
-                image_data[row][col] = (mt9v03x_image[row][col] > threshold) ? 255 : 0;
-            }
-        }
-        
-    #elif (BINARIZE_MODE == BINARIZE_ADAPTIVE)
-        // 模式3：自适应局部阈值
-        adaptive_threshold_binarization();
-        
-    #elif (BINARIZE_MODE == BINARIZE_OTSU_ADAPTIVE)
-        // 模式4：OTSU+自适应混合（推荐）
-        // 上半部分使用自适应（远处光照变化大）
-        for (row = 0; row < IMAGE_HEIGHT / 2; row++)
-        {
-            for (col = 0; col < IMAGE_WIDTH; col++)
-            {
-                uint8 local_threshold = calculate_local_mean(row, col, ADAPTIVE_BLOCK_SIZE);
-                if (local_threshold > ADAPTIVE_OFFSET)
-                    local_threshold -= ADAPTIVE_OFFSET;
-                image_data[row][col] = (mt9v03x_image[row][col] > local_threshold) ? 255 : 0;
-            }
-        }
-        
-        // 下半部分使用OTSU阈值（近处更稳定）
-        for (row = IMAGE_HEIGHT / 2; row < IMAGE_HEIGHT; row++)
-        {
-            for (col = 0; col < IMAGE_WIDTH; col++)
-            {
-                image_data[row][col] = (mt9v03x_image[row][col] > threshold) ? 255 : 0;
-            }
-        }
-    #endif
-    
+    }
     // 形态学滤波去噪（可选，根据效果开启）
     morphology_erode();   // 腐蚀：去除小噪点
     morphology_dilate();  // 膨胀：填充小孔洞
@@ -317,204 +251,362 @@ void vision_init(void)
 }
 
 /**
- * @brief  计算梯度强度（用于边缘检测）
- * @param  row  行号
- * @param  col  列号
- * @return 梯度强度
- */
-static int16 calculate_gradient(uint8 row, uint8 col)
-{
-    // 边界检查
-    if (col < 1 || col >= IMAGE_WIDTH - 1)
-        return 0;
-    
-    // 修复：使用原始灰度图 mt9v03x_image 计算梯度，而不是二值化后的 image_data
-    // 这样才能真正利用梯度大小来区分强边缘和噪声
-    int16 gradient = (int16)mt9v03x_image[row][col+1] - (int16)mt9v03x_image[row][col-1];
-    return gradient > 0 ? gradient : -gradient;  // 返回绝对值
-}
-
-/**
- * @brief  视觉跟踪边缘检测（优化版）
+ * @brief  双最长白列巡线算法
  * @param  无
  * @return 无
- * @note   使用梯度法和连续性约束提高检测精度和鲁棒性
+ * @note   寻找最长白列,识别边界,后续进行中线拟合和优化
  */
 void vision_find_track_edge(void)
 {
-    uint8 row, col;
-    uint8 left_found, right_found;
-    static uint8 center_col = IMAGE_WIDTH / 2;
-    uint8 last_valid_left = 10;
-    uint8 last_valid_right = IMAGE_WIDTH - 10;
-    uint8 last_valid_center = center_col;
-    int16 max_gradient;
-    uint8 max_gradient_col;
+    int i, j;
+    int start_column = 20;  // 最长白列的搜索区间
+    int end_column = MT9V03X_W - 20;
+    uint8 left_border = 0, right_border = 0;
     
-    vision.track.valid_rows = 0;
-    
-    // 从图像底部向上扫描
-    for (row = SCAN_START_ROW; row > SCAN_END_ROW; row -= SCAN_STEP)
+    // 初始化
+    Longest_White_Column_Left[0] = 0;
+    Longest_White_Column_Left[1] = 0;
+    Longest_White_Column_Right[0] = 0;
+    Longest_White_Column_Right[1] = 0;
+    Right_Lost_Time = 0;
+    Left_Lost_Time = 0;
+    Boundry_Start_Left = 0;
+    Boundry_Start_Right = 0;
+    Both_Lost_Time = 0;
+
+    // 数据清零
+    for (i = 0; i <= MT9V03X_H - 1; i++)
     {
-        left_found = 0;
-        right_found = 0;
-        
-        // === 左边缘检测：使用梯度法 ===
-        max_gradient = 0;
-        max_gradient_col = 10;
-        
-        // 从上一行边缘位置附近开始搜索（连续性约束）
-        // 修复：确保搜索范围有效，避免死循环或跳过
-        uint8 left_search_start = (last_valid_left > 30) ? (last_valid_left - 30) : 2;
-        
-        // 向左搜索白到黑的跳变
-        for (col = last_valid_left; col > left_search_start; col--)
+        Right_Lost_Flag[i] = 0;
+        Left_Lost_Flag[i] = 0;
+        vision.track.left_edge[i] = 0;
+        vision.track.right_edge[i] = MT9V03X_W - 1;
+    }
+    for (i = 0; i <= MT9V03X_W - 1; i++)
+    {
+        White_Column[i] = 0;
+    }
+
+    // 环岛范围限定
+    if (Right_Island_Flag == 1)
+    {
+        if (Island_State == 3)
         {
-            // 结合二值化结果进行粗筛选，再用梯度精确定位
-            if (image_data[row][col] > 128 && image_data[row][col-1] < 128)
+            start_column = 40;
+            end_column = MT9V03X_W - 20;
+        }
+    }
+    else if (Left_Island_Flag == 1)
+    {
+        if (Island_State == 3)
+        {
+            start_column = 20;
+            end_column = MT9V03X_W - 40;
+        }
+    }
+
+    // 统计每列白点数量
+    for (j = start_column; j <= end_column; j++)
+    {
+        for (i = MT9V03X_H - 1; i >= 0; i--)
+        {
+            if (image_data[i][j] == IMG_BLACK)
+                break;
+            else
+                White_Column[j]++;
+        }
+    }
+
+    // 从左到右找左边最长白列
+    Longest_White_Column_Left[0] = 0;
+    for (i = start_column; i <= end_column; i++)
+    {
+        if (Longest_White_Column_Left[0] < White_Column[i])
+        {
+            Longest_White_Column_Left[0] = White_Column[i];
+            Longest_White_Column_Left[1] = i;
+        }
+    }
+
+    // 从右到左找右边最长白列
+    Longest_White_Column_Right[0] = 0;
+    for (i = end_column; i >= start_column; i--)
+    {
+        if (Longest_White_Column_Right[0] < White_Column[i])
+        {
+            Longest_White_Column_Right[0] = White_Column[i];
+            Longest_White_Column_Right[1] = i;
+        }
+    }
+
+    Search_Stop_Line = Longest_White_Column_Left[0];
+
+    // 常规巡线
+    for (i = MT9V03X_H - 1; i >= MT9V03X_H - Search_Stop_Line; i--)
+    {
+        // 从右边最长白列向右扫描找右边界
+        for (j = Longest_White_Column_Right[1]; j <= MT9V03X_W - 1 - 2; j++)
+        {
+            if (image_data[i][j] == IMG_WHITE &&
+                image_data[i][j + 1] == IMG_BLACK &&
+                image_data[i][j + 2] == IMG_BLACK)
             {
-                int16 gradient = calculate_gradient(row, col);
-                // 只有梯度足够大且是局部最大值时才认为是边缘
-                if (gradient > GRADIENT_THRESHOLD && gradient > max_gradient)
-                {
-                    max_gradient = gradient;
-                    max_gradient_col = col;
-                    left_found = 1;
-                }
+                right_border = j;
+                Right_Lost_Flag[i] = 0;
+                break;
             }
-        }
-        
-        // 如果没找到，扩展到中心区域搜索
-        if (!left_found)
-        {
-            for (col = center_col; col > 10; col--)
+            else if (j >= MT9V03X_W - 1 - 2)
             {
-                if (image_data[row][col] > 128 && image_data[row][col-1] < 128)
-                {
-                    int16 gradient = calculate_gradient(row, col);
-                    if (gradient > GRADIENT_THRESHOLD)
-                    {
-                        max_gradient_col = col;
-                        left_found = 1;
-                        break;
-                    }
-                }
-            }
-        }
-        if (left_found)
-        {
-            vision.track.left_edge[row] = max_gradient_col;
-            last_valid_left = max_gradient_col;
-        }
-        else
-        {
-            // 丢边处理：使用上一行边缘预测
-            vision.track.left_edge[row] = last_valid_left;
-        }
-        
-        // === 右边缘检测：使用梯度法 ===
-        max_gradient = 0;
-        max_gradient_col = IMAGE_WIDTH - 10;
-        
-        // 从上一行边缘位置附近开始搜索
-        uint8 right_search_end = (last_valid_right < IMAGE_WIDTH - 30) ? (last_valid_right + 30) : (IMAGE_WIDTH - 2);
-        
-        // 向右搜索白到黑的跳变
-        for (col = last_valid_right; col < right_search_end; col++)
-        {
-            if (image_data[row][col] > 128 && image_data[row][col+1] < 128)
-            {
-                int16 gradient = calculate_gradient(row, col);
-                if (gradient > GRADIENT_THRESHOLD && gradient > max_gradient)
-                {
-                    max_gradient = gradient;
-                    max_gradient_col = col;
-                    right_found = 1;
-                }
-            }
-        }
-        
-        // 如果没找到，扩展到中心区域搜索
-        if (!right_found)
-        {
-            for (col = center_col; col < IMAGE_WIDTH - 10; col++)
-            {
-                if (image_data[row][col] > 128 && image_data[row][col+1] < 128)
-                {
-                    int16 gradient = calculate_gradient(row, col);
-                    if (gradient > 50)
-                    {
-                        max_gradient_col = col;
-                        right_found = 1;
-                        break;
-                    }
-                }
-            }
-        }
-        
-        if (right_found)
-        {
-            vision.track.right_edge[row] = max_gradient_col;
-            last_valid_right = max_gradient_col;
-        }
-        else
-        {
-            // 丢边处理：使用上一行边缘预测
-            vision.track.right_edge[row] = last_valid_right;
-        }
-
-        
-
-        // 计算轨道宽度
-        vision.track.track_width[row] = vision.track.right_edge[row] - vision.track.left_edge[row];
-        
-        // 判断轨道宽度是否合理
-        if (vision.track.track_width[row] >= TRACK_WIDTH_MIN &&
-            vision.track.track_width[row] <= TRACK_WIDTH_MAX)
-        {
-            // 计算中心线
-            vision.track.center_line[row] = (vision.track.left_edge[row] + vision.track.right_edge[row]) / 2;
-
-            // 更新中心列，使用当前行的中心线作为下一行的搜索中心
-            center_col = vision.track.center_line[row];
-
-            // 限制中心列，避免过于靠近边缘
-            if (center_col < 20) center_col = 20;
-            if (center_col > IMAGE_WIDTH - 20) center_col = IMAGE_WIDTH - 20;
-
-            last_valid_center = vision.track.center_line[row];
-            vision.track.valid_rows++;
-            
-            // 计算真实世界坐标
-            vision_pixel_to_world(row, vision.track.left_edge[row], &vision.track.left_real_x[row], &vision.track.left_real_y[row]);
-            vision_pixel_to_world(row, vision.track.right_edge[row], &vision.track.right_real_x[row], &vision.track.right_real_y[row]);
-            vision_pixel_to_world(row, vision.track.center_line[row], &vision.track.center_real_x[row], &vision.track.center_real_y[row]);
-        }
-        else
-        {
-            // 轨道宽度不合理时，使用预测中心线
-            vision.track.center_line[row] = last_valid_center;
-            
-            // 计算预测中心线的真实坐标
-            vision_pixel_to_world(row, vision.track.center_line[row], &vision.track.center_real_x[row], &vision.track.center_real_y[row]);
-            
-            // 连续多行丢失，提前退出
-            if (vision.track.valid_rows == 0 && row < SCAN_START_ROW - 10)
-            {
+                right_border = j;
+                Right_Lost_Flag[i] = 1;
                 break;
             }
         }
+
+        // 从左边最长白列向左扫描找左边界
+        for (j = Longest_White_Column_Left[1]; j >= 0 + 2; j--)
+        {
+            if (image_data[i][j] == IMG_WHITE &&
+                image_data[i][j - 1] == IMG_BLACK &&
+                image_data[i][j - 2] == IMG_BLACK)
+            {
+                left_border = j;
+                Left_Lost_Flag[i] = 0;
+                break;
+            }
+            else if (j <= 0 + 2)
+            {
+                left_border = j;
+                Left_Lost_Flag[i] = 1;
+                break;
+            }
+        }
+
+        vision.track.left_edge[i] = left_border;
+        vision.track.right_edge[i] = right_border;
     }
-    
-    // 判断是否成功找到轨道（有效行数不少于50行）
-    vision.track_found = (vision.track.valid_rows >= 80) ? 1 : 0;
+
+    // 赛道数据分析
+    for (i = MT9V03X_H - 1; i >= 0; i--)
+    {
+        if (Left_Lost_Flag[i] == 1)
+            Left_Lost_Time++;
+        if (Right_Lost_Flag[i] == 1)
+            Right_Lost_Time++;
+        if (Left_Lost_Flag[i] == 1 && Right_Lost_Flag[i] == 1)
+            Both_Lost_Time++;
+        if (Boundry_Start_Left == 0 && Left_Lost_Flag[i] != 1)
+            Boundry_Start_Left = i;
+        if (Boundry_Start_Right == 0 && Right_Lost_Flag[i] != 1)
+            Boundry_Start_Right = i;
+        vision.track.track_width[i] = vision.track.right_edge[i] - vision.track.left_edge[i];
+    }
+
+    // === 优化处理流程 ===
+    #if EDGE_SMOOTH_ENABLE
+    edge_smooth_filter();  // 边缘平滑
+    #endif
+
+    #if LOST_LINE_REPAIR_ENABLE
+    lost_line_repair();    // 丢线补线
+    #endif
+
+    #if FIT_ENABLE
+    centerline_least_square_fit();  // 中线拟合
+    #endif
+
+    // 同步数据到vision结构体
+    vision.track.valid_rows = 0;
+    for (i = 0; i < MT9V03X_H; i++)
+    {
+
+        if (vision.track.track_width[i] >= TRACK_WIDTH_MIN &&
+            vision.track.track_width[i] <= TRACK_WIDTH_MAX)
+        {
+            vision.track.center_line[i] = (vision.track.left_edge[i] + vision.track.right_edge[i]) / 2;
+            vision.track.valid_rows++;
+        }
+        else
+        {
+            vision.track.center_line[i] = IMAGE_WIDTH / 2;
+        }
+    }
+
+    vision.track_found = (vision.track.valid_rows >= 10) ? 1 : 0;
 }
 
 
 /**
- * @brief  获取轨道偏差值（优化版）
+ * @brief  边缘平滑滤波（移动平均）
  * @param  无
- * @return 轨道偏差值 (-80 ~ 80)
+ * @return 无
+ * @note   对检测到的边缘进行3点移动平均,消除毛刺
+ */
+void edge_smooth_filter(void)
+{
+    int i;
+    static uint8 left_buffer[IMAGE_HEIGHT];
+    static uint8 right_buffer[IMAGE_HEIGHT];
+
+    // 复制原始边缘数据
+    for (i = 0; i < IMAGE_HEIGHT; i++)
+    {
+        left_buffer[i] = vision.track.left_edge[i];
+        right_buffer[i] = vision.track.right_edge[i];
+    }
+
+    // 3点移动平均滤波
+    for (i = 1; i < IMAGE_HEIGHT - 1; i++)
+    {
+        // 只对非丢线点进行平滑
+        if (Left_Lost_Flag[i] == 0 && Left_Lost_Flag[i-1] == 0 && Left_Lost_Flag[i+1] == 0)
+        {
+            vision.track.left_edge[i] = (left_buffer[i-1] + left_buffer[i] + left_buffer[i+1]) / 3;
+        }
+
+        if (Right_Lost_Flag[i] == 0 && Right_Lost_Flag[i-1] == 0 && Right_Lost_Flag[i+1] == 0)
+        {
+            vision.track.right_edge[i] = (right_buffer[i-1] + right_buffer[i] + right_buffer[i+1]) / 3;
+        }
+    }
+}
+
+/**
+ * @brief  丢线补线处理
+ * @param  无
+ * @return 无
+ * @note   使用斜率延拓法补线,防止边线突变
+ */
+void lost_line_repair(void)
+{
+    int i;
+    int last_valid_left = 0;
+    int last_valid_right = MT9V03X_W - 1;
+    float left_slope = 0.0f;
+    float right_slope = 0.0f;
+    int slope_count_left = 0;
+    int slope_count_right = 0;
+
+    // 从下往上遍历,计算斜率并补线
+    for (i = MT9V03X_H - 1; i >= 0; i--)
+    {
+        // === 左边线处理 ===
+        if (Left_Lost_Flag[i] == 0)
+        {
+            // 非丢线点,更新斜率
+            if (last_valid_left != 0 && i < MT9V03X_H - 1)
+            {
+                float new_slope = (float)(vision.track.left_edge[i] - last_valid_left);
+                // 斜率限制
+                if (new_slope > -SLOPE_LIMIT * 10 && new_slope < SLOPE_LIMIT * 10)
+                {
+                    left_slope = (left_slope * slope_count_left + new_slope) / (slope_count_left + 1);
+                    slope_count_left++;
+                    if (slope_count_left > 5) slope_count_left = 5;  // 限制历史数量
+                }
+            }
+            last_valid_left = vision.track.left_edge[i];
+        }
+        else
+        {
+            // 丢线点,使用斜率延拓
+            vision.track.left_edge[i] = last_valid_left + (int)left_slope;
+            // 边界限制
+            if (vision.track.left_edge[i] < 0) vision.track.left_edge[i] = 0;
+            if (vision.track.left_edge[i] >= MT9V03X_W) vision.track.left_edge[i] = MT9V03X_W - 1;
+        }
+
+        // === 右边线处理 ===
+        if (Right_Lost_Flag[i] == 0)
+        {
+            // 非丢线点,更新斜率
+            if (last_valid_right != MT9V03X_W - 1 && i < MT9V03X_H - 1)
+            {
+                float new_slope = (float)(vision.track.right_edge[i] - last_valid_right);
+                // 斜率限制
+                if (new_slope > -SLOPE_LIMIT * 10 && new_slope < SLOPE_LIMIT * 10)
+                {
+                    right_slope = (right_slope * slope_count_right + new_slope) / (slope_count_right + 1);
+                    slope_count_right++;
+                    if (slope_count_right > 5) slope_count_right = 5;
+                }
+            }
+            last_valid_right = vision.track.right_edge[i];
+        }
+        else
+        {
+            // 丢线点,使用斜率延拓
+            vision.track.right_edge[i] = last_valid_right + (int)right_slope;
+            // 边界限制
+            if (vision.track.right_edge[i] < 0) vision.track.right_edge[i] = 0;
+            if (vision.track.right_edge[i] >= MT9V03X_W) vision.track.right_edge[i] = MT9V03X_W - 1;
+        }
+
+        // 更新赛道宽度
+        vision.track.track_width[i] = vision.track.right_edge[i] - vision.track.left_edge[i];
+    }
+}
+
+/**
+ * @brief  最小二乘法中线拟合
+ * @param  无
+ * @return 无
+ * @note   对指定范围内的中心线进行最小二乘拟合,提高稳定性
+ */
+void centerline_least_square_fit(void)
+{
+    int i;
+    float sum_x = 0, sum_y = 0, sum_xy = 0, sum_x2 = 0;
+    int valid_points = 0;
+    float a = 0, b = 0;  // y = a*x + b (x为行号,y为列号)
+
+    // 统计有效点并计算累加值
+    for (i = FIT_START_ROW; i >= FIT_END_ROW; i--)
+    {
+        if (vision.track.track_width[i] >= TRACK_WIDTH_MIN && vision.track.track_width[i] <= TRACK_WIDTH_MAX)
+        {
+            float center = (vision.track.left_edge[i] + vision.track.right_edge[i]) / 2.0f;
+            sum_x += i;
+            sum_y += center;
+            sum_xy += i * center;
+            sum_x2 += i * i;
+            valid_points++;
+        }
+    }
+
+    // 如果有效点足够,进行拟合
+    if (valid_points >= FIT_MIN_POINTS)
+    {
+        float denominator = valid_points * sum_x2 - sum_x * sum_x;
+        if (denominator != 0)  // 避免除零
+        {
+            a = (valid_points * sum_xy - sum_x * sum_y) / denominator;
+            b = (sum_y - a * sum_x) / valid_points;
+
+            // 使用拟合结果更新中心线
+            for (i = FIT_START_ROW; i >= FIT_END_ROW; i--)
+            {
+                if (vision.track.track_width[i] >= TRACK_WIDTH_MIN && vision.track.track_width[i] <= TRACK_WIDTH_MAX)
+                {
+                    float fitted_center = a * i + b;
+                    // 限制拟合结果不要偏离原值太远
+                    float original_center = (vision.track.left_edge[i] + vision.track.right_edge[i]) / 2.0f;
+                    float diff = fitted_center - original_center;
+                    if (diff > -20 && diff < 20)  // 允许±20像素偏差
+                    {
+                        // 使用加权平均:70%拟合值 + 30%原始值
+                        vision.track.center_line[i] = (uint8)(fitted_center * 0.7f + original_center * 0.3f);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * @brief  获取轨道偏差值（使用权重数组优化版）
+ * @param  无
+ * @return 轨道偏差值
  */
 int16 vision_get_deviation(void)
 {
@@ -537,7 +629,6 @@ int16 vision_get_deviation(void)
             uint8 weight;
             uint16 distance_from_bottom = SCAN_START_ROW - row;
             
-            // 修复1：使用更大的数据类型避免溢出
             if (distance_from_bottom < 30)
                 weight = 3;
             else if (distance_from_bottom < 60)
@@ -545,7 +636,6 @@ int16 vision_get_deviation(void)
             else
                 weight = 1;
             
-            // 修复2：添加边界检查
             if (vision.track.center_line[row] < IMAGE_WIDTH)
             {
                 sum_weighted_center += (uint32)vision.track.center_line[row] * weight;
@@ -557,22 +647,16 @@ int16 vision_get_deviation(void)
     
     if (sum_weight > 0 && valid_row_count > 0)
     {
-        // 修复3：使用更大的数据类型并添加溢出检查
         uint32 weighted_center_val = sum_weighted_center / sum_weight;
         
-        // 修复4：确保在有效范围内
         if (weighted_center_val >= IMAGE_WIDTH) {
             weighted_center_val = IMAGE_WIDTH - 1;
         }
-        
-        // 修复5：使用有符号运算
         int16 new_error = (int16)weighted_center_val - (int16)center_col;
-        
-        // 修复6：限制误差范围
         if (new_error < -80) new_error = -80;
         if (new_error > 80) new_error = 80;
         
-        vision.error = new_error;
+        vision.error = new_error+1;
         vision.deviation = (float)vision.error / center_col;
         vision.last_error = vision.error;
     }
@@ -597,10 +681,11 @@ void vision_image_process(void)
         return;
     
     // 计算阈值
-    uint8 threshold = otsu_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH * IMAGE_HEIGHT);
+    //uint8 threshold = otsu_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH * IMAGE_HEIGHT);
+    uint8 threshold = my_adapt_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH, IMAGE_HEIGHT);
     
     // 使用固定阈值
-    threshold = THRESHOLD_VALUE;
+    //threshold = THRESHOLD_VALUE;
     
     // 图像二值化处理
     image_binarization(threshold);
@@ -614,55 +699,3 @@ void vision_image_process(void)
     vision.image_ready = 0;
 }
 
-/**
- * @brief  显示轨道图像
- * @param  无
- * @return 无
- */
-void vision_show_image(void)
-{
-    // 该函数用于显示轨道图像，具体实现依赖于硬件平台
-    // 具体显示函数见 display_tft180.c
-}
-
-/**
- * @brief  像素坐标转世界坐标 (透视变换)
- * @param  row    图像行坐标 (0-119)
- * @param  col    图像列坐标 (0-187)
- * @param  real_x 输出：世界坐标X (cm)
- * @param  real_y 输出：世界坐标Y (cm)
- */
-void vision_pixel_to_world(uint8 row, uint8 col, float *real_x, float *real_y)
-{
-    // 角度换算
-    float alpha = CAMERA_VIEW_ANGLE * PI / 180.0f; // 俯仰角弧度
-    float beta_v = (CAMERA_FOV_V / 2.0f) * PI / 180.0f; // 垂直半视场角
-    float beta_h = (CAMERA_FOV_H / 2.0f) * PI / 180.0f; // 水平半视场角
-    
-    // 归一化坐标 (-1.0 ~ 1.0)
-    // 注意：图像坐标系原点在左上角，row=0对应最上方（远处），row=119对应最下方（近处）
-    float y_norm = (2.0f * row / IMAGE_HEIGHT) - 1.0f; 
-    float x_norm = (2.0f * col / IMAGE_WIDTH) - 1.0f;
-    
-    // 垂直方向角度 (相对于光轴)
-    // 使用 atan 模型： tan(theta) = y_norm * tan(beta_v)
-    float theta_v = atanf(y_norm * tanf(beta_v));
-    
-    // 总俯仰角 (相对于水平面)
-    // row越大，y_norm越大，theta_v越大（向下偏），总角度越大
-    float angle_total = alpha + theta_v;
-    
-    // 计算纵向距离 Y (cm)
-    // Y = H / tan(angle_total)
-    if (angle_total <= 0.01f) {
-        *real_y = 1000.0f; // 限制最大距离
-    } else {
-        *real_y = CAMERA_HEIGHT / tanf(angle_total);
-    }
-    
-    // 计算横向距离 X (cm)
-    // X = Y * tan(theta_h)
-    // theta_h = atan(x_norm * tan(beta_h))
-    float theta_h = atanf(x_norm * tanf(beta_h));
-    *real_x = *real_y * tanf(theta_h);
-}

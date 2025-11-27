@@ -350,32 +350,14 @@ cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Openso
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\pid_control.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\vision_track.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\vision_track.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\pid_control.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\pid_control.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\vision_track.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\vision_track.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\path_planning.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\path_planning.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\path_planning.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\path_planning.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\display_tft180.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\display_tft180.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\libraries\\zf_common\zf_common_headfile.h"
@@ -384,11 +366,7 @@ cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Openso
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\smart_car.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\vision_track.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\vision_track.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\position_control.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\element_recognition.h" :
-cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\path_planning.h"
-"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\path_planning.h" :
 cpu0_main.o :	"C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\show_speed.h"
 "C:\\Users\\admin\\AURIX-v1.10.24-workspace\\Seekfree_TC264_Opensource_Library\\code\show_speed.h" :
