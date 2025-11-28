@@ -1,21 +1,4 @@
 # TC264 智能小车驱动系统 - v1.5
-
-## 版本概览
-
-本系统是基于英飞凌TC264开发的智能小车控制系统，经过多个版本迭代，从基础差速转向发展到当前的**后轮驱动+前轮舵机转向+智能避障+多场景PID**完整方案。
-
-### 版本演进
-- **v1.0** - 差速转向基础版
-- **v1.1** - 舵机转向+DRV8701驱动
-- **v1.2** - 位置控制+元素识别
-- **v1.3** - 无线串口调试
-- **v1.4** - 路径规划与智能决策
-- **v1.5** - 多场景PID+智能避障优化
-
----
-
-## v1.5 核心功能
-
 ### 1. 多场景PID参数管理 🆕
 支持8种不同场景的PID参数预设和动态切换，实现精确控制。
 
@@ -54,35 +37,8 @@
 基础速度: 2400 (0.8倍)
 ```
 
-### 2. 智能避障系统 🆕
-基于状态机的完整避障流程，支持自动绕行和回归赛道。
 
-**避障状态机：**
-```
-IDLE → TURNING_LEFT → BYPASSING → RETURNING → IDLE
-```
-
-**避障参数：**
-- 避障角度: 25°
-- 绕行距离: 0.3米
-- 绕行速度: 2400 脉冲/10ms
-- 支持左右方向选择
-
-**避障流程：**
-1. 检测障碍物（暗色区域检测）
-2. 记录起始位置
-3. 左转避让（25°）
-4. 直行绕过（0.3米）
-5. 右转回归
-6. 恢复正常循迹
-
-**特点：**
-- 手动舵机控制（避免与PID冲突）
-- 基于位置控制的精确绕行
-- 自动检测赛道恢复
-- 状态持久化
-
-### 3. DRV8701电机驱动 (v1.1优化)
+### 1. DRV8701电机驱动
 采用DRV8701专业电机驱动芯片，PWM+DIR控制模式。
 
 **硬件配置：**
@@ -111,7 +67,7 @@ IDLE → TURNING_LEFT → BYPASSING → RETURNING → IDLE
 - 编码器速度闭环
 - 双轮独立PID控制
 
-### 4. 优化元素识别（v1.2增强）
+### 2. 优化元素识别（v1.2增强）
 改进识别算法，提高准确性和稳定性。
 
 **识别元素：**
@@ -134,7 +90,7 @@ IDLE → TURNING_LEFT → BYPASSING → RETURNING → IDLE
 NONE → FOUND → ENTERING → IN_ELEMENT → LEAVING → PASSED
 ```
 
-### 5. 精确位置控制（v1.2）
+### 3. 精确位置控制（v1.2）
 基于编码器的位置闭环控制，实现精确停车和定点运动。
 
 **控制架构：**
@@ -146,33 +102,6 @@ NONE → FOUND → ENTERING → IN_ELEMENT → LEAVING → PASSED
 - 编码器脉冲数/米: 5000（需校准）
 - 位置容差: 50脉冲（约±5cm）
 - 位置PID: Kp=20.0, Ki=0.1, Kd=10.0
-
-### 6. 无线串口调试（v1.3）
-通过蓝牙实时调整参数，无需重新编译上传。
-
-**核心功能：**
-- 实时参数调整（PID参数、速度、角度等）
-- 远程控制（启动/停止/暂停）
-- 数据监控（12个参数，100ms周期）
-- 状态查询（系统状态、PID参数、位置、元素）
-
-**通信协议：**
-- 命令格式: `$命令,参数#`
-- 数据格式: `@类型,数据#`
-- 波特率: 115200
-- 支持模块: CH9141, HC-05, HC-06
-
-### 7. 路径规划系统（v1.4）
-基于成本评估的自动路径规划系统，支持复杂赛道元素的智能决策。
-
-**主要特性：**
-- ✅ 12种路径类型（直行、转弯、圆岛、十字、避障等）
-- ✅ 三种决策模式（手动、自动、最优）
-- ✅ 多维度成本计算（距离、时间、风险）
-- ✅ 动态偏好调整
-- ✅ 路径节点队列管理
-
----
 
 ## 快速开始
 
@@ -299,58 +228,6 @@ while(TRUE)
 }
 ```
 
-### 方案2: 障碍物避障测试
-
-```c
-#include "zf_common_headfile.h"
-#include "car_headfile.h"
-
-int core0_main(void)
-{
-    clock_init();
-    debug_init();
-    
-    smart_car_init();
-    pit_ms_init(PIT_CH0, 10);
-    tft180_init();
-    
-    // 启用必要功能
-    smart_car_enable_position_control();  // 避障需要位置控制
-    smart_car_enable_element_recognition();
-    
-    cpu_wait_event_ready();
-    smart_car_start();
-    
-    while(TRUE)
-    {
-        if (vision.image_ready)
-        {
-            vision_image_process();
-        }
-        
-        // 显示避障状态
-        tft180_show_string(0, 20, "Avoid State:");
-        switch(smart_car.avoid_state)
-        {
-            case AVOID_IDLE:
-                tft180_show_string(100, 20, "IDLE     ");
-                break;
-            case AVOID_TURNING_LEFT:
-                tft180_show_string(100, 20, "TURNING  ");
-                break;
-            case AVOID_BYPASSING:
-                tft180_show_string(100, 20, "BYPASSING");
-                break;
-            case AVOID_RETURNING:
-                tft180_show_string(100, 20, "RETURNING");
-                break;
-        }
-        
-        system_delay_ms(10);
-    }
-}
-```
-
 ---
 
 ## 系统架构
@@ -360,8 +237,6 @@ int core0_main(void)
 应用层
 ├── smart_car           主控制逻辑
 │   ├── PID场景管理     多场景PID切换 🆕
-│   ├── 智能避障        状态机避障控制 🆕
-│   ├── path_planning   路径规划与决策
 │   ├── element_recognition  元素识别（增强）
 │   └── position_control     位置控制
 │
@@ -369,7 +244,6 @@ int core0_main(void)
 ├── motor_control       DRV8701电机控制（PWM+DIR）🆕
 ├── pid_control         PID控制器（15+调整函数）🆕
 ├── vision_track        视觉循迹（MT9V03X）
-└── wireless_debug      无线调试
 
 硬件层
 └── zf_driver           逐飞驱动库
@@ -406,10 +280,6 @@ smart_car_control() 主控制
 │    └→ 元素处理：              │
 │       ├ 停车 → 位置控制        │
 │       ├ 坡道 → 增速1.3倍       │
-│       └ 障碍 → 避障状态机      │
-│          ├ TURNING_LEFT        │
-│          ├ BYPASSING           │
-│          └ RETURNING           │
 └───────────────────────────────┘
     ↓
 ┌───────────────────────┐
@@ -421,7 +291,7 @@ smart_car_control() 主控制
 ┌───────────────────────┐
 │ 6. 方向控制           │
 │ 手动舵机？            │
-│  ├ 是 → 使用避障角度  │
+│  ├ 是 → 使用指定角度  │
 │  └ 否 → 方向PID计算   │
 └───────────────────────┘
     ↓
@@ -442,8 +312,6 @@ OTSU阈值     →    二值化
     ↓                   ↓
 偏差计算     →    元素识别
     ↓                   ↓
-方向PID      ←    避障状态机
-    ↓                   ↓
 舵机角度     ←    手动角度
 
 TIM编码器采集 → 速度计算
@@ -463,7 +331,6 @@ TIM编码器采集 → 速度计算
 - **元素识别**: 每帧视觉处理后触发（~5ms）
 - **避障处理**: 集成在主控制中（<1ms）
 - **PID计算**: 每次主控制周期（3个PID共<2ms）
-- **无线通信**: 100ms（数据发送周期，可选）
 
 ---
 
@@ -538,38 +405,7 @@ float pid_get_error(pid_t *pid);
 float pid_get_output(pid_t *pid);
 ```
 
-### 智能避障模块（v1.5新增）
-
-#### 避障状态（只读，由系统自动管理）
-```c
-// 避障状态枚举（在smart_car.h中定义）
-typedef enum {
-    AVOID_IDLE = 0,          // 未避障
-    AVOID_TURNING_LEFT,      // 左转避障
-    AVOID_BYPASSING,         // 绕行中
-    AVOID_RETURNING          // 返回赛道
-} obstacle_avoid_state_enum;
-
-// 访问避障状态
-smart_car.avoid_state                // 当前避障状态
-smart_car.avoid_start_distance       // 避障起始位置
-smart_car.avoid_direction            // 避障方向(0=左,1=右)
-```
-
-#### 避障参数配置
-```c
-// 在smart_car.h中定义的避障参数
-#define OBSTACLE_AVOID_ANGLE    25          // 避障转向角度(度)
-#define OBSTACLE_AVOID_DISTANCE 0.3f        // 避障绕行距离(米)
-#define OBSTACLE_BYPASS_SPEED   2400        // 绕行速度
-```
-
-**注意事项：**
-- 避障过程完全自动化，由元素识别触发
-- 需要启用位置控制 (`smart_car_enable_position_control()`)
-- 避障过程中使用手动舵机控制，不会与方向PID冲突
-
-### 电机控制模块（v1.1优化DRV8701）
+### 电机控制模块（DRV8701）
 
 #### 电机驱动
 ```c
@@ -594,7 +430,7 @@ void car_turn(int16 speed, int16 angle);                  // 转向行驶
 void car_stop(void);                                       // 停车
 ```
 
-### 元素识别模块（v1.2优化）
+### 元素识别模块
 ```c
 void element_recognition_init(void);                        // 初始化元素识别
 void element_recognition_process(void);                     // 元素识别处理（中断调用）
@@ -609,20 +445,6 @@ uint8 element_detect_ramp(void);                            // 检测坡道
 uint8 element_detect_parking(void);                         // 检测停车点
 uint8 element_detect_obstacle(void);                        // 检测障碍物
 ```
-
-### 位置控制模块（v1.2）
-```c
-void position_control_init(void);                   // 初始化位置控制
-void position_update(void);                         // 更新位置（中断调用）
-void position_enable(void);                         // 启用位置控制
-void position_disable(void);                        // 禁用位置控制
-void position_set_target(float distance);           // 设置目标距离
-void position_stop_at(float distance);              // 定点停车
-uint8 position_is_reached(void);                    // 判断是否到达
-float position_get_current_distance(void);          // 获取当前距离
-void position_reset(void);                          // 重置位置
-```
-
 ### 视觉模块
 ```c
 void vision_init(void);                             // 初始化视觉模块
@@ -631,32 +453,6 @@ void vision_find_track_edge(void);                  // 边界检测
 int16 vision_get_deviation(void);                   // 获取偏差(-80~80)
 uint8 otsu_threshold(uint8 *image, uint32 size);   // OTSU自动阈值
 void image_binarization(uint8 threshold);           // 二值化
-```
-
-### 路径规划模块（v1.4）
-
-#### 初始化与配置
-```c
-void path_planning_init(void);                              // 初始化路径规划器
-void path_planning_reset(void);                             // 重置规划器
-void smart_car_enable_path_planning(void);                  // 启用路径规划
-void smart_car_disable_path_planning(void);                 // 禁用路径规划
-void smart_car_set_decision_mode(decision_mode_enum mode);  // 设置决策模式
-```
-
-#### 路径管理
-```c
-void path_add_node(path_node_t node);              // 添加路径节点
-void path_clear_nodes(void);                       // 清空节点队列
-void path_plan_for_element(element_type_enum e);   // 为元素规划路径
-```
-
-#### 路径执行
-```c
-void path_execute_current_node(void);              // 执行当前节点
-uint8 path_is_node_completed(void);                // 判断节点是否完成
-void path_next_node(void);                         // 切换到下一节点
-void path_auto_decision(void);                     // 自动决策（已集成）
 ```
 
 ### 主控制模块
@@ -669,64 +465,9 @@ void smart_car_pause(void);                         // 暂停
 void smart_car_debug_mode(void);                    // 调试模式
 void smart_car_display_info(void);                  // 显示信息
 ```
-
-### 无线调试模块（v1.3）
-```c
-void wireless_debug_init(void);                     // 初始化无线调试
-void wireless_debug_handler(void);                  // 处理函数（主循环调用）
-void wireless_uart_callback(void);                  // 串口中断回调
-void wireless_send_all_data(void);                  // 发送所有数据
-void wireless_send_string(const char* str);         // 发送字符串
-```
-
----
-
 ## 参数调优指南
 
-### 1. 路径规划权重
-
-**保守策略（稳定优先）：**
-```c
-path_planner.distance_weight = 0.3f;
-path_planner.time_weight = 0.2f;
-path_planner.risk_weight = 0.5f;  // 高风险权重
-```
-
-**激进策略（速度优先）：**
-```c
-path_planner.distance_weight = 0.2f;
-path_planner.time_weight = 0.6f;  // 高时间权重
-path_planner.risk_weight = 0.2f;
-```
-
-**均衡策略：**
-```c
-path_planner.distance_weight = 0.4f;
-path_planner.time_weight = 0.3f;
-path_planner.risk_weight = 0.3f;
-```
-
-### 2. 转向偏好
-
-**无偏好（纯成本决策）：**
-```c
-path_planner.prefer_left = 50;
-path_planner.prefer_right = 50;
-```
-
-**偏好左转：**
-```c
-path_planner.prefer_left = 70;
-path_planner.prefer_right = 30;
-```
-
-**强制右转（右圆岛赛道）：**
-```c
-path_planner.prefer_left = 10;
-path_planner.prefer_right = 90;
-```
-
-### 3. 元素识别阈值
+### 1. 元素识别阈值
 
 详见 `element_recognition.h`:
 ```c
@@ -769,29 +510,17 @@ path_planner.prefer_right = 90;
 
 ## 性能指标
 
-### 路径规划（v1.4）
-- **规划延迟**: <5ms（自动模式），<1ms（手动模式）
-- **决策延迟**: <10ms（最优模式），<2ms（自动模式）
-- **内存占用**: 约1.5KB（20节点队列 + 规划器状态）
-- **CPU占用**: 约3%（10ms周期调用）
-
-### 元素识别（v1.2）
+### 元素识别
 - **识别延迟**: <5ms（单个元素）
 - **识别精度**: 95%+（需根据赛道调整阈值）
 - **内存占用**: 约1KB
 - **CPU占用**: 约5%
 
-### 位置控制（v1.2）
+### 位置控制
 - **位置精度**: ±5cm（默认容差50脉冲）
 - **响应时间**: 100ms（到达稳定）
 - **内存占用**: 约0.5KB
 - **CPU占用**: 约2%
-
-### 无线调试（v1.3）
-- **通信延迟**: <20ms
-- **内存占用**: 约1KB（缓冲区）
-- **CPU占用**: 约5%（包含数据发送）
-- **中断延迟**: <1ms
 
 ### 系统总体
 - **总内存占用**: 约5-6KB
@@ -824,19 +553,8 @@ int core0_main(void)
     tft180_clear();
     tft180_show_string(0, 0, "Race Mode");
     
-    // 配置最优决策模式
-    smart_car_set_decision_mode(DECISION_MODE_OPTIMAL);
-    
-    // 激进策略
-    path_planner.distance_weight = 0.2f;
-    path_planner.time_weight = 0.6f;
-    path_planner.risk_weight = 0.2f;
-    
     // 启用所有功能
-    smart_car_enable_position_control();
     smart_car_enable_element_recognition();
-    smart_car_enable_path_planning();
-    
     cpu_wait_event_ready();
     
     // 开始比赛
@@ -852,9 +570,6 @@ int core0_main(void)
         
         // 显示信息
         smart_car_display_info_tft180();
-        
-        // 无线调试处理（可选）
-        // wireless_debug_handler();
         
         // 检测停车点
         if (smart_car_get_current_element() == ELEMENT_PARKING)
@@ -882,169 +597,19 @@ int core0_main(void)
     
     while(TRUE);  // 结束后停留
 }
-```
 
-### 示例2: 自定义路径
-```c
-#include "zf_common_headfile.h"
-#include "car_headfile.h"
-
-int core0_main(void)
-{
-    clock_init();
-    debug_init();
-    
-    smart_car_init();
-    pit_ms_init(PIT_CH0, 10);
-    tft180_init();
-    
-    // 手动模式
-    smart_car_set_decision_mode(DECISION_MODE_MANUAL);
-    
-    // S弯路径
-    path_node_t nodes[] = {
-        {PATH_RIGHT_TURN, .distance=0.8f, .target_speed=2500, .target_angle=20},
-        {PATH_STRAIGHT,   .distance=0.3f, .target_speed=2800, .target_angle=0},
-        {PATH_LEFT_TURN,  .distance=0.8f, .target_speed=2500, .target_angle=-20},
-        {PATH_STRAIGHT,   .distance=1.5f, .target_speed=3500, .target_angle=0}
-    };
-    
-    for (int i = 0; i < 4; i++)
-    {
-        path_add_node(nodes[i]);
-    }
-    
-    path_planner.state = PATH_STATE_EXECUTING;
-    smart_car_enable_path_planning();
-    
-    cpu_wait_event_ready();
-    smart_car_start();
-    
-    while(TRUE)
-    {
-        if (vision.image_ready)
-        {
-            vision_image_process();
-        }
-        display_path_info_tft180();  // 显示路径执行状态
-    }
-}
-```
-
-### 示例3: 动态偏好调整
-```c
-#include "zf_common_headfile.h"
-#include "car_headfile.h"
-
-int core0_main(void)
-{
-    clock_init();
-    debug_init();
-    
-    smart_car_init();
-    pit_ms_init(PIT_CH0, 10);
-    tft180_init();
-    
-    smart_car_set_decision_mode(DECISION_MODE_OPTIMAL);
-    smart_car_enable_element_recognition();
-    smart_car_enable_path_planning();
-    
-    cpu_wait_event_ready();
-    smart_car_start();
-    
-    while(TRUE)
-    {
-        if (vision.image_ready)
-        {
-            vision_image_process();
-        }
-        
-        // 根据元素计数动态调整偏好
-        if (path_planner.circle_count > 2)
-        {
-            path_planner.prefer_right = 70;
-            path_planner.prefer_left = 30;
-        }
-        
-        if (path_planner.obstacle_count > 3)
-        {
-            path_planner.risk_weight = 0.5f;  // 更保守
-        }
-        
-        // 显示当前状态
-        display_path_info_tft180();
-        
-        system_delay_ms(100);
-    }
-}
-```
-
----
-
-## 文档索引
-
-### 核心文档
-- 📘 `README.md` - 本文档（v1.4完整说明）
-- 📗 `DEVELOPMENT_GUIDE.md` - 开发指南（3000+行完整开发文档）🆕
-- 📙 `USAGE_EXAMPLES.md` - 使用示例集（18个完整示例）🆕
-- 📕 `PATH_PLANNING_GUIDE.md` - 路径规划详细指南（70+ 页）
-- � `POSITION_ELEMENT_GUIDE.md` - 位置控制+元素识别指南
-- � `WIRELESS_DEBUG_GUIDE.md` - 无线调试完整指南
-- � `TFT180_USAGE_GUIDE.md` - TFT180显示屏使用指南🆕
-
-### 辅助文档
-- 🚀 `WIRELESS_QUICK_START.md` - 无线调试5分钟快速开始
-- � `FEATURES_OVERVIEW.md` - 系统功能概览
-- 📝 `CHANGELOG.md` - 版本更新历史
-- 📋 `PROJECT_CLEANUP_REPORT.md` - 项目清理报告🆕
-
-### 示例代码
-- 💻 `path_planning_example.c` - 路径规划示例
-- 💻 `position_element_example.c` - 位置控制+元素识别示例
-- 💻 `wireless_debug_example.c` - 无线调试示例
-- � `smart_car_example.c` - 基础使用示例
 
 ---
 
 ## 常见问题
 
-### Q1: 路径规划不生效？
-**A**: 检查以下项：
-1. 是否调用 `smart_car_enable_path_planning()`
-2. 是否启用元素识别 `smart_car_enable_element_recognition()`
-3. 决策模式是否正确设置
-4. 元素识别参数是否能正常检测元素
-
-### Q2: 路径选择不合理？
-**A**: 调整决策参数：
-1. 权重设置（`distance_weight`, `time_weight`, `risk_weight`）
-2. 转向偏好（`prefer_left`, `prefer_right`）
-3. 节点优先级（`node.priority`）
-4. 使用手动模式测试特定路径
-
-### Q3: 元素识别不准确？
+### Q1: 元素识别不准确？
 **A**: 调整识别阈值：
 1. 检查视觉采集质量
 2. 调整各元素阈值（见 `element_recognition.h`）
 3. 使用无线调试实时查看识别状态
-4. 参考 `POSITION_ELEMENT_GUIDE.md` 调优章节
 
-### Q4: 位置控制不精确？
-**A**: 校准编码器：
-1. 运行校准示例（`position_element_example.c` 示例1）
-2. 更新 `ENCODER_PULSES_PER_METER` 常量
-3. 调整 `POSITION_TOLERANCE` 容差
-4. 检查PID参数
-
-### Q5: 无线调试无法连接？
-**A**: 检查硬件和配置：
-1. 蓝牙模块供电和接线
-2. TX/RX是否交叉连接
-3. 波特率是否为115200
-4. 是否调用 `wireless_uart_callback()` 在中断中
-5. 参考 `WIRELESS_QUICK_START.md`
-
-### Q6: 如何组合使用多个功能？
+### Q2: 如何组合使用多个功能？
 **A**: 按照推荐顺序集成：
 1. 先测试基础驱动（电机+舵机）
 2. 添加视觉循迹
@@ -1065,7 +630,6 @@ int core0_main(void)
 - 舵机: 1个数字舵机（前轮转向）
 - 摄像头: 总钻风摄像头或其他兼容模块
 - 编码器: 2个增量式编码器（后轮测速）
-- 蓝牙模块: CH9141/HC-05/HC-06（可选，用于无线调试）
 
 ### 软件要求
 - IDE: AURIX Development Studio (ADS) v1.10.2+
@@ -1078,16 +642,6 @@ int core0_main(void)
 - 标准C库
 
 ---
-
-## 贡献与支持
-
-### 问题反馈
-如遇到问题，请提供以下信息：
-- 系统版本（v1.0-v1.4）
-- 使用的功能模块
-- 详细问题描述
-- 相关参数配置
-- 错误信息或异常现象
 
 ### 功能建议
 欢迎提出新功能建议：
@@ -1102,33 +656,5 @@ int core0_main(void)
 
 ### v1.5 计划
 - [ ] Flash参数存储（保存校准值）
-- [ ] 更多元素类型（分叉、隧道）
-- [ ] 地图记忆功能
-- [ ] 学习型偏好调整
 - [ ] 上位机监控软件
 
-### 长期规划
-- [ ] 多车协同
-- [ ] 视觉SLAM
-- [ ] 深度学习元素识别
-- [ ] 云端数据分析
-
----
-
-## 许可证
-
-本项目基于逐飞科技开源库开发，遵循相应开源协议。
-
----
-
-## 致谢
-
-- 逐飞科技 - 提供TC264开源库
-- Infineon - AURIX MCU和iLLD库
-- 所有测试和反馈的用户
-
----
-
-**最后更新**: 2025-11-12
-**当前版本**: v1.4 - 路径规划与智能决策
-**文档维护**: AI Assistant
