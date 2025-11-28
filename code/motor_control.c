@@ -81,7 +81,7 @@ void motor_init(void)
     car.left_motor.target_speed  = 0;
     car.left_motor.current_speed = 0;
     car.left_motor.pwm_duty      = 0;
-    car.left_motor.direction     = 1;
+    car.left_motor.direction     = 0;
     
     // ========== 右电机左电机初始化，DRV8701驱动模式 ==========
     car.right_motor.pwm_pin       = MOTOR_RIGHT_PWM;
@@ -91,7 +91,7 @@ void motor_init(void)
     car.right_motor.target_speed  = 0;
     car.right_motor.current_speed = 0;
     car.right_motor.pwm_duty      = 0;
-    car.right_motor.direction     = 1;
+    car.right_motor.direction     = 0;
     
     // ========== 转向舵机初始化 ==========
     car.steering_servo.pwm_pin      = SERVO_PWM_PIN;
