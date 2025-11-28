@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc10916a --dep-file=code/vision_track.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\code -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_common -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_components -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_device -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/vision_track.src ../code/vision_track.c"
+	.compiler_invocation	"ctc -f cc41524a --dep-file=code/vision_track.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\code -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_common -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_components -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_device -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\admin\\\\AURIX-v1.10.24-workspace\\\\Seekfree_TC264_Opensource_Library\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/vision_track.src ../code/vision_track.c"
 	.compiler_name		"ctc"
 	;source	'../code/vision_track.c'
 
@@ -18,9 +18,9 @@ my_adapt_threshold:	.type	func
 	lea	a10,[a10]-2064
 .L417:
 	mul	d15,d4,d5
-.L1142:
+.L1139:
 	mov	d0,#4
-.L1143:
+.L1140:
 	div	e8,d15,d0
 .L418:
 	mov	d15,#0
@@ -33,28 +33,28 @@ my_adapt_threshold:	.type	func
 .L3:
 	mul	d15,d0,#4
 	addsc.a	a15,a10,d15,#0
+.L1141:
+	mov	d15,#0
+.L1142:
+	st.w	[a15],d15
+.L1143:
+	mul	d15,d0,#4
+	addsc.a	a15,a10,d15,#0
 .L1144:
 	mov	d15,#0
 .L1145:
-	st.w	[a15],d15
-.L1146:
-	mul	d15,d0,#4
-	addsc.a	a15,a10,d15,#0
-.L1147:
-	mov	d15,#0
-.L1148:
 	st.w	[a15]1024,d15
-.L1149:
+.L1146:
 	add	d0,#1
 .L2:
 	mov	d15,#256
-.L1150:
+.L1147:
 	jlt	d0,d15,.L3
 .L395:
 	mov	d10,#0
 .L422:
 	mov	d0,#0
-.L1151:
+.L1148:
 	j	.L4
 .L5:
 	mov	d1,#0
@@ -62,63 +62,63 @@ my_adapt_threshold:	.type	func
 	j	.L6
 .L7:
 	madd	d15,d1,d0,d4
-.L1152:
+.L1149:
 	addsc.a	a15,a4,d15,#0
 	ld.bu	d15,[a15]
-.L1153:
+.L1150:
 	mul	d15,d15,#4
 	addsc.a	a15,a10,d15,#0
-.L1154:
+.L1151:
 	madd	d15,d1,d0,d4
-.L1155:
+.L1152:
 	addsc.a	a2,a4,d15,#0
 	ld.bu	d15,[a2]
-.L1156:
+.L1153:
 	mul	d15,d15,#4
 	addsc.a	a2,a10,d15,#0
 	ld.w	d15,[a2]
-.L1157:
+.L1154:
 	add	d15,#1
 	st.w	[a15],d15
-.L1158:
+.L1155:
 	madd	d15,d1,d0,d4
-.L1159:
+.L1156:
 	addsc.a	a15,a4,d15,#0
 	ld.bu	d15,[a15]
-.L1160:
+.L1157:
 	add	d10,d15
-.L1161:
+.L1158:
 	add	d1,#2
 .L6:
 	jlt	d1,d4,.L7
-.L1162:
+.L1159:
 	add	d0,#2
 .L4:
 	jlt	d0,d5,.L5
-.L1163:
+.L1160:
 	mov	d0,#0
-.L1164:
+.L1161:
 	j	.L8
 .L9:
 	mul	d15,d0,#4
 	addsc.a	a15,a10,d15,#0
-.L1165:
+.L1162:
 	mul	d15,d0,#4
 	addsc.a	a2,a10,d15,#0
 	ld.w	d15,[a2]
-.L1166:
+.L1163:
 	itof	d15,d15
-.L1167:
+.L1164:
 	itof	d1,d8
-.L1168:
+.L1165:
 	div.f	d15,d15,d1
-.L1169:
+.L1166:
 	st.w	[a15]1024,d15
-.L1170:
+.L1167:
 	add	d0,#1
 .L8:
 	mov	d15,#256
-.L1171:
+.L1168:
 	jlt	d0,d15,.L9
 .L397:
 	mov	d15,#0
@@ -136,12 +136,12 @@ my_adapt_threshold:	.type	func
 	mul	d15,d12,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]1024
-.L1172:
+.L1169:
 	ld.w	d0,[a10]2048
 .L430:
 	add.f	d0,d0,d15
 	st.w	[a10]2048,d0
-.L1173:
+.L1170:
 	itof	d0,d12
 .L431:
 	mul	d15,d12,#4
@@ -149,9 +149,9 @@ my_adapt_threshold:	.type	func
 	ld.w	d15,[a15]1024
 .L432:
 	madd.f	d11,d11,d0,d15
-.L1174:
+.L1171:
 	movh	d15,#16256
-.L1175:
+.L1172:
 	ld.w	d0,[a10]2048
 .L434:
 	sub.f	d15,d15,d0
@@ -159,7 +159,7 @@ my_adapt_threshold:	.type	func
 	div.u	e0,d10,d8
 .L435:
 	utof	d0,d0
-.L1176:
+.L1173:
 	sub.f	d1,d0,d11
 .L438:
 	ld.w	d0,[a10]2048
@@ -171,17 +171,17 @@ my_adapt_threshold:	.type	func
 	add.f	d14,d11,d1
 .L433:
 	sub.f	d4,d0,d14
-.L1177:
+.L1174:
 	movh	d5,#16384
 	call	pow
 .L439:
 	mul.f	d15,d15,d2
 .L437:
 	sub.f	d4,d13,d14
-.L1178:
+.L1175:
 	movh	d5,#16384
 	call	pow
-.L1179:
+.L1176:
 	ld.w	d0,[a10]2048
 .L443:
 	madd.f	d0,d15,d0,d2
@@ -191,11 +191,11 @@ my_adapt_threshold:	.type	func
 	cmp.f	d15,d0,d15
 .L446:
 	extr.u	d15,d15,#2,#1
-.L1180:
+.L1177:
 	jeq	d15,#0,.L12
-.L1181:
+.L1178:
 	st.w	[a10]2052,d0
-.L1182:
+.L1179:
 	st.w	[a10]2056,d12
 .L12:
 	ld.w	d15,[a10]2052
@@ -203,15 +203,15 @@ my_adapt_threshold:	.type	func
 	cmp.f	d15,d0,d15
 .L448:
 	extr.u	d15,d15,#0,#1
-.L1183:
+.L1180:
 	jeq	d15,#0,.L13
-.L1184:
+.L1181:
 	j	.L14
 .L13:
 	add	d12,#1
 .L10:
 	mov	d15,#256
-.L1185:
+.L1182:
 	jlt	d12,d15,.L11
 .L14:
 	ld.w	d2,[a10]2056
@@ -241,34 +241,34 @@ otsu_threshold:	.type	func
 	movh.a	a15,#@his(.1.ini)
 	lea	a15,[a15]@los(.1.ini)
 	lea	a15,[a15]0
-.L889:
+.L886:
 	lea	a2,[a10]0
 	lea	a5,255
 .L16:
 	ld.w	d15,[a15+]
 	st.w	[a2+],d15
 	loop	a5,.L16
-.L890:
+.L887:
 	mov	d0,#0
 .L451:
 	j	.L17
 .L18:
 	addsc.a	a15,a4,d0,#0
 	ld.bu	d15,[a15]
-.L891:
+.L888:
 	mul	d15,d15,#4
 	addsc.a	a15,a10,d15,#0
-.L892:
+.L889:
 	addsc.a	a2,a4,d0,#0
 	ld.bu	d15,[a2]
-.L893:
+.L890:
 	mul	d15,d15,#4
 	addsc.a	a2,a10,d15,#0
 	ld.w	d15,[a2]
-.L894:
+.L891:
 	add	d15,#1
 	st.w	[a15],d15
-.L895:
+.L892:
 	add	d0,#1
 .L17:
 	jlt.u	d0,d14,.L18
@@ -276,19 +276,19 @@ otsu_threshold:	.type	func
 	mov	d9,#0
 .L453:
 	mov	d0,#0
-.L896:
+.L893:
 	j	.L19
 .L20:
 	mul	d15,d0,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L897:
+.L894:
 	madd	d9,d9,d0,d15
-.L898:
+.L895:
 	add	d0,#1
 .L19:
 	mov	d15,#256
-.L899:
+.L896:
 	jlt.u	d0,d15,.L20
 .L334:
 	mov	d10,#0
@@ -308,33 +308,33 @@ otsu_threshold:	.type	func
 	mul	d15,d8,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L900:
+.L897:
 	add	d10,d15
-.L901:
+.L898:
 	jne	d10,#0,.L23
-.L902:
+.L899:
 	j	.L24
 .L23:
 	sub	d11,d14,d10
 .L460:
 	jne	d11,#0,.L25
-.L903:
+.L900:
 	j	.L26
 .L25:
 	mul	d15,d8,#4
 	addsc.a	a15,a10,d15,#0
 	ld.w	d15,[a15]
-.L904:
+.L901:
 	madd	d12,d12,d8,d15
 .L340:
 	mul	d15,d12,d11
-.L905:
+.L902:
 	sub	d0,d9,d12
-.L906:
+.L903:
 	mul	d0,d10
 .L461:
 	sub	d15,d0
-.L907:
+.L904:
 	mov	e4,d15
 .L462:
 	mov	e6,d15
@@ -342,14 +342,14 @@ otsu_threshold:	.type	func
 	call	__ll_mul64
 .L464:
 	mov	e4,d3,d2
-.L908:
+.L905:
 	mul	d6,d10,d11
 	mov	d7,#0
-.L909:
+.L906:
 	call	__ll_div64
 .L465:
 	jge.u	d13,d2,.L27
-.L910:
+.L907:
 	mov	d13,d2
 .L466:
 	st.w	[a10]1024,d8
@@ -358,7 +358,7 @@ otsu_threshold:	.type	func
 	add	d8,#1
 .L21:
 	mov	d15,#256
-.L911:
+.L908:
 	jlt.u	d8,d15,.L22
 .L26:
 	ld.w	d2,[a10]1024
@@ -389,40 +389,40 @@ morphology_erode:	.type	func
 	j	.L31
 .L32:
 	mul	d15,d0,#188
-.L1190:
+.L1187:
 	movh.a	a15,#@his(_999001_temp_image)
 	lea	a15,[a15]@los(_999001_temp_image)
-.L1191:
+.L1188:
 	addsc.a	a15,a15,d15,#0
-.L1192:
+.L1189:
 	addsc.a	a15,a15,d1,#0
-.L1193:
+.L1190:
 	mul	d15,d0,#188
-.L1194:
+.L1191:
 	movh.a	a2,#@his(image_data)
 	lea	a2,[a2]@los(image_data)
-.L1195:
+.L1192:
 	addsc.a	a2,a2,d15,#0
-.L1196:
+.L1193:
 	addsc.a	a2,a2,d1,#0
 	ld.bu	d15,[a2]
-.L1197:
+.L1194:
 	st.b	[a15],d15
-.L1198:
+.L1195:
 	add	d1,#1
 .L31:
 	mov	d15,#188
-.L1199:
+.L1196:
 	jlt.u	d1,d15,.L32
-.L1200:
+.L1197:
 	add	d0,#1
 .L29:
 	mov	d15,#120
-.L1201:
+.L1198:
 	jlt.u	d0,d15,.L30
-.L1202:
+.L1199:
 	mov	d0,#1
-.L1203:
+.L1200:
 	j	.L33
 .L34:
 	mov	d1,#1
@@ -430,84 +430,84 @@ morphology_erode:	.type	func
 	j	.L35
 .L36:
 	add	d15,d0,#-1
+.L1201:
+	mul	d15,d15,#188
+.L1202:
+	movh.a	a15,#@his(_999001_temp_image)
+	lea	a15,[a15]@los(_999001_temp_image)
+.L1203:
+	addsc.a	a15,a15,d15,#0
 .L1204:
-	mul	d15,d15,#188
+	addsc.a	a15,a15,d1,#0
+	ld.bu	d15,[a15]
 .L1205:
-	movh.a	a15,#@his(_999001_temp_image)
-	lea	a15,[a15]@los(_999001_temp_image)
-.L1206:
-	addsc.a	a15,a15,d15,#0
-.L1207:
-	addsc.a	a15,a15,d1,#0
-	ld.bu	d15,[a15]
-.L1208:
 	jeq	d15,#0,.L37
-.L1209:
+.L1206:
 	add	d15,d0,#1
-.L1210:
+.L1207:
 	mul	d15,d15,#188
-.L1211:
+.L1208:
 	movh.a	a15,#@his(_999001_temp_image)
 	lea	a15,[a15]@los(_999001_temp_image)
-.L1212:
+.L1209:
 	addsc.a	a15,a15,d15,#0
-.L1213:
+.L1210:
 	addsc.a	a15,a15,d1,#0
 	ld.bu	d15,[a15]
-.L1214:
+.L1211:
 	jeq	d15,#0,.L38
-.L1215:
+.L1212:
 	mul	d15,d0,#188
-.L1216:
+.L1213:
 	movh.a	a15,#@his(_999001_temp_image)
 	lea	a15,[a15]@los(_999001_temp_image)
-.L1217:
+.L1214:
 	addsc.a	a15,a15,d15,#0
-.L1218:
+.L1215:
 	addsc.a	a15,a15,d1,#0
 	ld.bu	d15,[a15]-1
-.L1219:
+.L1216:
 	jeq	d15,#0,.L39
-.L1220:
+.L1217:
 	mul	d15,d0,#188
-.L1221:
+.L1218:
 	movh.a	a15,#@his(_999001_temp_image)
 	lea	a15,[a15]@los(_999001_temp_image)
-.L1222:
+.L1219:
 	addsc.a	a15,a15,d15,#0
-.L1223:
+.L1220:
 	addsc.a	a15,a15,d1,#0
 	ld.bu	d15,[a15]1
-.L1224:
+.L1221:
 	jne	d15,#0,.L40
 .L39:
 .L38:
 .L37:
 	mul	d15,d0,#188
-.L1225:
+.L1222:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L1226:
+.L1223:
 	addsc.a	a15,a15,d15,#0
-.L1227:
+.L1224:
 	addsc.a	a15,a15,d1,#0
-.L1228:
+.L1225:
 	mov	d15,#0
-.L1229:
+.L1226:
 	st.b	[a15],d15
 .L40:
 	add	d1,#1
 .L35:
 	mov	d15,#187
-.L1230:
+.L1227:
 	jlt	d1,d15,.L36
-.L1231:
+.L1228:
 	add	d0,#1
 .L33:
 	mov	d15,#119
-.L1232:
+.L1229:
 	jlt	d0,d15,.L34
-.L1233:
+.L1230:
 	ret
 .L407:
 	
@@ -532,38 +532,38 @@ morphology_dilate:	.type	func
 	j	.L43
 .L44:
 	mul	d15,d0,#188
-.L1238:
+.L1235:
 	movh.a	a15,#@his(_999002_temp_image)
 	lea	a15,[a15]@los(_999002_temp_image)
-.L1239:
+.L1236:
 	addsc.a	a15,a15,d15,#0
-.L1240:
+.L1237:
 	addsc.a	a15,a15,d1,#0
-.L1241:
+.L1238:
 	mul	d15,d0,#188
-.L1242:
+.L1239:
 	movh.a	a2,#@his(image_data)
 	lea	a2,[a2]@los(image_data)
-.L1243:
+.L1240:
 	addsc.a	a2,a2,d15,#0
-.L1244:
+.L1241:
 	addsc.a	a2,a2,d1,#0
 	ld.bu	d15,[a2]
-.L1245:
+.L1242:
 	st.b	[a15],d15
-.L1246:
+.L1243:
 	add	d1,#1
 .L43:
 	mov	d15,#188
-.L1247:
+.L1244:
 	jlt.u	d1,d15,.L44
-.L1248:
+.L1245:
 	add	d0,#1
 .L41:
 	mov	d15,#120
-.L1249:
+.L1246:
 	jlt.u	d0,d15,.L42
-.L1250:
+.L1247:
 	mov	d1,#1
 .L471:
 	j	.L45
@@ -573,92 +573,92 @@ morphology_dilate:	.type	func
 	j	.L47
 .L48:
 	add	d15,d1,#-1
+.L1248:
+	mul	d15,d15,#188
+.L1249:
+	movh.a	a15,#@his(_999002_temp_image)
+	lea	a15,[a15]@los(_999002_temp_image)
+.L1250:
+	addsc.a	a15,a15,d15,#0
 .L1251:
-	mul	d15,d15,#188
+	addsc.a	a15,a15,d2,#0
+	ld.bu	d0,[a15]
 .L1252:
-	movh.a	a15,#@his(_999002_temp_image)
-	lea	a15,[a15]@los(_999002_temp_image)
+	mov	d15,#255
 .L1253:
-	addsc.a	a15,a15,d15,#0
-.L1254:
-	addsc.a	a15,a15,d2,#0
-	ld.bu	d0,[a15]
-.L1255:
-	mov	d15,#255
-.L1256:
 	jeq	d15,d0,.L49
-.L1257:
+.L1254:
 	add	d15,d1,#1
-.L1258:
+.L1255:
 	mul	d15,d15,#188
-.L1259:
+.L1256:
 	movh.a	a15,#@his(_999002_temp_image)
 	lea	a15,[a15]@los(_999002_temp_image)
-.L1260:
+.L1257:
 	addsc.a	a15,a15,d15,#0
-.L1261:
+.L1258:
 	addsc.a	a15,a15,d2,#0
 	ld.bu	d0,[a15]
-.L1262:
+.L1259:
 	mov	d15,#255
-.L1263:
+.L1260:
 	jeq	d15,d0,.L50
-.L1264:
+.L1261:
 	mul	d15,d1,#188
-.L1265:
+.L1262:
 	movh.a	a15,#@his(_999002_temp_image)
 	lea	a15,[a15]@los(_999002_temp_image)
-.L1266:
+.L1263:
 	addsc.a	a15,a15,d15,#0
-.L1267:
+.L1264:
 	addsc.a	a15,a15,d2,#0
 	ld.bu	d0,[a15]-1
-.L1268:
+.L1265:
 	mov	d15,#255
-.L1269:
+.L1266:
 	jeq	d15,d0,.L51
-.L1270:
+.L1267:
 	mul	d15,d1,#188
-.L1271:
+.L1268:
 	movh.a	a15,#@his(_999002_temp_image)
 	lea	a15,[a15]@los(_999002_temp_image)
-.L1272:
+.L1269:
 	addsc.a	a15,a15,d15,#0
-.L1273:
+.L1270:
 	addsc.a	a15,a15,d2,#0
 	ld.bu	d0,[a15]1
-.L1274:
+.L1271:
 	mov	d15,#255
-.L1275:
+.L1272:
 	jne	d15,d0,.L52
 .L51:
 .L50:
 .L49:
 	mul	d15,d1,#188
-.L1276:
+.L1273:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L1277:
+.L1274:
 	addsc.a	a15,a15,d15,#0
-.L1278:
+.L1275:
 	addsc.a	a15,a15,d2,#0
-.L1279:
+.L1276:
 	mov	d15,#255
-.L1280:
+.L1277:
 	st.b	[a15],d15
 .L52:
 	add	d2,#1
 .L47:
 	mov	d15,#187
-.L1281:
+.L1278:
 	jlt	d2,d15,.L48
-.L1282:
+.L1279:
 	add	d1,#1
 .L45:
 	mov	d15,#119
-.L1283:
+.L1280:
 	jlt	d1,d15,.L46
-.L1284:
+.L1281:
 	ret
 .L411:
 	
@@ -684,50 +684,50 @@ image_binarization:	.type	func
 	j	.L55
 .L56:
 	mul	d15,d0,#188
-.L916:
+.L913:
 	movh.a	a15,#@his(mt9v03x_image)
 	lea	a15,[a15]@los(mt9v03x_image)
-.L917:
+.L914:
 	addsc.a	a15,a15,d15,#0
-.L918:
+.L915:
 	addsc.a	a15,a15,d1,#0
 	ld.bu	d15,[a15]
-.L919:
+.L916:
 	jge.u	d4,d15,.L57
-.L920:
+.L917:
 	mov	d15,#255
-.L921:
+.L918:
 	j	.L58
 .L57:
 	mov	d15,#0
 .L58:
 	mul	d2,d0,#188
-.L922:
+.L919:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L923:
+.L920:
 	addsc.a	a15,a15,d2,#0
-.L924:
+.L921:
 	addsc.a	a15,a15,d1,#0
-.L925:
+.L922:
 	st.b	[a15],d15
-.L926:
+.L923:
 	add	d1,#1
 .L55:
 	mov	d15,#188
-.L927:
+.L924:
 	jlt.u	d1,d15,.L56
-.L928:
+.L925:
 	add	d0,#1
 .L53:
 	mov	d15,#120
-.L929:
+.L926:
 	jlt.u	d0,d15,.L54
-.L930:
+.L927:
 	call	morphology_erode
 .L474:
 	call	morphology_dilate
-.L931:
+.L928:
 	ret
 .L343:
 	
@@ -814,148 +814,148 @@ vision_find_track_edge:	.type	func
 .L482:
 	movh.a	a15,#@his(Longest_White_Column_Left)
 	lea	a15,[a15]@los(Longest_White_Column_Left)
-.L593:
+.L590:
 	mov	d0,#0
-.L594:
+.L591:
 	st.w	[a15],d0
-.L595:
+.L592:
 	movh.a	a15,#@his(Longest_White_Column_Left)
 	lea	a15,[a15]@los(Longest_White_Column_Left)
-.L596:
+.L593:
 	mov	d15,#0
-.L597:
+.L594:
 	st.w	[a15]4,d15
+.L595:
+	movh.a	a15,#@his(Longest_White_Column_Right)
+	lea	a15,[a15]@los(Longest_White_Column_Right)
+.L596:
+	mov	d0,#0
+.L597:
+	st.w	[a15],d0
 .L598:
 	movh.a	a15,#@his(Longest_White_Column_Right)
 	lea	a15,[a15]@los(Longest_White_Column_Right)
 .L599:
-	mov	d0,#0
-.L600:
-	st.w	[a15],d0
-.L601:
-	movh.a	a15,#@his(Longest_White_Column_Right)
-	lea	a15,[a15]@los(Longest_White_Column_Right)
-.L602:
 	mov	d15,#0
-.L603:
+.L600:
 	st.w	[a15]4,d15
-.L604:
+.L601:
 	movh.a	a15,#@his(Right_Lost_Time)
 	lea	a15,[a15]@los(Right_Lost_Time)
+.L602:
+	mov	d0,#0
+.L603:
+	st.w	[a15],d0
+.L604:
+	movh.a	a15,#@his(Left_Lost_Time)
+	lea	a15,[a15]@los(Left_Lost_Time)
 .L605:
 	mov	d0,#0
 .L606:
 	st.w	[a15],d0
 .L607:
-	movh.a	a15,#@his(Left_Lost_Time)
-	lea	a15,[a15]@los(Left_Lost_Time)
+	movh.a	a15,#@his(Boundry_Start_Left)
+	lea	a15,[a15]@los(Boundry_Start_Left)
 .L608:
 	mov	d0,#0
 .L609:
 	st.w	[a15],d0
 .L610:
-	movh.a	a15,#@his(Boundry_Start_Left)
-	lea	a15,[a15]@los(Boundry_Start_Left)
+	movh.a	a15,#@his(Boundry_Start_Right)
+	lea	a15,[a15]@los(Boundry_Start_Right)
 .L611:
 	mov	d0,#0
 .L612:
 	st.w	[a15],d0
 .L613:
-	movh.a	a15,#@his(Boundry_Start_Right)
-	lea	a15,[a15]@los(Boundry_Start_Right)
+	movh.a	a15,#@his(Both_Lost_Time)
+	lea	a15,[a15]@los(Both_Lost_Time)
 .L614:
 	mov	d0,#0
 .L615:
 	st.w	[a15],d0
 .L616:
-	movh.a	a15,#@his(Both_Lost_Time)
-	lea	a15,[a15]@los(Both_Lost_Time)
-.L617:
-	mov	d0,#0
-.L618:
-	st.w	[a15],d0
-.L619:
 	mov	d15,#0
 .L483:
 	j	.L59
 .L60:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
-.L620:
+.L617:
 	addsc.a	a15,a15,d15,#0
-.L621:
+.L618:
 	mov	d0,#0
-.L622:
+.L619:
 	st.b	[a15],d0
-.L623:
+.L620:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
+.L621:
+	addsc.a	a15,a15,d15,#0
+.L622:
+	mov	d0,#0
+.L623:
+	st.b	[a15],d0
 .L624:
-	addsc.a	a15,a15,d15,#0
+	movh.a	a15,#@his(vision)
+	lea	a15,[a15]@los(vision)
 .L625:
-	mov	d0,#0
+	addsc.a	a15,a15,d15,#0
 .L626:
-	st.b	[a15],d0
-.L627:
-	movh.a	a15,#@his(vision)
-	lea	a15,[a15]@los(vision)
-.L628:
-	addsc.a	a15,a15,d15,#0
-.L629:
 	mov	d0,#0
-.L630:
+.L627:
 	st.b	[a15],d0
-.L631:
+.L628:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L632:
+.L629:
 	addsc.a	a15,a15,d15,#0
-.L633:
+.L630:
 	mov	d0,#187
-.L634:
+.L631:
 	st.b	[a15]120,d0
-.L635:
+.L632:
 	add	d15,#1
 .L59:
 	mov	d0,#119
-.L636:
+.L633:
 	jge	d0,d15,.L60
-.L637:
+.L634:
 	mov	d0,#0
 .L484:
 	j	.L61
 .L62:
 	mul	d15,d0,#4
-.L638:
+.L635:
 	movh.a	a15,#@his(White_Column)
 	lea	a15,[a15]@los(White_Column)
-.L639:
+.L636:
 	addsc.a	a15,a15,d15,#0
-.L640:
+.L637:
 	mov	d15,#0
-.L641:
+.L638:
 	st.w	[a15],d15
-.L642:
+.L639:
 	add	d0,#1
 .L61:
 	mov	d15,#187
-.L643:
+.L640:
 	jge	d15,d0,.L62
-.L644:
+.L641:
 	movh.a	a15,#@his(Right_Island_Flag)
 	lea	a15,[a15]@los(Right_Island_Flag)
 	ld.bu	d15,[a15]
-.L645:
+.L642:
 	jne	d15,#1,.L63
-.L646:
+.L643:
 	movh.a	a15,#@his(Island_State)
 	lea	a15,[a15]@los(Island_State)
 	ld.bu	d15,[a15]
-.L647:
+.L644:
 	jne	d15,#3,.L64
-.L648:
+.L645:
 	mov	d1,#40
-.L649:
+.L646:
 	mov	d2,#168
 .L64:
 	j	.L65
@@ -963,17 +963,17 @@ vision_find_track_edge:	.type	func
 	movh.a	a15,#@his(Left_Island_Flag)
 	lea	a15,[a15]@los(Left_Island_Flag)
 	ld.bu	d15,[a15]
-.L650:
+.L647:
 	jne	d15,#1,.L66
-.L651:
+.L648:
 	movh.a	a15,#@his(Island_State)
 	lea	a15,[a15]@los(Island_State)
 	ld.bu	d15,[a15]
-.L652:
+.L649:
 	jne	d15,#3,.L67
-.L653:
+.L650:
 	mov	d1,#20
-.L654:
+.L651:
 	mov	d2,#148
 .L67:
 .L66:
@@ -987,36 +987,36 @@ vision_find_track_edge:	.type	func
 	j	.L70
 .L71:
 	mul	d15,d5,#188
-.L655:
+.L652:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L656:
+.L653:
 	addsc.a	a15,a15,d15,#0
-.L657:
+.L654:
 	addsc.a	a15,a15,d0,#0
 	ld.bu	d15,[a15]
-.L658:
+.L655:
 	jne	d15,#0,.L72
-.L659:
+.L656:
 	j	.L73
 .L72:
 	mul	d15,d0,#4
-.L660:
+.L657:
 	movh.a	a15,#@his(White_Column)
 	lea	a15,[a15]@los(White_Column)
-.L661:
+.L658:
 	addsc.a	a15,a15,d15,#0
 	mul	d15,d0,#4
-.L662:
+.L659:
 	movh.a	a2,#@his(White_Column)
 	lea	a2,[a2]@los(White_Column)
-.L663:
+.L660:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L664:
+.L661:
 	add	d15,#1
 	st.w	[a15],d15
-.L665:
+.L662:
 	add	d5,#-1
 .L70:
 	jge	d5,#0,.L71
@@ -1024,272 +1024,272 @@ vision_find_track_edge:	.type	func
 	add	d0,#1
 .L68:
 	jge	d2,d0,.L69
-.L666:
+.L663:
 	movh.a	a15,#@his(Longest_White_Column_Left)
 	lea	a15,[a15]@los(Longest_White_Column_Left)
-.L667:
+.L664:
 	mov	d15,#0
-.L668:
+.L665:
 	st.w	[a15],d15
-.L669:
+.L666:
 	mov	d0,d1
 .L486:
 	j	.L74
 .L75:
 	movh.a	a15,#@his(Longest_White_Column_Left)
 	lea	a15,[a15]@los(Longest_White_Column_Left)
-.L670:
+.L667:
 	ld.w	d5,[a15]
-.L671:
+.L668:
 	mul	d15,d0,#4
-.L672:
+.L669:
 	movh.a	a15,#@his(White_Column)
 	lea	a15,[a15]@los(White_Column)
-.L673:
+.L670:
 	addsc.a	a15,a15,d15,#0
 	ld.w	d15,[a15]
-.L674:
+.L671:
 	jge	d5,d15,.L76
-.L675:
+.L672:
 	movh.a	a15,#@his(Longest_White_Column_Left)
 	lea	a15,[a15]@los(Longest_White_Column_Left)
-.L676:
+.L673:
 	mul	d15,d0,#4
-.L677:
+.L674:
 	movh.a	a2,#@his(White_Column)
 	lea	a2,[a2]@los(White_Column)
-.L678:
+.L675:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L679:
+.L676:
 	st.w	[a15],d15
-.L680:
+.L677:
 	movh.a	a15,#@his(Longest_White_Column_Left)
 	lea	a15,[a15]@los(Longest_White_Column_Left)
-.L681:
+.L678:
 	st.w	[a15]4,d0
 .L76:
 	add	d0,#1
 .L74:
 	jge	d2,d0,.L75
-.L682:
+.L679:
 	movh.a	a15,#@his(Longest_White_Column_Right)
 	lea	a15,[a15]@los(Longest_White_Column_Right)
-.L683:
+.L680:
 	mov	d15,#0
-.L684:
+.L681:
 	st.w	[a15],d15
-.L685:
+.L682:
 	j	.L77
 .L78:
 	movh.a	a15,#@his(Longest_White_Column_Right)
 	lea	a15,[a15]@los(Longest_White_Column_Right)
-.L686:
+.L683:
 	ld.w	d0,[a15]
-.L687:
+.L684:
 	mul	d15,d2,#4
-.L688:
+.L685:
 	movh.a	a15,#@his(White_Column)
 	lea	a15,[a15]@los(White_Column)
-.L689:
+.L686:
 	addsc.a	a15,a15,d15,#0
 	ld.w	d15,[a15]
-.L690:
+.L687:
 	jge	d0,d15,.L79
-.L691:
+.L688:
 	movh.a	a15,#@his(Longest_White_Column_Right)
 	lea	a15,[a15]@los(Longest_White_Column_Right)
-.L692:
+.L689:
 	mul	d15,d2,#4
-.L693:
+.L690:
 	movh.a	a2,#@his(White_Column)
 	lea	a2,[a2]@los(White_Column)
-.L694:
+.L691:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L695:
+.L692:
 	st.w	[a15],d15
-.L696:
+.L693:
 	movh.a	a15,#@his(Longest_White_Column_Right)
 	lea	a15,[a15]@los(Longest_White_Column_Right)
-.L697:
+.L694:
 	st.w	[a15]4,d2
 .L79:
 	add	d2,#-1
 .L77:
 	jge	d2,d1,.L78
-.L698:
+.L695:
 	movh.a	a15,#@his(Search_Stop_Line)
 	lea	a15,[a15]@los(Search_Stop_Line)
-.L699:
+.L696:
 	movh.a	a2,#@his(Longest_White_Column_Left)
 	lea	a2,[a2]@los(Longest_White_Column_Left)
-.L700:
+.L697:
 	ld.w	d15,[a2]
-.L701:
+.L698:
 	st.w	[a15],d15
-.L702:
+.L699:
 	mov	d2,#119
 .L479:
 	j	.L80
 .L81:
 	movh.a	a15,#@his(Longest_White_Column_Right)
 	lea	a15,[a15]@los(Longest_White_Column_Right)
-.L703:
+.L700:
 	ld.w	d0,[a15]4
 .L489:
 	j	.L82
 .L83:
 	mul	d15,d2,#188
-.L704:
+.L701:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L705:
+.L702:
 	addsc.a	a15,a15,d15,#0
-.L706:
+.L703:
 	addsc.a	a15,a15,d0,#0
 	ld.bu	d1,[a15]
-.L707:
+.L704:
 	mov	d15,#255
-.L708:
+.L705:
 	jne	d15,d1,.L84
-.L709:
+.L706:
 	mul	d15,d2,#188
-.L710:
+.L707:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L711:
+.L708:
 	addsc.a	a15,a15,d15,#0
-.L712:
+.L709:
 	addsc.a	a15,a15,d0,#0
 	ld.bu	d15,[a15]1
-.L713:
+.L710:
 	jne	d15,#0,.L85
-.L714:
+.L711:
 	mul	d15,d2,#188
-.L715:
+.L712:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L716:
+.L713:
 	addsc.a	a15,a15,d15,#0
-.L717:
+.L714:
 	addsc.a	a15,a15,d0,#0
 	ld.bu	d15,[a15]2
-.L718:
+.L715:
 	jne	d15,#0,.L86
-.L719:
+.L716:
 	extr.u	d4,d0,#0,#8
-.L720:
+.L717:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
-.L721:
+.L718:
 	addsc.a	a15,a15,d2,#0
-.L722:
+.L719:
 	mov	d0,#0
 .L490:
 	st.b	[a15],d0
-.L723:
+.L720:
 	j	.L87
 .L86:
 .L85:
 .L84:
 	mov	d15,#185
-.L724:
+.L721:
 	jlt	d0,d15,.L88
-.L725:
+.L722:
 	mov	d4,d0
-.L726:
+.L723:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
-.L727:
+.L724:
 	addsc.a	a15,a15,d2,#0
-.L728:
+.L725:
 	mov	d0,#1
 .L491:
 	st.b	[a15],d0
-.L729:
+.L726:
 	j	.L89
 .L88:
 	add	d0,#1
 .L82:
 	mov	d15,#185
-.L730:
+.L727:
 	jge	d15,d0,.L83
 .L89:
 .L87:
 	movh.a	a15,#@his(Longest_White_Column_Left)
 	lea	a15,[a15]@los(Longest_White_Column_Left)
-.L731:
+.L728:
 	ld.w	d15,[a15]4
 .L492:
 	j	.L90
 .L91:
 	mul	d0,d2,#188
-.L732:
+.L729:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L733:
+.L730:
 	addsc.a	a15,a15,d0,#0
-.L734:
+.L731:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L735:
+.L732:
 	mov	d1,#255
-.L736:
+.L733:
 	jne	d0,d1,.L92
-.L737:
+.L734:
 	mul	d0,d2,#188
-.L738:
+.L735:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L739:
+.L736:
 	addsc.a	a15,a15,d0,#0
-.L740:
+.L737:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]-1
-.L741:
+.L738:
 	jne	d0,#0,.L93
-.L742:
+.L739:
 	mul	d0,d2,#188
-.L743:
+.L740:
 	movh.a	a15,#@his(image_data)
 	lea	a15,[a15]@los(image_data)
-.L744:
+.L741:
 	addsc.a	a15,a15,d0,#0
-.L745:
+.L742:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]-2
-.L746:
+.L743:
 	jne	d0,#0,.L94
-.L747:
+.L744:
 	extr.u	d3,d15,#0,#8
-.L748:
+.L745:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
-.L749:
+.L746:
 	addsc.a	a15,a15,d2,#0
-.L750:
+.L747:
 	mov	d15,#0
 .L493:
 	st.b	[a15],d15
-.L751:
+.L748:
 	j	.L95
 .L94:
 .L93:
 .L92:
 	jge	d15,#3,.L96
-.L752:
+.L749:
 	mov	d3,#2
-.L753:
+.L750:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
-.L754:
+.L751:
 	addsc.a	a15,a15,d2,#0
-.L755:
+.L752:
 	mov	d15,#1
 .L494:
 	st.b	[a15],d15
-.L756:
+.L753:
 	j	.L97
 .L96:
 	add	d15,#-1
@@ -1299,88 +1299,88 @@ vision_find_track_edge:	.type	func
 .L95:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
+.L754:
+	addsc.a	a15,a15,d2,#0
+.L755:
+	st.b	[a15],d3
+.L756:
+	movh.a	a15,#@his(vision)
+	lea	a15,[a15]@los(vision)
 .L757:
 	addsc.a	a15,a15,d2,#0
 .L758:
-	st.b	[a15],d3
-.L759:
-	movh.a	a15,#@his(vision)
-	lea	a15,[a15]@los(vision)
-.L760:
-	addsc.a	a15,a15,d2,#0
-.L761:
 	st.b	[a15]120,d4
-.L762:
+.L759:
 	add	d2,#-1
 .L80:
 	movh.a	a15,#@his(Search_Stop_Line)
 	lea	a15,[a15]@los(Search_Stop_Line)
 	ld.w	d15,[a15]
-.L763:
+.L760:
 	rsub	d15,d15,#120
-.L764:
+.L761:
 	jge	d2,d15,.L81
-.L765:
+.L762:
 	mov	d15,#119
 .L488:
 	j	.L98
 .L99:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
-.L766:
+.L763:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L767:
+.L764:
 	jne	d0,#1,.L100
-.L768:
+.L765:
 	movh.a	a15,#@his(Left_Lost_Time)
 	lea	a15,[a15]@los(Left_Lost_Time)
 	movh.a	a2,#@his(Left_Lost_Time)
 	lea	a2,[a2]@los(Left_Lost_Time)
 	ld.w	d0,[a2]
-.L769:
+.L766:
 	add	d0,#1
 	st.w	[a15],d0
 .L100:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
-.L770:
+.L767:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L771:
+.L768:
 	jne	d0,#1,.L101
-.L772:
+.L769:
 	movh.a	a15,#@his(Right_Lost_Time)
 	lea	a15,[a15]@los(Right_Lost_Time)
 	movh.a	a2,#@his(Right_Lost_Time)
 	lea	a2,[a2]@los(Right_Lost_Time)
 	ld.w	d0,[a2]
-.L773:
+.L770:
 	add	d0,#1
 	st.w	[a15],d0
 .L101:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
+.L771:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]
+.L772:
+	jne	d0,#1,.L102
+.L773:
+	movh.a	a15,#@his(Right_Lost_Flag)
+	lea	a15,[a15]@los(Right_Lost_Flag)
 .L774:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
 .L775:
-	jne	d0,#1,.L102
-.L776:
-	movh.a	a15,#@his(Right_Lost_Flag)
-	lea	a15,[a15]@los(Right_Lost_Flag)
-.L777:
-	addsc.a	a15,a15,d15,#0
-	ld.bu	d0,[a15]
-.L778:
 	jne	d0,#1,.L103
-.L779:
+.L776:
 	movh.a	a15,#@his(Both_Lost_Time)
 	lea	a15,[a15]@los(Both_Lost_Time)
 	movh.a	a2,#@his(Both_Lost_Time)
 	lea	a2,[a2]@los(Both_Lost_Time)
 	ld.w	d0,[a2]
-.L780:
+.L777:
 	add	d0,#1
 	st.w	[a15],d0
 .L103:
@@ -1389,18 +1389,18 @@ vision_find_track_edge:	.type	func
 	lea	a15,[a15]@los(Boundry_Start_Left)
 	ld.w	d0,[a15]
 	jne	d0,#0,.L104
-.L781:
+.L778:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
-.L782:
+.L779:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L783:
+.L780:
 	jeq	d0,#1,.L105
-.L784:
+.L781:
 	movh.a	a15,#@his(Boundry_Start_Left)
 	lea	a15,[a15]@los(Boundry_Start_Left)
-.L785:
+.L782:
 	st.w	[a15],d15
 .L105:
 .L104:
@@ -1408,154 +1408,154 @@ vision_find_track_edge:	.type	func
 	lea	a15,[a15]@los(Boundry_Start_Right)
 	ld.w	d0,[a15]
 	jne	d0,#0,.L106
-.L786:
+.L783:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
-.L787:
+.L784:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L788:
+.L785:
 	jeq	d0,#1,.L107
-.L789:
+.L786:
 	movh.a	a15,#@his(Boundry_Start_Right)
 	lea	a15,[a15]@los(Boundry_Start_Right)
-.L790:
+.L787:
 	st.w	[a15],d15
 .L107:
 .L106:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L791:
+.L788:
 	addsc.a	a15,a15,d15,#0
-.L792:
+.L789:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L793:
+.L790:
 	addsc.a	a2,a2,d15,#0
 	ld.bu	d0,[a2]120
-.L794:
+.L791:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L795:
+.L792:
 	addsc.a	a2,a2,d15,#0
 	ld.bu	d1,[a2]
-.L796:
+.L793:
 	sub	d0,d1
-.L797:
+.L794:
 	st.b	[a15]360,d0
-.L798:
+.L795:
 	add	d15,#-1
 .L98:
 	jge	d15,#0,.L99
-.L799:
+.L796:
 	call	edge_smooth_filter
 .L481:
 	call	lost_line_repair
-.L800:
+.L797:
 	call	centerline_least_square_fit
-.L801:
+.L798:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L802:
+.L799:
 	mov	d15,#0
 .L495:
 	st.b	[a15]480,d15
-.L803:
+.L800:
 	mov	d15,#0
 .L496:
 	j	.L108
 .L109:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L804:
+.L801:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]360
-.L805:
+.L802:
 	mov	d1,#20
-.L806:
+.L803:
 	jlt.u	d0,d1,.L110
-.L807:
+.L804:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L808:
+.L805:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]360
-.L809:
+.L806:
 	mov	d1,#188
-.L810:
+.L807:
 	jlt.u	d1,d0,.L111
-.L811:
+.L808:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L812:
+.L809:
 	addsc.a	a15,a15,d15,#0
-.L813:
+.L810:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L814:
+.L811:
 	addsc.a	a2,a2,d15,#0
 	ld.bu	d0,[a2]
-.L815:
+.L812:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L816:
+.L813:
 	addsc.a	a2,a2,d15,#0
 	ld.bu	d1,[a2]120
-.L817:
+.L814:
 	add	d0,d1
-.L818:
+.L815:
 	mov	d1,#2
-.L819:
+.L816:
 	div	e0,d0,d1
-.L820:
+.L817:
 	st.b	[a15]240,d0
-.L821:
+.L818:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L822:
+.L819:
 	ld.bu	d0,[a2]480
-.L823:
+.L820:
 	add	d0,#1
 	st.b	[a15]480,d0
-.L824:
+.L821:
 	j	.L112
 .L111:
 .L110:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L825:
+.L822:
 	addsc.a	a15,a15,d15,#0
-.L826:
+.L823:
 	mov	d0,#94
-.L827:
+.L824:
 	st.b	[a15]240,d0
 .L112:
 	add	d15,#1
 .L108:
 	mov	d0,#120
-.L828:
+.L825:
 	jlt	d15,d0,.L109
-.L829:
+.L826:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L830:
+.L827:
 	ld.bu	d15,[a15]480
 .L497:
 	jlt.u	d15,#10,.L113
-.L831:
+.L828:
 	mov	d15,#1
-.L832:
+.L829:
 	j	.L114
 .L113:
 	mov	d15,#0
 .L114:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L833:
+.L830:
 	st.b	[a15]492,d15
-.L834:
+.L831:
 	ret
 .L301:
 	
@@ -1578,154 +1578,154 @@ edge_smooth_filter:	.type	func
 .L116:
 	movh.a	a15,#@his(_999003_left_buffer)
 	lea	a15,[a15]@los(_999003_left_buffer)
-.L936:
+.L933:
 	addsc.a	a15,a15,d15,#0
-.L937:
+.L934:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L938:
+.L935:
 	addsc.a	a2,a2,d15,#0
 	ld.bu	d0,[a2]
-.L939:
+.L936:
 	st.b	[a15],d0
-.L940:
+.L937:
 	movh.a	a15,#@his(_999004_right_buffer)
 	lea	a15,[a15]@los(_999004_right_buffer)
-.L941:
+.L938:
 	addsc.a	a15,a15,d15,#0
-.L942:
+.L939:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L943:
+.L940:
 	addsc.a	a2,a2,d15,#0
 	ld.bu	d0,[a2]120
-.L944:
+.L941:
 	st.b	[a15],d0
-.L945:
+.L942:
 	add	d15,#1
 .L115:
 	mov	d0,#120
-.L946:
+.L943:
 	jlt	d15,d0,.L116
-.L947:
+.L944:
 	mov	d15,#1
-.L948:
+.L945:
 	j	.L117
 .L118:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
-.L949:
+.L946:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L950:
+.L947:
 	jne	d0,#0,.L119
+.L948:
+	movh.a	a15,#@his(Left_Lost_Flag)
+	lea	a15,[a15]@los(Left_Lost_Flag)
+.L949:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-1
+.L950:
+	jne	d0,#0,.L120
 .L951:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
 .L952:
 	addsc.a	a15,a15,d15,#0
-	ld.bu	d0,[a15]-1
-.L953:
-	jne	d0,#0,.L120
-.L954:
-	movh.a	a15,#@his(Left_Lost_Flag)
-	lea	a15,[a15]@los(Left_Lost_Flag)
-.L955:
-	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]1
-.L956:
+.L953:
 	jne	d0,#0,.L121
-.L957:
+.L954:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L958:
+.L955:
 	addsc.a	a2,a15,d15,#0
-.L959:
+.L956:
 	movh.a	a15,#@his(_999003_left_buffer)
 	lea	a15,[a15]@los(_999003_left_buffer)
-.L960:
+.L957:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]-1
+.L958:
+	movh.a	a15,#@his(_999003_left_buffer)
+	lea	a15,[a15]@los(_999003_left_buffer)
+.L959:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d1,[a15]
+.L960:
+	add	d0,d1
 .L961:
 	movh.a	a15,#@his(_999003_left_buffer)
 	lea	a15,[a15]@los(_999003_left_buffer)
 .L962:
 	addsc.a	a15,a15,d15,#0
-	ld.bu	d1,[a15]
+	ld.bu	d1,[a15]1
 .L963:
 	add	d0,d1
 .L964:
-	movh.a	a15,#@his(_999003_left_buffer)
-	lea	a15,[a15]@los(_999003_left_buffer)
-.L965:
-	addsc.a	a15,a15,d15,#0
-	ld.bu	d1,[a15]1
-.L966:
-	add	d0,d1
-.L967:
 	mov	d1,#3
-.L968:
+.L965:
 	div	e0,d0,d1
-.L969:
+.L966:
 	st.b	[a2],d0
 .L121:
 .L120:
 .L119:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
-.L970:
+.L967:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L971:
+.L968:
 	jne	d0,#0,.L122
+.L969:
+	movh.a	a15,#@his(Right_Lost_Flag)
+	lea	a15,[a15]@los(Right_Lost_Flag)
+.L970:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d0,[a15]-1
+.L971:
+	jne	d0,#0,.L123
 .L972:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
 .L973:
 	addsc.a	a15,a15,d15,#0
-	ld.bu	d0,[a15]-1
-.L974:
-	jne	d0,#0,.L123
-.L975:
-	movh.a	a15,#@his(Right_Lost_Flag)
-	lea	a15,[a15]@los(Right_Lost_Flag)
-.L976:
-	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]1
-.L977:
+.L974:
 	jne	d0,#0,.L124
-.L978:
+.L975:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L979:
+.L976:
 	addsc.a	a2,a15,d15,#0
-.L980:
+.L977:
 	movh.a	a15,#@his(_999004_right_buffer)
 	lea	a15,[a15]@los(_999004_right_buffer)
-.L981:
+.L978:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]-1
+.L979:
+	movh.a	a15,#@his(_999004_right_buffer)
+	lea	a15,[a15]@los(_999004_right_buffer)
+.L980:
+	addsc.a	a15,a15,d15,#0
+	ld.bu	d1,[a15]
+.L981:
+	add	d0,d1
 .L982:
 	movh.a	a15,#@his(_999004_right_buffer)
 	lea	a15,[a15]@los(_999004_right_buffer)
 .L983:
 	addsc.a	a15,a15,d15,#0
-	ld.bu	d1,[a15]
+	ld.bu	d1,[a15]1
 .L984:
 	add	d0,d1
 .L985:
-	movh.a	a15,#@his(_999004_right_buffer)
-	lea	a15,[a15]@los(_999004_right_buffer)
-.L986:
-	addsc.a	a15,a15,d15,#0
-	ld.bu	d1,[a15]1
-.L987:
-	add	d0,d1
-.L988:
 	mov	d1,#3
-.L989:
+.L986:
 	div	e0,d0,d1
-.L990:
+.L987:
 	st.b	[a2]120,d0
 .L124:
 .L123:
@@ -1733,9 +1733,9 @@ edge_smooth_filter:	.type	func
 	add	d15,#1
 .L117:
 	mov	d0,#119
-.L991:
+.L988:
 	jlt	d15,d0,.L118
-.L992:
+.L989:
 	ret
 .L347:
 	
@@ -1770,54 +1770,54 @@ lost_line_repair:	.type	func
 .L126:
 	movh.a	a15,#@his(Left_Lost_Flag)
 	lea	a15,[a15]@los(Left_Lost_Flag)
-.L1056:
+.L1053:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d15,[a15]
-.L1057:
+.L1054:
 	jne	d15,#0,.L127
-.L1058:
+.L1055:
 	jeq	d1,#0,.L128
-.L1059:
+.L1056:
 	mov	d15,#119
-.L1060:
+.L1057:
 	jge	d7,d15,.L129
 .L376:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1061:
+.L1058:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d0,[a15]
-.L1062:
+.L1059:
 	sub	d0,d1
-.L1063:
+.L1060:
 	itof	d0,d0
 .L507:
 	movh	d1,#49312
 .L500:
 	cmp.f	d1,d0,d1
 	extr.u	d15,d1,#2,#1
-.L1064:
+.L1061:
 	jeq	d15,#0,.L130
-.L1065:
+.L1062:
 	movh	d1,#16544
-.L1066:
+.L1063:
 	cmp.f	d1,d0,d1
 	extr.u	d15,d1,#0,#1
 	jeq	d15,#0,.L131
-.L1067:
+.L1064:
 	itof	d15,d5
-.L1068:
+.L1065:
 	madd.f	d0,d0,d3,d15
 .L508:
 	add	d15,d5,#1
 	itof	d15,d15
-.L1069:
+.L1066:
 	div.f	d3,d0,d15
-.L1070:
+.L1067:
 	add	d5,#1
-.L1071:
+.L1068:
 	jlt	d5,#6,.L132
-.L1072:
+.L1069:
 	mov	d5,#5
 .L132:
 .L131:
@@ -1826,7 +1826,7 @@ lost_line_repair:	.type	func
 .L128:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1073:
+.L1070:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d1,[a15]
 .L509:
@@ -1834,102 +1834,102 @@ lost_line_repair:	.type	func
 .L127:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1074:
+.L1071:
 	addsc.a	a15,a15,d7,#0
-.L1075:
+.L1072:
 	ftoiz	d0,d3
-.L1076:
+.L1073:
 	add	d0,d1
-.L1077:
+.L1074:
 	st.b	[a15],d0
-.L1078:
+.L1075:
 	ftoiz	d0,d3
 	add	d0,d1
 	extr.u	d0,d0,#0,#8
-.L1079:
+.L1076:
 	jge.u	d0,#0,.L134
-.L1080:
+.L1077:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1081:
+.L1078:
 	addsc.a	a15,a15,d7,#0
-.L1082:
+.L1079:
 	mov	d0,#0
-.L1083:
+.L1080:
 	st.b	[a15],d0
 .L134:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1084:
+.L1081:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d0,[a15]
-.L1085:
+.L1082:
 	mov	d15,#188
-.L1086:
+.L1083:
 	jlt.u	d0,d15,.L135
-.L1087:
+.L1084:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1088:
+.L1085:
 	addsc.a	a15,a15,d7,#0
-.L1089:
+.L1086:
 	mov	d15,#187
-.L1090:
+.L1087:
 	st.b	[a15],d15
 .L135:
 .L133:
 	movh.a	a15,#@his(Right_Lost_Flag)
 	lea	a15,[a15]@los(Right_Lost_Flag)
-.L1091:
+.L1088:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d15,[a15]
-.L1092:
+.L1089:
 	jne	d15,#0,.L136
-.L1093:
+.L1090:
 	mov	d15,#187
-.L1094:
+.L1091:
 	jeq	d15,d2,.L137
-.L1095:
+.L1092:
 	mov	d15,#119
-.L1096:
+.L1093:
 	jge	d7,d15,.L138
 .L378:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1097:
+.L1094:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d15,[a15]120
-.L1098:
+.L1095:
 	sub	d15,d2
-.L1099:
+.L1096:
 	itof	d0,d15
 .L510:
 	movh	d15,#49312
-.L1100:
+.L1097:
 	cmp.f	d15,d0,d15
 	extr.u	d15,d15,#2,#1
-.L1101:
+.L1098:
 	jeq	d15,#0,.L139
-.L1102:
+.L1099:
 	movh	d15,#16544
-.L1103:
+.L1100:
 	cmp.f	d15,d0,d15
 	extr.u	d15,d15,#0,#1
 	jeq	d15,#0,.L140
-.L1104:
+.L1101:
 	itof	d15,d6
-.L1105:
+.L1102:
 	madd.f	d0,d0,d4,d15
 .L511:
 	add	d15,d6,#1
 	itof	d15,d15
-.L1106:
+.L1103:
 	div.f	d4,d0,d15
-.L1107:
+.L1104:
 	add	d6,#1
-.L1108:
+.L1105:
 	jlt	d6,#6,.L141
-.L1109:
+.L1106:
 	mov	d6,#5
 .L141:
 .L140:
@@ -1938,83 +1938,83 @@ lost_line_repair:	.type	func
 .L137:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1110:
+.L1107:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d2,[a15]120
-.L1111:
+.L1108:
 	j	.L142
 .L136:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1112:
+.L1109:
 	addsc.a	a15,a15,d7,#0
-.L1113:
+.L1110:
 	ftoiz	d15,d4
-.L1114:
+.L1111:
 	add	d15,d2
-.L1115:
+.L1112:
 	st.b	[a15]120,d15
-.L1116:
+.L1113:
 	ftoiz	d15,d4
 	add	d15,d2
 	extr.u	d15,d15,#0,#8
-.L1117:
+.L1114:
 	jge.u	d15,#0,.L143
-.L1118:
+.L1115:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1119:
+.L1116:
 	addsc.a	a15,a15,d7,#0
-.L1120:
+.L1117:
 	mov	d15,#0
-.L1121:
+.L1118:
 	st.b	[a15]120,d15
 .L143:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1122:
+.L1119:
 	addsc.a	a15,a15,d7,#0
 	ld.bu	d0,[a15]120
-.L1123:
+.L1120:
 	mov	d15,#188
-.L1124:
+.L1121:
 	jlt.u	d0,d15,.L144
-.L1125:
+.L1122:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1126:
+.L1123:
 	addsc.a	a15,a15,d7,#0
-.L1127:
+.L1124:
 	mov	d15,#187
-.L1128:
+.L1125:
 	st.b	[a15]120,d15
 .L144:
 .L142:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1129:
+.L1126:
 	addsc.a	a15,a15,d7,#0
-.L1130:
+.L1127:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L1131:
+.L1128:
 	addsc.a	a2,a2,d7,#0
 	ld.bu	d15,[a2]120
-.L1132:
+.L1129:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L1133:
+.L1130:
 	addsc.a	a2,a2,d7,#0
 	ld.bu	d0,[a2]
-.L1134:
+.L1131:
 	sub	d15,d0
-.L1135:
+.L1132:
 	st.b	[a15]360,d15
-.L1136:
+.L1133:
 	add	d7,#-1
 .L125:
 	jge	d7,#0,.L126
-.L1137:
+.L1134:
 	ret
 .L368:
 	
@@ -2047,93 +2047,93 @@ centerline_least_square_fit:	.type	func
 .L146:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L997:
+.L994:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]360
-.L998:
+.L995:
 	mov	d1,#20
-.L999:
+.L996:
 	jlt.u	d0,d1,.L147
-.L1000:
+.L997:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1001:
+.L998:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]360
-.L1002:
+.L999:
 	mov	d1,#188
-.L1003:
+.L1000:
 	jlt.u	d1,d0,.L148
 .L360:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1004:
+.L1001:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d0,[a15]
-.L1005:
+.L1002:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1006:
+.L1003:
 	addsc.a	a15,a15,d15,#0
 	ld.bu	d1,[a15]120
-.L1007:
+.L1004:
 	add	d0,d1
 	itof	d0,d0
-.L1008:
+.L1005:
 	movh	d1,#16384
-.L1009:
+.L1006:
 	div.f	d0,d0,d1
 .L519:
 	itof	d1,d15
-.L1010:
+.L1007:
 	add.f	d2,d2,d1
-.L1011:
+.L1008:
 	add.f	d3,d3,d0
-.L1012:
+.L1009:
 	itof	d1,d15
-.L1013:
+.L1010:
 	madd.f	d4,d4,d1,d0
-.L1014:
+.L1011:
 	mul	d0,d15,d15
 .L520:
 	itof	d0,d0
-.L1015:
+.L1012:
 	add.f	d5,d5,d0
-.L1016:
+.L1013:
 	add	d6,#1
 .L148:
 .L147:
 	add	d15,#-1
 .L145:
 	mov	d0,#30
-.L1017:
+.L1014:
 	jge	d15,d0,.L146
-.L1018:
+.L1015:
 	mov	d15,#10
 .L518:
 	jlt	d6,d15,.L149
 .L362:
 	itof	d15,d6
-.L1019:
+.L1016:
 	mul.f	d15,d15,d5
-.L1020:
+.L1017:
 	msub.f	d0,d15,d2,d2
 .L521:
 	extr.u	d15,d0,#23,#8
 	ne	d15,d15,#0
-.L1021:
+.L1018:
 	jeq	d15,#0,.L150
-.L1022:
+.L1019:
 	itof	d15,d6
-.L1023:
+.L1020:
 	mul.f	d15,d15,d4
-.L1024:
+.L1021:
 	msub.f	d15,d15,d2,d3
-.L1025:
+.L1022:
 	div.f	d8,d15,d0
 .L523:
 	msub.f	d15,d3,d8,d2
-.L1026:
+.L1023:
 	itof	d0,d6
 .L522:
 	div.f	d9,d15,d0
@@ -2144,78 +2144,78 @@ centerline_least_square_fit:	.type	func
 .L152:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1027:
+.L1024:
 	addsc.a	a15,a15,d10,#0
 	ld.bu	d0,[a15]360
-.L1028:
+.L1025:
 	mov	d15,#20
-.L1029:
+.L1026:
 	jlt.u	d0,d15,.L153
-.L1030:
+.L1027:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1031:
+.L1028:
 	addsc.a	a15,a15,d10,#0
 	ld.bu	d0,[a15]360
-.L1032:
+.L1029:
 	mov	d15,#188
-.L1033:
+.L1030:
 	jlt.u	d15,d0,.L154
 .L364:
 	itof	d0,d10
-.L1034:
+.L1031:
 	madd.f	d2,d9,d8,d0
 .L526:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1035:
+.L1032:
 	addsc.a	a15,a15,d10,#0
 	ld.bu	d15,[a15]
-.L1036:
+.L1033:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1037:
+.L1034:
 	addsc.a	a15,a15,d10,#0
 	ld.bu	d0,[a15]120
-.L1038:
+.L1035:
 	add	d15,d0
 	itof	d15,d15
-.L1039:
+.L1036:
 	movh	d0,#16384
-.L1040:
+.L1037:
 	div.f	d0,d15,d0
 .L528:
 	sub.f	d1,d2,d0
 .L530:
 	movh	d15,#49568
-.L1041:
+.L1038:
 	cmp.f	d15,d1,d15
 	extr.u	d15,d15,#2,#1
-.L1042:
+.L1039:
 	jeq	d15,#0,.L155
-.L1043:
+.L1040:
 	movh	d15,#16800
-.L1044:
+.L1041:
 	cmp.f	d15,d1,d15
 	extr.u	d15,d15,#0,#1
 	jeq	d15,#0,.L156
-.L1045:
+.L1042:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L1046:
+.L1043:
 	addsc.a	a15,a15,d10,#0
-.L1047:
+.L1044:
 	mov	d15,#13107
 	addih	d15,d15,#16179
-.L1048:
+.L1045:
 	mov.u	d1,#39322
 .L531:
 	addih	d1,d1,#16025
-.L1049:
+.L1046:
 	mul.f	d0,d0,d1
 .L529:
 	madd.f	d4,d0,d2,d15
-.L1050:
+.L1047:
 	call	__f_ftouc
 .L527:
 	st.b	[a15]240,d2
@@ -2226,7 +2226,7 @@ centerline_least_square_fit:	.type	func
 	add	d10,#-1
 .L151:
 	mov	d15,#30
-.L1051:
+.L1048:
 	jge	d10,d15,.L152
 .L150:
 .L149:
@@ -2248,16 +2248,16 @@ __centerline_least_square_fit_function_end:
 vision_get_deviation:	.type	func
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L839:
+.L836:
 	ld.bu	d15,[a15]492
-.L840:
+.L837:
 	jne	d15,#0,.L157
-.L841:
+.L838:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L842:
+.L839:
 	ld.h	d2,[a15]486
-.L843:
+.L840:
 	j	.L158
 .L157:
 	mov	d2,#94
@@ -2274,39 +2274,39 @@ vision_get_deviation:	.type	func
 .L160:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L844:
+.L841:
 	addsc.a	a15,a15,d6,#0
 	ld.bu	d0,[a15]360
-.L845:
+.L842:
 	mov	d15,#20
-.L846:
+.L843:
 	jlt.u	d0,d15,.L161
-.L847:
+.L844:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L848:
+.L845:
 	addsc.a	a15,a15,d6,#0
 	ld.bu	d0,[a15]360
-.L849:
+.L846:
 	mov	d15,#188
-.L850:
+.L847:
 	jlt.u	d15,d0,.L162
 .L318:
 	rsub	d0,d6,#110
 	extr.u	d0,d0,#0,#16
 .L539:
 	mov	d15,#30
-.L851:
+.L848:
 	jge.u	d0,d15,.L163
-.L852:
+.L849:
 	mov	d0,#3
 .L540:
 	j	.L164
 .L163:
 	mov	d15,#60
-.L853:
+.L850:
 	jge.u	d0,d15,.L165
-.L854:
+.L851:
 	mov	d0,#2
 .L541:
 	j	.L166
@@ -2316,24 +2316,24 @@ vision_get_deviation:	.type	func
 .L164:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L855:
+.L852:
 	addsc.a	a15,a15,d6,#0
 	ld.bu	d1,[a15]240
-.L856:
+.L853:
 	mov	d15,#188
-.L857:
+.L854:
 	jge.u	d1,d15,.L167
-.L858:
+.L855:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L859:
+.L856:
 	addsc.a	a15,a15,d6,#0
 	ld.bu	d15,[a15]240
-.L860:
+.L857:
 	madd	d3,d3,d15,d0
-.L861:
+.L858:
 	add	d5,d0
-.L862:
+.L859:
 	add	d4,#1
 .L537:
 	extr.u	d4,d4,#0,#16
@@ -2343,19 +2343,19 @@ vision_get_deviation:	.type	func
 	add	d6,#-1
 .L159:
 	mov	d15,#50
-.L863:
+.L860:
 	jlt.u	d15,d6,.L160
-.L864:
+.L861:
 	jlt.u	d5,#1,.L168
-.L865:
+.L862:
 	jlt.u	d4,#1,.L169
 .L321:
 	div.u	e0,d3,d5
 .L542:
 	mov	d15,#188
-.L866:
+.L863:
 	jlt.u	d0,d15,.L170
-.L867:
+.L864:
 	mov	d0,#187
 .L170:
 	add	d15,d0,#-94
@@ -2363,39 +2363,39 @@ vision_get_deviation:	.type	func
 	mov	d0,#-80
 .L543:
 	jge	d15,d0,.L171
-.L868:
+.L865:
 	mov	d15,#-80
 .L171:
 	mov	d0,#80
-.L869:
+.L866:
 	jge	d0,d15,.L172
-.L870:
+.L867:
 	mov	d15,#80
 .L172:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
+.L868:
+	add	d0,d15,#1
+.L869:
+	st.h	[a15]484,d0
+.L870:
+	movh.a	a15,#@his(vision)
+	lea	a15,[a15]@los(vision)
 .L871:
 	add	d0,d15,#1
-.L872:
-	st.h	[a15]484,d0
-.L873:
-	movh.a	a15,#@his(vision)
-	lea	a15,[a15]@los(vision)
-.L874:
-	add	d0,d15,#1
 	extr	d0,d0,#0,#16
-.L875:
+.L872:
 	itof	d0,d0
-.L876:
+.L873:
 	utof	d1,d2
-.L877:
+.L874:
 	div.f	d0,d0,d1
-.L878:
+.L875:
 	st.w	[a15]488,d0
-.L879:
+.L876:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L880:
+.L877:
 	add	d15,#1
 .L545:
 	st.h	[a15]486,d15
@@ -2405,17 +2405,17 @@ vision_get_deviation:	.type	func
 .L168:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L881:
+.L878:
 	movh.a	a2,#@his(vision)
 	lea	a2,[a2]@los(vision)
-.L882:
+.L879:
 	ld.h	d15,[a2]486
-.L883:
+.L880:
 	st.h	[a15]484,d15
 .L173:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L884:
+.L881:
 	ld.h	d2,[a15]484
 .L533:
 	j	.L174
@@ -2446,27 +2446,19 @@ vision_image_process:	.type	func
 .L581:
 	j	.L176
 .L175:
-	movh.a	a4,#@his(mt9v03x_image)
-	lea	a4,[a4]@los(mt9v03x_image)
-.L582:
-	mov	d4,#188
-.L583:
-	mov	d5,#120
-	call	my_adapt_threshold
-.L584:
-	extr.u	d4,d2,#0,#8
+	mov	d4,#230
 .L546:
 	call	image_binarization
 .L547:
 	call	vision_find_track_edge
-.L585:
+.L582:
 	call	vision_get_deviation
-.L586:
+.L583:
 	movh.a	a15,#@his(vision)
 	lea	a15,[a15]@los(vision)
-.L587:
+.L584:
 	mov	d15,#0
-.L588:
+.L585:
 	st.b	[a15]493,d15
 .L176:
 	ret
@@ -2619,7 +2611,6 @@ _999004_right_buffer:	.type	object
 	.calls	'vision_find_track_edge','edge_smooth_filter'
 	.calls	'vision_find_track_edge','lost_line_repair'
 	.calls	'vision_find_track_edge','centerline_least_square_fit'
-	.calls	'vision_image_process','my_adapt_threshold'
 	.calls	'vision_image_process','image_binarization'
 	.calls	'vision_image_process','vision_find_track_edge'
 	.calls	'vision_image_process','vision_get_deviation'
@@ -22129,7 +22120,7 @@ _999004_right_buffer:	.type	object
 	.byte	4
 	.word	.L175,.L298
 	.byte	5
-	.byte	'threshold',0,1,173,5,11
+	.byte	'threshold',0,1,176,5,11
 	.word	.L299,.L300
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('vision_image_process')
@@ -22156,28 +22147,22 @@ _999004_right_buffer:	.type	object
 	.half	.L580-.L579
 	.byte	1,5,9,7,9
 	.half	.L581-.L580
-	.byte	3,1,1,5,51,9
+	.byte	3,1,1,5,21,9
 	.half	.L175-.L581
-	.byte	3,4,1,5,66,9
-	.half	.L582-.L175
-	.byte	1,5,79,9
-	.half	.L583-.L582
-	.byte	1,5,41,9
-	.half	.L584-.L583
-	.byte	1,5,24,9
-	.half	.L546-.L584
-	.byte	3,6,1,5,27,9
+	.byte	3,7,1,5,24,9
+	.half	.L546-.L175
+	.byte	3,3,1,5,27,9
 	.half	.L547-.L546
 	.byte	3,3,1,5,25,9
-	.half	.L585-.L547
+	.half	.L582-.L547
 	.byte	3,3,1,5,5,9
-	.half	.L586-.L585
+	.half	.L583-.L582
 	.byte	3,2,1,5,26,9
-	.half	.L587-.L586
+	.half	.L584-.L583
 	.byte	1,5,24,9
-	.half	.L588-.L587
+	.half	.L585-.L584
 	.byte	1,5,1,9
-	.half	.L176-.L588
+	.half	.L176-.L585
 	.byte	3,1,1,7,9
 	.half	.L214-.L176
 	.byte	0,1,1
@@ -22231,14 +22216,14 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('vision_find_track_edge')
 	.sect	'.debug_line'
 .L217:
-	.word	.L590-.L589
-.L589:
+	.word	.L587-.L586
+.L586:
 	.half	3
-	.word	.L592-.L591
-.L591:
+	.word	.L589-.L588
+.L588:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L592:
+.L589:
 	.byte	5,22,7,0,5,2
 	.word	.L190
 	.byte	3,133,2,1,5,20,9
@@ -22250,14 +22235,20 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,5,9
 	.half	.L482-.L480
 	.byte	3,3,1,5,36,9
-	.half	.L593-.L482
+	.half	.L590-.L482
+	.byte	1,5,34,9
+	.half	.L591-.L590
+	.byte	1,5,5,9
+	.half	.L592-.L591
+	.byte	3,1,1,5,36,9
+	.half	.L593-.L592
 	.byte	1,5,34,9
 	.half	.L594-.L593
 	.byte	1,5,5,9
 	.half	.L595-.L594
-	.byte	3,1,1,5,36,9
+	.byte	3,1,1,5,37,9
 	.half	.L596-.L595
-	.byte	1,5,34,9
+	.byte	1,5,35,9
 	.half	.L597-.L596
 	.byte	1,5,5,9
 	.half	.L598-.L597
@@ -22267,130 +22258,124 @@ _999004_right_buffer:	.type	object
 	.half	.L600-.L599
 	.byte	1,5,5,9
 	.half	.L601-.L600
-	.byte	3,1,1,5,37,9
+	.byte	3,1,1,5,23,9
 	.half	.L602-.L601
-	.byte	1,5,35,9
+	.byte	1,5,21,9
 	.half	.L603-.L602
 	.byte	1,5,5,9
 	.half	.L604-.L603
-	.byte	3,1,1,5,23,9
+	.byte	3,1,1,5,22,9
 	.half	.L605-.L604
-	.byte	1,5,21,9
+	.byte	1,5,20,9
 	.half	.L606-.L605
 	.byte	1,5,5,9
 	.half	.L607-.L606
-	.byte	3,1,1,5,22,9
+	.byte	3,1,1,5,26,9
 	.half	.L608-.L607
-	.byte	1,5,20,9
+	.byte	1,5,24,9
 	.half	.L609-.L608
 	.byte	1,5,5,9
 	.half	.L610-.L609
-	.byte	3,1,1,5,26,9
+	.byte	3,1,1,5,27,9
 	.half	.L611-.L610
-	.byte	1,5,24,9
+	.byte	1,5,25,9
 	.half	.L612-.L611
 	.byte	1,5,5,9
 	.half	.L613-.L612
-	.byte	3,1,1,5,27,9
-	.half	.L614-.L613
-	.byte	1,5,25,9
-	.half	.L615-.L614
-	.byte	1,5,5,9
-	.half	.L616-.L615
 	.byte	3,1,1,5,22,9
-	.half	.L617-.L616
+	.half	.L614-.L613
 	.byte	1,5,20,9
-	.half	.L618-.L617
+	.half	.L615-.L614
 	.byte	1,5,12,9
-	.half	.L619-.L618
+	.half	.L616-.L615
 	.byte	3,3,1,5,35,9
-	.half	.L483-.L619
+	.half	.L483-.L616
 	.byte	1,5,9,9
 	.half	.L60-.L483
 	.byte	3,2,1,5,24,9
-	.half	.L620-.L60
+	.half	.L617-.L60
 	.byte	1,5,30,9
-	.half	.L621-.L620
+	.half	.L618-.L617
 	.byte	1,5,28,9
-	.half	.L622-.L621
+	.half	.L619-.L618
 	.byte	1,5,9,9
-	.half	.L623-.L622
+	.half	.L620-.L619
 	.byte	3,1,1,5,23,9
-	.half	.L624-.L623
+	.half	.L621-.L620
 	.byte	1,5,29,9
-	.half	.L625-.L624
+	.half	.L622-.L621
 	.byte	1,5,27,9
-	.half	.L626-.L625
+	.half	.L623-.L622
 	.byte	1,5,9,9
-	.half	.L627-.L626
+	.half	.L624-.L623
 	.byte	3,1,1,5,31,9
-	.half	.L628-.L627
+	.half	.L625-.L624
 	.byte	1,5,37,9
-	.half	.L629-.L628
+	.half	.L626-.L625
 	.byte	1,5,35,9
-	.half	.L630-.L629
+	.half	.L627-.L626
 	.byte	1,5,9,9
-	.half	.L631-.L630
+	.half	.L628-.L627
 	.byte	3,1,1,5,32,9
-	.half	.L632-.L631
+	.half	.L629-.L628
 	.byte	1,5,48,9
-	.half	.L633-.L632
+	.half	.L630-.L629
 	.byte	1,5,36,9
-	.half	.L634-.L633
+	.half	.L631-.L630
 	.byte	1,5,38,9
-	.half	.L635-.L634
+	.half	.L632-.L631
 	.byte	3,123,1,5,32,9
-	.half	.L59-.L635
+	.half	.L59-.L632
 	.byte	1,5,35,9
-	.half	.L636-.L59
+	.half	.L633-.L59
 	.byte	1,5,12,7,9
-	.half	.L637-.L636
+	.half	.L634-.L633
 	.byte	3,7,1,5,35,9
-	.half	.L484-.L637
+	.half	.L484-.L634
 	.byte	1,5,21,9
 	.half	.L62-.L484
 	.byte	3,2,1,5,9,9
-	.half	.L638-.L62
+	.half	.L635-.L62
 	.byte	1,5,21,9
-	.half	.L639-.L638
+	.half	.L636-.L635
 	.byte	1,5,27,9
-	.half	.L640-.L639
+	.half	.L637-.L636
 	.byte	1,5,25,9
-	.half	.L641-.L640
+	.half	.L638-.L637
 	.byte	1,5,38,9
-	.half	.L642-.L641
+	.half	.L639-.L638
 	.byte	3,126,1,5,32,9
-	.half	.L61-.L642
+	.half	.L61-.L639
 	.byte	1,5,35,9
-	.half	.L643-.L61
+	.half	.L640-.L61
 	.byte	1,5,9,7,9
-	.half	.L644-.L643
+	.half	.L641-.L640
 	.byte	3,6,1,5,5,9
-	.half	.L645-.L644
+	.half	.L642-.L641
 	.byte	1,5,13,7,9
-	.half	.L646-.L645
+	.half	.L643-.L642
 	.byte	3,2,1,5,9,9
-	.half	.L647-.L646
+	.half	.L644-.L643
 	.byte	1,5,26,7,9
-	.half	.L648-.L647
+	.half	.L645-.L644
 	.byte	3,2,1,5,24,9
-	.half	.L649-.L648
+	.half	.L646-.L645
 	.byte	3,1,1,5,9,9
-	.half	.L64-.L649
+	.half	.L64-.L646
 	.byte	3,125,1,5,14,9
 	.half	.L63-.L64
 	.byte	3,6,1,5,10,9
-	.half	.L650-.L63
+	.half	.L647-.L63
 	.byte	1,5,13,7,9
-	.half	.L651-.L650
+	.half	.L648-.L647
 	.byte	3,2,1,5,9,9
-	.half	.L652-.L651
+	.half	.L649-.L648
 	.byte	1,5,26,7,9
-	.half	.L653-.L652
+	.half	.L650-.L649
 	.byte	3,2,1,5,24,9
-	.half	.L654-.L653
+	.half	.L651-.L650
 	.byte	3,1,1,5,12,9
-	.half	.L65-.L654
+	.half	.L65-.L651
 	.byte	3,5,1,5,43,9
 	.half	.L485-.L65
 	.byte	1,5,16,9
@@ -22400,465 +22385,465 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,27,9
 	.half	.L71-.L487
 	.byte	3,2,1,5,17,9
-	.half	.L655-.L71
+	.half	.L652-.L71
 	.byte	1,5,27,9
-	.half	.L656-.L655
+	.half	.L653-.L652
 	.byte	1,5,30,9
-	.half	.L657-.L656
+	.half	.L654-.L653
 	.byte	1,5,13,9
-	.half	.L658-.L657
+	.half	.L655-.L654
 	.byte	1,5,17,7,9
-	.half	.L659-.L658
+	.half	.L656-.L655
 	.byte	3,1,1,5,29,9
-	.half	.L72-.L659
+	.half	.L72-.L656
 	.byte	3,2,1,5,17,9
-	.half	.L660-.L72
+	.half	.L657-.L72
 	.byte	1,5,29,9
-	.half	.L661-.L660
+	.half	.L658-.L657
 	.byte	1,5,17,9
-	.half	.L662-.L661
+	.half	.L659-.L658
 	.byte	1,5,29,9
-	.half	.L663-.L662
+	.half	.L660-.L659
 	.byte	1,5,32,9
-	.half	.L664-.L663
+	.half	.L661-.L660
 	.byte	1,5,42,9
-	.half	.L665-.L664
+	.half	.L662-.L661
 	.byte	3,123,1,5,39,9
-	.half	.L70-.L665
+	.half	.L70-.L662
 	.byte	1,5,46,7,9
 	.half	.L73-.L70
 	.byte	3,126,1,5,43,9
 	.half	.L68-.L73
 	.byte	1,5,5,7,9
-	.half	.L666-.L68
+	.half	.L663-.L68
 	.byte	3,12,1,5,36,9
-	.half	.L667-.L666
+	.half	.L664-.L663
 	.byte	1,5,34,9
-	.half	.L668-.L667
+	.half	.L665-.L664
 	.byte	1,5,12,9
-	.half	.L669-.L668
+	.half	.L666-.L665
 	.byte	3,1,1,5,43,9
-	.half	.L486-.L669
+	.half	.L486-.L666
 	.byte	1,5,13,9
 	.half	.L75-.L486
 	.byte	3,2,1,5,38,9
-	.half	.L670-.L75
+	.half	.L667-.L75
 	.byte	1,5,56,9
-	.half	.L671-.L670
+	.half	.L668-.L667
 	.byte	1,5,44,9
-	.half	.L672-.L671
+	.half	.L669-.L668
 	.byte	1,5,56,9
-	.half	.L673-.L672
+	.half	.L670-.L669
 	.byte	1,5,9,9
-	.half	.L674-.L673
+	.half	.L671-.L670
 	.byte	1,5,13,7,9
-	.half	.L675-.L674
+	.half	.L672-.L671
 	.byte	3,2,1,5,56,9
-	.half	.L676-.L675
+	.half	.L673-.L672
 	.byte	1,5,44,9
-	.half	.L677-.L676
+	.half	.L674-.L673
 	.byte	1,5,56,9
-	.half	.L678-.L677
+	.half	.L675-.L674
 	.byte	1,5,42,9
-	.half	.L679-.L678
+	.half	.L676-.L675
 	.byte	1,5,13,9
-	.half	.L680-.L679
+	.half	.L677-.L676
 	.byte	3,1,1,5,42,9
-	.half	.L681-.L680
+	.half	.L678-.L677
 	.byte	1,5,46,9
-	.half	.L76-.L681
+	.half	.L76-.L678
 	.byte	3,123,1,5,43,9
 	.half	.L74-.L76
 	.byte	1,5,5,7,9
-	.half	.L682-.L74
+	.half	.L679-.L74
 	.byte	3,10,1,5,37,9
-	.half	.L683-.L682
+	.half	.L680-.L679
 	.byte	1,5,35,9
-	.half	.L684-.L683
+	.half	.L681-.L680
 	.byte	1,5,43,9
-	.half	.L685-.L684
+	.half	.L682-.L681
 	.byte	3,1,1,5,13,9
-	.half	.L78-.L685
+	.half	.L78-.L682
 	.byte	3,2,1,5,39,9
-	.half	.L686-.L78
+	.half	.L683-.L78
 	.byte	1,5,57,9
-	.half	.L687-.L686
+	.half	.L684-.L683
 	.byte	1,5,45,9
-	.half	.L688-.L687
+	.half	.L685-.L684
 	.byte	1,5,57,9
-	.half	.L689-.L688
+	.half	.L686-.L685
 	.byte	1,5,9,9
-	.half	.L690-.L689
+	.half	.L687-.L686
 	.byte	1,5,13,7,9
-	.half	.L691-.L690
+	.half	.L688-.L687
 	.byte	3,2,1,5,57,9
-	.half	.L692-.L691
+	.half	.L689-.L688
 	.byte	1,5,45,9
-	.half	.L693-.L692
+	.half	.L690-.L689
 	.byte	1,5,57,9
-	.half	.L694-.L693
+	.half	.L691-.L690
 	.byte	1,5,43,9
-	.half	.L695-.L694
+	.half	.L692-.L691
 	.byte	1,5,13,9
-	.half	.L696-.L695
+	.half	.L693-.L692
 	.byte	3,1,1,5,43,9
-	.half	.L697-.L696
+	.half	.L694-.L693
 	.byte	1,5,46,9
-	.half	.L79-.L697
+	.half	.L79-.L694
 	.byte	3,123,1,5,43,9
 	.half	.L77-.L79
 	.byte	1,5,5,7,9
-	.half	.L698-.L77
+	.half	.L695-.L77
 	.byte	3,9,1,5,24,9
-	.half	.L699-.L698
+	.half	.L696-.L695
 	.byte	1,5,49,9
-	.half	.L700-.L699
+	.half	.L697-.L696
 	.byte	1,5,22,9
-	.half	.L701-.L700
+	.half	.L698-.L697
 	.byte	1,5,12,9
-	.half	.L702-.L701
+	.half	.L699-.L698
 	.byte	3,3,1,5,62,9
-	.half	.L479-.L702
+	.half	.L479-.L699
 	.byte	1,5,18,9
 	.half	.L81-.L479
 	.byte	3,3,1,5,44,9
-	.half	.L703-.L81
+	.half	.L700-.L81
 	.byte	1,5,71,9
-	.half	.L489-.L703
+	.half	.L489-.L700
 	.byte	1,5,27,9
 	.half	.L83-.L489
 	.byte	3,2,1,5,17,9
-	.half	.L704-.L83
+	.half	.L701-.L83
 	.byte	1,5,27,9
-	.half	.L705-.L704
+	.half	.L702-.L701
 	.byte	1,5,30,9
-	.half	.L706-.L705
+	.half	.L703-.L702
 	.byte	1,5,37,9
+	.half	.L704-.L703
+	.byte	1,5,17,9
+	.half	.L705-.L704
+	.byte	1,5,27,7,9
+	.half	.L706-.L705
+	.byte	3,1,1,5,17,9
 	.half	.L707-.L706
-	.byte	1,5,17,9
+	.byte	1,5,27,9
 	.half	.L708-.L707
-	.byte	1,5,27,7,9
+	.byte	1,5,30,9
 	.half	.L709-.L708
-	.byte	3,1,1,5,17,9
+	.byte	1,5,38,9
 	.half	.L710-.L709
-	.byte	1,5,27,9
-	.half	.L711-.L710
-	.byte	1,5,30,9
-	.half	.L712-.L711
-	.byte	1,5,38,9
-	.half	.L713-.L712
 	.byte	1,5,27,7,9
-	.half	.L714-.L713
+	.half	.L711-.L710
 	.byte	3,1,1,5,17,9
-	.half	.L715-.L714
+	.half	.L712-.L711
 	.byte	1,5,27,9
-	.half	.L716-.L715
+	.half	.L713-.L712
 	.byte	1,5,30,9
-	.half	.L717-.L716
+	.half	.L714-.L713
 	.byte	1,5,38,9
-	.half	.L718-.L717
+	.half	.L715-.L714
 	.byte	1,5,32,7,9
+	.half	.L716-.L715
+	.byte	3,2,1,5,17,9
+	.half	.L717-.L716
+	.byte	3,1,1,5,32,9
+	.half	.L718-.L717
+	.byte	1,5,38,9
 	.half	.L719-.L718
-	.byte	3,2,1,5,17,9
-	.half	.L720-.L719
-	.byte	3,1,1,5,32,9
-	.half	.L721-.L720
-	.byte	1,5,38,9
-	.half	.L722-.L721
 	.byte	1,5,36,9
-	.half	.L490-.L722
+	.half	.L490-.L719
 	.byte	1,5,17,9
-	.half	.L723-.L490
+	.half	.L720-.L490
 	.byte	3,1,1,5,41,9
-	.half	.L84-.L723
+	.half	.L84-.L720
 	.byte	3,2,1,5,18,9
-	.half	.L724-.L84
+	.half	.L721-.L84
 	.byte	1,5,30,7,9
-	.half	.L725-.L724
+	.half	.L722-.L721
 	.byte	3,2,1,5,17,9
-	.half	.L726-.L725
+	.half	.L723-.L722
 	.byte	3,1,1,5,32,9
-	.half	.L727-.L726
+	.half	.L724-.L723
 	.byte	1,5,38,9
-	.half	.L728-.L727
+	.half	.L725-.L724
 	.byte	1,5,36,9
-	.half	.L491-.L728
+	.half	.L491-.L725
 	.byte	1,5,17,9
-	.half	.L729-.L491
+	.half	.L726-.L491
 	.byte	3,1,1,5,74,9
-	.half	.L88-.L729
+	.half	.L88-.L726
 	.byte	3,114,1,5,68,9
 	.half	.L82-.L88
 	.byte	1,5,71,9
-	.half	.L730-.L82
+	.half	.L727-.L82
 	.byte	1,5,18,7,9
-	.half	.L87-.L730
+	.half	.L87-.L727
 	.byte	3,19,1,5,43,9
-	.half	.L731-.L87
+	.half	.L728-.L87
 	.byte	1,5,58,9
-	.half	.L492-.L731
+	.half	.L492-.L728
 	.byte	1,5,27,9
 	.half	.L91-.L492
 	.byte	3,2,1,5,17,9
-	.half	.L732-.L91
+	.half	.L729-.L91
 	.byte	1,5,27,9
+	.half	.L730-.L729
+	.byte	1,5,30,9
+	.half	.L731-.L730
+	.byte	1,5,37,9
+	.half	.L732-.L731
+	.byte	1,5,17,9
 	.half	.L733-.L732
-	.byte	1,5,30,9
+	.byte	1,5,27,7,9
 	.half	.L734-.L733
-	.byte	1,5,37,9
+	.byte	3,1,1,5,17,9
 	.half	.L735-.L734
-	.byte	1,5,17,9
+	.byte	1,5,27,9
 	.half	.L736-.L735
-	.byte	1,5,27,7,9
+	.byte	1,5,30,9
 	.half	.L737-.L736
-	.byte	3,1,1,5,17,9
+	.byte	1,5,38,9
 	.half	.L738-.L737
-	.byte	1,5,27,9
-	.half	.L739-.L738
-	.byte	1,5,30,9
-	.half	.L740-.L739
-	.byte	1,5,38,9
-	.half	.L741-.L740
 	.byte	1,5,27,7,9
-	.half	.L742-.L741
+	.half	.L739-.L738
 	.byte	3,1,1,5,17,9
-	.half	.L743-.L742
+	.half	.L740-.L739
 	.byte	1,5,27,9
-	.half	.L744-.L743
+	.half	.L741-.L740
 	.byte	1,5,30,9
-	.half	.L745-.L744
+	.half	.L742-.L741
 	.byte	1,5,38,9
-	.half	.L746-.L745
+	.half	.L743-.L742
 	.byte	1,5,31,7,9
+	.half	.L744-.L743
+	.byte	3,2,1,5,17,9
+	.half	.L745-.L744
+	.byte	3,1,1,5,31,9
+	.half	.L746-.L745
+	.byte	1,5,37,9
 	.half	.L747-.L746
-	.byte	3,2,1,5,17,9
-	.half	.L748-.L747
-	.byte	3,1,1,5,31,9
-	.half	.L749-.L748
-	.byte	1,5,37,9
-	.half	.L750-.L749
 	.byte	1,5,35,9
-	.half	.L493-.L750
+	.half	.L493-.L747
 	.byte	1,5,17,9
-	.half	.L751-.L493
+	.half	.L748-.L493
 	.byte	3,1,1,5,18,9
-	.half	.L92-.L751
+	.half	.L92-.L748
 	.byte	3,2,1,5,29,7,9
-	.half	.L752-.L92
+	.half	.L749-.L92
 	.byte	3,2,1,5,17,9
-	.half	.L753-.L752
+	.half	.L750-.L749
 	.byte	3,1,1,5,31,9
-	.half	.L754-.L753
+	.half	.L751-.L750
 	.byte	1,5,37,9
-	.half	.L755-.L754
+	.half	.L752-.L751
 	.byte	1,5,35,9
-	.half	.L494-.L755
+	.half	.L494-.L752
 	.byte	1,5,17,9
-	.half	.L756-.L494
+	.half	.L753-.L494
 	.byte	3,1,1,5,61,9
-	.half	.L96-.L756
+	.half	.L96-.L753
 	.byte	3,114,1,5,58,9
 	.half	.L90-.L96
 	.byte	1,5,9,7,9
 	.half	.L95-.L90
 	.byte	3,18,1,5,31,9
-	.half	.L757-.L95
+	.half	.L754-.L95
 	.byte	1,5,35,9
-	.half	.L758-.L757
+	.half	.L755-.L754
 	.byte	1,5,9,9
-	.half	.L759-.L758
+	.half	.L756-.L755
 	.byte	3,1,1,5,32,9
-	.half	.L760-.L759
+	.half	.L757-.L756
 	.byte	1,5,36,9
-	.half	.L761-.L760
+	.half	.L758-.L757
 	.byte	1,5,65,9
-	.half	.L762-.L761
+	.half	.L759-.L758
 	.byte	3,87,1,5,46,9
-	.half	.L80-.L762
+	.half	.L80-.L759
 	.byte	1,5,44,9
-	.half	.L763-.L80
+	.half	.L760-.L80
 	.byte	1,5,62,9
-	.half	.L764-.L763
+	.half	.L761-.L760
 	.byte	1,5,12,7,9
-	.half	.L765-.L764
+	.half	.L762-.L761
 	.byte	3,45,1,5,35,9
-	.half	.L488-.L765
+	.half	.L488-.L762
 	.byte	1,5,13,9
 	.half	.L99-.L488
 	.byte	3,2,1,5,27,9
-	.half	.L766-.L99
+	.half	.L763-.L99
 	.byte	1,5,9,9
-	.half	.L767-.L766
+	.half	.L764-.L763
 	.byte	1,5,13,7,9
+	.half	.L765-.L764
+	.byte	3,1,1,5,27,9
+	.half	.L766-.L765
+	.byte	1,5,13,9
+	.half	.L100-.L766
+	.byte	3,1,1,5,28,9
+	.half	.L767-.L100
+	.byte	1,5,9,9
 	.half	.L768-.L767
-	.byte	3,1,1,5,27,9
+	.byte	1,5,13,7,9
 	.half	.L769-.L768
-	.byte	1,5,13,9
-	.half	.L100-.L769
 	.byte	3,1,1,5,28,9
-	.half	.L770-.L100
-	.byte	1,5,9,9
-	.half	.L771-.L770
-	.byte	1,5,13,7,9
+	.half	.L770-.L769
+	.byte	1,5,13,9
+	.half	.L101-.L770
+	.byte	3,1,1,5,27,9
+	.half	.L771-.L101
+	.byte	1,5,13,9
 	.half	.L772-.L771
-	.byte	3,1,1,5,28,9
-	.half	.L773-.L772
-	.byte	1,5,13,9
-	.half	.L101-.L773
-	.byte	3,1,1,5,27,9
-	.half	.L774-.L101
-	.byte	1,5,13,9
-	.half	.L775-.L774
 	.byte	1,5,39,7,9
+	.half	.L773-.L772
+	.byte	1,5,54,9
+	.half	.L774-.L773
+	.byte	1,5,58,9
+	.half	.L775-.L774
+	.byte	1,5,13,7,9
 	.half	.L776-.L775
-	.byte	1,5,54,9
-	.half	.L777-.L776
-	.byte	1,5,58,9
-	.half	.L778-.L777
-	.byte	1,5,13,7,9
-	.half	.L779-.L778
 	.byte	3,1,1,5,27,9
-	.half	.L780-.L779
+	.half	.L777-.L776
 	.byte	1,5,13,9
-	.half	.L102-.L780
+	.half	.L102-.L777
 	.byte	3,1,1,5,40,9
-	.half	.L781-.L102
+	.half	.L778-.L102
 	.byte	1,5,54,9
-	.half	.L782-.L781
+	.half	.L779-.L778
 	.byte	1,5,58,9
-	.half	.L783-.L782
+	.half	.L780-.L779
 	.byte	1,5,13,7,9
-	.half	.L784-.L783
+	.half	.L781-.L780
 	.byte	3,1,1,5,32,9
-	.half	.L785-.L784
+	.half	.L782-.L781
 	.byte	1,5,13,9
-	.half	.L104-.L785
+	.half	.L104-.L782
 	.byte	3,1,1,5,41,9
-	.half	.L786-.L104
+	.half	.L783-.L104
 	.byte	1,5,56,9
-	.half	.L787-.L786
+	.half	.L784-.L783
 	.byte	1,5,60,9
-	.half	.L788-.L787
+	.half	.L785-.L784
 	.byte	1,5,13,7,9
-	.half	.L789-.L788
+	.half	.L786-.L785
 	.byte	3,1,1,5,33,9
-	.half	.L790-.L789
+	.half	.L787-.L786
 	.byte	1,5,9,9
-	.half	.L106-.L790
+	.half	.L106-.L787
 	.byte	3,1,1,5,33,9
-	.half	.L791-.L106
+	.half	.L788-.L106
 	.byte	1,5,39,9
-	.half	.L792-.L791
+	.half	.L789-.L788
 	.byte	1,5,62,9
-	.half	.L793-.L792
+	.half	.L790-.L789
 	.byte	1,5,68,9
-	.half	.L794-.L793
+	.half	.L791-.L790
 	.byte	1,5,90,9
-	.half	.L795-.L794
+	.half	.L792-.L791
 	.byte	1,5,66,9
-	.half	.L796-.L795
+	.half	.L793-.L792
 	.byte	1,5,37,9
-	.half	.L797-.L796
+	.half	.L794-.L793
 	.byte	1,5,38,9
-	.half	.L798-.L797
+	.half	.L795-.L794
 	.byte	3,116,1,5,35,9
-	.half	.L98-.L798
+	.half	.L98-.L795
 	.byte	1,5,23,7,9
-	.half	.L799-.L98
+	.half	.L796-.L98
 	.byte	3,17,1,5,21,9
-	.half	.L481-.L799
+	.half	.L481-.L796
 	.byte	3,4,1,5,32,9
-	.half	.L800-.L481
+	.half	.L797-.L481
 	.byte	3,4,1,5,5,9
-	.half	.L801-.L800
+	.half	.L798-.L797
 	.byte	3,4,1,5,31,9
-	.half	.L802-.L801
+	.half	.L799-.L798
 	.byte	1,5,29,9
-	.half	.L495-.L802
+	.half	.L495-.L799
 	.byte	1,5,12,9
-	.half	.L803-.L495
+	.half	.L800-.L495
 	.byte	3,1,1,5,30,9
-	.half	.L496-.L803
+	.half	.L496-.L800
 	.byte	1,5,13,9
 	.half	.L109-.L496
 	.byte	3,3,1,5,37,9
-	.half	.L804-.L109
+	.half	.L801-.L109
 	.byte	1,5,44,9
-	.half	.L805-.L804
+	.half	.L802-.L801
 	.byte	1,5,13,9
-	.half	.L806-.L805
+	.half	.L803-.L802
 	.byte	1,7,9
-	.half	.L807-.L806
+	.half	.L804-.L803
 	.byte	3,1,1,5,37,9
-	.half	.L808-.L807
+	.half	.L805-.L804
 	.byte	1,5,44,9
-	.half	.L809-.L808
+	.half	.L806-.L805
 	.byte	1,5,41,9
-	.half	.L810-.L809
+	.half	.L807-.L806
 	.byte	1,5,13,7,9
-	.half	.L811-.L810
+	.half	.L808-.L807
 	.byte	3,2,1,5,37,9
-	.half	.L812-.L811
+	.half	.L809-.L808
 	.byte	1,5,44,9
-	.half	.L813-.L812
+	.half	.L810-.L809
 	.byte	1,5,66,9
-	.half	.L814-.L813
+	.half	.L811-.L810
 	.byte	1,5,72,9
-	.half	.L815-.L814
+	.half	.L812-.L811
 	.byte	1,5,95,9
-	.half	.L816-.L815
+	.half	.L813-.L812
 	.byte	1,5,70,9
-	.half	.L817-.L816
+	.half	.L814-.L813
 	.byte	1,5,102,9
-	.half	.L818-.L817
+	.half	.L815-.L814
 	.byte	1,5,100,9
-	.half	.L819-.L818
+	.half	.L816-.L815
 	.byte	1,5,41,9
-	.half	.L820-.L819
+	.half	.L817-.L816
 	.byte	1,5,13,9
-	.half	.L821-.L820
+	.half	.L818-.L817
 	.byte	3,1,1,5,25,9
-	.half	.L822-.L821
+	.half	.L819-.L818
 	.byte	1,5,36,9
-	.half	.L823-.L822
+	.half	.L820-.L819
 	.byte	1,5,103,9
-	.half	.L824-.L823
+	.half	.L821-.L820
 	.byte	3,127,1,5,13,9
-	.half	.L110-.L824
+	.half	.L110-.L821
 	.byte	3,5,1,5,37,9
-	.half	.L825-.L110
+	.half	.L822-.L110
 	.byte	1,5,55,9
-	.half	.L826-.L825
+	.half	.L823-.L822
 	.byte	1,5,41,9
-	.half	.L827-.L826
+	.half	.L824-.L823
 	.byte	1,5,33,9
-	.half	.L112-.L827
+	.half	.L112-.L824
 	.byte	3,117,1,5,21,9
 	.half	.L108-.L112
 	.byte	1,5,30,9
-	.half	.L828-.L108
+	.half	.L825-.L108
 	.byte	1,5,27,7,9
-	.half	.L829-.L828
+	.half	.L826-.L825
 	.byte	3,15,1,5,39,9
-	.half	.L830-.L829
+	.half	.L827-.L826
 	.byte	1,5,26,9
-	.half	.L497-.L830
+	.half	.L497-.L827
 	.byte	1,5,58,7,9
-	.half	.L831-.L497
+	.half	.L828-.L497
 	.byte	1,5,62,9
-	.half	.L832-.L831
+	.half	.L829-.L828
 	.byte	1,5,58,9
-	.half	.L113-.L832
+	.half	.L113-.L829
 	.byte	1,5,5,9
 	.half	.L114-.L113
 	.byte	1,5,24,9
-	.half	.L833-.L114
+	.half	.L830-.L114
 	.byte	1,5,1,9
-	.half	.L834-.L833
+	.half	.L831-.L830
 	.byte	3,1,1,7,9
-	.half	.L219-.L834
+	.half	.L219-.L831
 	.byte	0,1,1
-.L590:
+.L587:
 	.sdecl	'.debug_ranges',debug,cluster('vision_find_track_edge')
 	.sect	'.debug_ranges'
 .L218:
@@ -22927,28 +22912,28 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('vision_get_deviation')
 	.sect	'.debug_line'
 .L222:
-	.word	.L836-.L835
-.L835:
+	.word	.L833-.L832
+.L832:
 	.half	3
-	.word	.L838-.L837
-.L837:
+	.word	.L835-.L834
+.L834:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L838:
+.L835:
 	.byte	5,10,7,0,5,2
 	.word	.L198
 	.byte	3,228,4,1,5,16,9
-	.half	.L839-.L198
+	.half	.L836-.L198
 	.byte	1,5,10,9
-	.half	.L840-.L839
+	.half	.L837-.L836
 	.byte	1,5,16,7,9
-	.half	.L841-.L840
+	.half	.L838-.L837
 	.byte	3,2,1,5,22,9
-	.half	.L842-.L841
+	.half	.L839-.L838
 	.byte	1,5,9,9
-	.half	.L843-.L842
+	.half	.L840-.L839
 	.byte	1,5,22,9
-	.half	.L157-.L843
+	.half	.L157-.L840
 	.byte	3,4,1,5,32,9
 	.half	.L532-.L157
 	.byte	3,1,1,5,23,9
@@ -22962,135 +22947,135 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,13,9
 	.half	.L160-.L538
 	.byte	3,2,1,5,37,9
-	.half	.L844-.L160
+	.half	.L841-.L160
 	.byte	1,5,46,9
-	.half	.L845-.L844
+	.half	.L842-.L841
 	.byte	1,5,13,9
-	.half	.L846-.L845
+	.half	.L843-.L842
 	.byte	1,7,9
-	.half	.L847-.L846
+	.half	.L844-.L843
 	.byte	3,1,1,5,37,9
-	.half	.L848-.L847
+	.half	.L845-.L844
 	.byte	1,5,46,9
-	.half	.L849-.L848
+	.half	.L846-.L845
 	.byte	1,5,43,9
-	.half	.L850-.L849
+	.half	.L847-.L846
 	.byte	1,5,58,7,9
-	.half	.L318-.L850
+	.half	.L318-.L847
 	.byte	3,3,1,5,40,9
 	.half	.L539-.L318
 	.byte	3,2,1,5,13,9
-	.half	.L851-.L539
+	.half	.L848-.L539
 	.byte	1,5,24,7,9
-	.half	.L852-.L851
+	.half	.L849-.L848
 	.byte	3,1,1,5,27,9
-	.half	.L540-.L852
+	.half	.L540-.L849
 	.byte	1,5,45,9
 	.half	.L163-.L540
 	.byte	3,1,1,5,18,9
-	.half	.L853-.L163
+	.half	.L850-.L163
 	.byte	1,5,24,7,9
-	.half	.L854-.L853
+	.half	.L851-.L850
 	.byte	3,1,1,5,27,9
-	.half	.L541-.L854
+	.half	.L541-.L851
 	.byte	1,5,24,9
 	.half	.L165-.L541
 	.byte	3,2,1,5,17,9
 	.half	.L164-.L165
 	.byte	3,2,1,5,41,9
-	.half	.L855-.L164
+	.half	.L852-.L164
 	.byte	1,5,49,9
-	.half	.L856-.L855
+	.half	.L853-.L852
 	.byte	1,5,13,9
-	.half	.L857-.L856
+	.half	.L854-.L853
 	.byte	1,5,48,7,9
-	.half	.L858-.L857
+	.half	.L855-.L854
 	.byte	3,2,1,5,72,9
-	.half	.L859-.L858
+	.half	.L856-.L855
 	.byte	1,5,37,9
-	.half	.L860-.L859
+	.half	.L857-.L856
 	.byte	1,5,28,9
-	.half	.L861-.L860
+	.half	.L858-.L857
 	.byte	3,1,1,5,32,9
-	.half	.L862-.L861
+	.half	.L859-.L858
 	.byte	3,1,1,5,56,9
-	.half	.L161-.L862
+	.half	.L161-.L859
 	.byte	3,109,1,5,38,9
 	.half	.L159-.L161
 	.byte	1,5,50,9
-	.half	.L863-.L159
+	.half	.L860-.L159
 	.byte	1,5,9,7,9
-	.half	.L864-.L863
+	.half	.L861-.L860
 	.byte	3,24,1,5,43,7,9
-	.half	.L865-.L864
+	.half	.L862-.L861
 	.byte	1,5,58,7,9
-	.half	.L321-.L865
+	.half	.L321-.L862
 	.byte	3,2,1,5,36,9
 	.half	.L542-.L321
 	.byte	3,2,1,5,9,9
-	.half	.L866-.L542
+	.half	.L863-.L542
 	.byte	1,5,33,7,9
-	.half	.L867-.L866
+	.half	.L864-.L863
 	.byte	3,1,1,5,54,9
-	.half	.L170-.L867
+	.half	.L170-.L864
 	.byte	3,2,1,5,25,9
 	.half	.L544-.L170
 	.byte	3,1,1,5,9,9
 	.half	.L543-.L544
 	.byte	1,5,40,7,9
-	.half	.L868-.L543
+	.half	.L865-.L543
 	.byte	1,5,25,9
-	.half	.L171-.L868
+	.half	.L171-.L865
 	.byte	3,1,1,5,9,9
-	.half	.L869-.L171
+	.half	.L866-.L171
 	.byte	1,5,39,7,9
-	.half	.L870-.L869
+	.half	.L867-.L866
 	.byte	1,5,9,9
-	.half	.L172-.L870
+	.half	.L172-.L867
 	.byte	3,2,1,5,33,9
-	.half	.L871-.L172
+	.half	.L868-.L172
 	.byte	1,5,22,9
-	.half	.L872-.L871
+	.half	.L869-.L868
 	.byte	1,5,9,9
-	.half	.L873-.L872
+	.half	.L870-.L869
 	.byte	3,1,1,5,41,9
-	.half	.L874-.L873
+	.half	.L871-.L870
 	.byte	1,5,28,9
-	.half	.L875-.L874
+	.half	.L872-.L871
 	.byte	1,5,50,9
-	.half	.L876-.L875
+	.half	.L873-.L872
 	.byte	1,5,48,9
-	.half	.L877-.L876
+	.half	.L874-.L873
 	.byte	1,5,26,9
-	.half	.L878-.L877
+	.half	.L875-.L874
 	.byte	1,5,9,9
-	.half	.L879-.L878
+	.half	.L876-.L875
 	.byte	3,1,1,5,35,9
-	.half	.L880-.L879
+	.half	.L877-.L876
 	.byte	1,5,27,9
-	.half	.L545-.L880
+	.half	.L545-.L877
 	.byte	1,5,35,9
 	.half	.L322-.L545
 	.byte	3,126,1,5,9,9
 	.half	.L168-.L322
 	.byte	3,7,1,5,24,9
-	.half	.L881-.L168
+	.half	.L878-.L168
 	.byte	1,5,30,9
-	.half	.L882-.L881
+	.half	.L879-.L878
 	.byte	1,5,22,9
-	.half	.L883-.L882
+	.half	.L880-.L879
 	.byte	1,5,12,9
-	.half	.L173-.L883
+	.half	.L173-.L880
 	.byte	3,3,1,5,18,9
-	.half	.L884-.L173
+	.half	.L881-.L173
 	.byte	1,5,5,9
-	.half	.L533-.L884
+	.half	.L533-.L881
 	.byte	1,5,1,9
 	.half	.L158-.L533
 	.byte	3,1,1,7,9
 	.half	.L224-.L158
 	.byte	0,1,1
-.L836:
+.L833:
 	.sdecl	'.debug_ranges',debug,cluster('vision_get_deviation')
 	.sect	'.debug_ranges'
 .L223:
@@ -23167,56 +23152,56 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('otsu_threshold')
 	.sect	'.debug_line'
 .L227:
-	.word	.L886-.L885
-.L885:
+	.word	.L883-.L882
+.L882:
 	.half	3
-	.word	.L888-.L887
-.L887:
+	.word	.L885-.L884
+.L884:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L888:
+.L885:
 	.byte	5,7,7,0,5,2
 	.word	.L180
 	.byte	3,220,0,1,5,29,9
 	.half	.L450-.L180
 	.byte	3,2,1,5,27,9
-	.half	.L889-.L450
+	.half	.L886-.L450
 	.byte	1,5,12,9
-	.half	.L890-.L889
+	.half	.L887-.L886
 	.byte	3,4,1,5,25,9
-	.half	.L451-.L890
+	.half	.L451-.L887
 	.byte	1,5,24,9
 	.half	.L18-.L451
 	.byte	3,2,1,5,18,9
-	.half	.L891-.L18
+	.half	.L888-.L18
 	.byte	1,5,24,9
-	.half	.L892-.L891
+	.half	.L889-.L888
 	.byte	1,5,18,9
-	.half	.L893-.L892
+	.half	.L890-.L889
 	.byte	1,5,28,9
-	.half	.L894-.L893
+	.half	.L891-.L890
 	.byte	1,9
-	.half	.L895-.L894
+	.half	.L892-.L891
 	.byte	3,126,1,5,25,9
-	.half	.L17-.L895
+	.half	.L17-.L892
 	.byte	1,5,16,7,9
 	.half	.L332-.L17
 	.byte	3,6,1,5,12,9
 	.half	.L453-.L332
 	.byte	3,1,1,5,24,9
-	.half	.L896-.L453
+	.half	.L893-.L453
 	.byte	1,5,29,9
-	.half	.L20-.L896
+	.half	.L20-.L893
 	.byte	3,2,1,5,13,9
-	.half	.L897-.L20
+	.half	.L894-.L20
 	.byte	1,5,27,9
-	.half	.L898-.L897
+	.half	.L895-.L894
 	.byte	3,126,1,5,21,9
-	.half	.L19-.L898
+	.half	.L19-.L895
 	.byte	1,5,24,9
-	.half	.L899-.L19
+	.half	.L896-.L19
 	.byte	1,5,15,7,9
-	.half	.L334-.L899
+	.half	.L334-.L896
 	.byte	3,5,1,5,17,9
 	.half	.L454-.L334
 	.byte	3,1,1,5,25,9
@@ -23230,59 +23215,59 @@ _999004_right_buffer:	.type	object
 	.byte	1,9
 	.half	.L22-.L452
 	.byte	3,2,1,5,12,9
-	.half	.L900-.L22
+	.half	.L897-.L22
 	.byte	1,5,9,9
-	.half	.L901-.L900
+	.half	.L898-.L897
 	.byte	3,1,1,5,22,7,9
-	.half	.L902-.L901
+	.half	.L899-.L898
 	.byte	1,5,19,9
-	.half	.L23-.L902
+	.half	.L23-.L899
 	.byte	3,2,1,5,9,9
 	.half	.L460-.L23
 	.byte	3,1,1,5,22,7,9
-	.half	.L903-.L460
+	.half	.L900-.L460
 	.byte	1,5,30,9
-	.half	.L25-.L903
+	.half	.L25-.L900
 	.byte	3,2,1,5,14,9
-	.half	.L904-.L25
+	.half	.L901-.L25
 	.byte	1,5,35,9
-	.half	.L340-.L904
+	.half	.L340-.L901
 	.byte	3,6,1,5,56,9
-	.half	.L905-.L340
+	.half	.L902-.L340
 	.byte	1,5,64,9
-	.half	.L906-.L905
+	.half	.L903-.L902
 	.byte	1,5,41,9
-	.half	.L461-.L906
+	.half	.L461-.L903
 	.byte	1,5,36,9
-	.half	.L907-.L461
+	.half	.L904-.L461
 	.byte	3,1,1,5,50,9
-	.half	.L462-.L907
+	.half	.L462-.L904
 	.byte	1,5,48,9
 	.half	.L463-.L462
 	.byte	1,5,61,9
-	.half	.L908-.L463
+	.half	.L905-.L463
 	.byte	1,5,55,9
-	.half	.L909-.L908
+	.half	.L906-.L905
 	.byte	1,5,9,9
-	.half	.L465-.L909
+	.half	.L465-.L906
 	.byte	3,2,1,5,26,7,9
-	.half	.L910-.L465
+	.half	.L907-.L465
 	.byte	3,2,1,5,23,9
-	.half	.L466-.L910
+	.half	.L466-.L907
 	.byte	3,1,1,5,27,9
 	.half	.L24-.L466
 	.byte	3,108,1,5,21,9
 	.half	.L21-.L24
 	.byte	1,5,24,9
-	.half	.L911-.L21
+	.half	.L908-.L21
 	.byte	1,5,5,7,9
-	.half	.L26-.L911
+	.half	.L26-.L908
 	.byte	3,24,1,5,1,9
 	.half	.L28-.L26
 	.byte	3,1,1,7,9
 	.half	.L229-.L28
 	.byte	0,1,1
-.L886:
+.L883:
 	.sdecl	'.debug_ranges',debug,cluster('otsu_threshold')
 	.sect	'.debug_ranges'
 .L228:
@@ -23324,14 +23309,14 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('image_binarization')
 	.sect	'.debug_line'
 .L232:
-	.word	.L913-.L912
-.L912:
+	.word	.L910-.L909
+.L909:
 	.half	3
-	.word	.L915-.L914
-.L914:
+	.word	.L912-.L911
+.L911:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L915:
+.L912:
 	.byte	5,14,7,0,5,2
 	.word	.L186
 	.byte	3,220,1,1,5,37,9
@@ -23343,51 +23328,51 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,50,9
 	.half	.L56-.L476
 	.byte	3,2,1,5,37,9
-	.half	.L916-.L56
+	.half	.L913-.L56
 	.byte	1,5,50,9
-	.half	.L917-.L916
+	.half	.L914-.L913
 	.byte	1,5,55,9
-	.half	.L918-.L917
+	.half	.L915-.L914
 	.byte	1,5,36,9
-	.half	.L919-.L918
+	.half	.L916-.L915
 	.byte	1,5,74,7,9
-	.half	.L920-.L919
+	.half	.L917-.L916
 	.byte	1,5,80,9
-	.half	.L921-.L920
+	.half	.L918-.L917
 	.byte	1,5,74,9
-	.half	.L57-.L921
+	.half	.L57-.L918
 	.byte	1,5,23,9
 	.half	.L58-.L57
 	.byte	1,5,13,9
-	.half	.L922-.L58
+	.half	.L919-.L58
 	.byte	1,5,23,9
-	.half	.L923-.L922
+	.half	.L920-.L919
 	.byte	1,5,28,9
-	.half	.L924-.L923
+	.half	.L921-.L920
 	.byte	1,5,34,9
-	.half	.L925-.L924
+	.half	.L922-.L921
 	.byte	1,5,45,9
-	.half	.L926-.L925
+	.half	.L923-.L922
 	.byte	3,126,1,5,29,9
-	.half	.L55-.L926
+	.half	.L55-.L923
 	.byte	1,5,40,9
-	.half	.L927-.L55
+	.half	.L924-.L55
 	.byte	1,5,42,7,9
-	.half	.L928-.L927
+	.half	.L925-.L924
 	.byte	3,126,1,5,25,9
-	.half	.L53-.L928
+	.half	.L53-.L925
 	.byte	1,5,37,9
-	.half	.L929-.L53
+	.half	.L926-.L53
 	.byte	1,5,21,7,9
-	.half	.L930-.L929
+	.half	.L927-.L926
 	.byte	3,8,1,5,22,9
-	.half	.L474-.L930
+	.half	.L474-.L927
 	.byte	3,1,1,5,1,9
-	.half	.L931-.L474
+	.half	.L928-.L474
 	.byte	3,1,1,7,9
-	.half	.L234-.L931
+	.half	.L234-.L928
 	.byte	0,1,1
-.L913:
+.L910:
 	.sdecl	'.debug_ranges',debug,cluster('image_binarization')
 	.sect	'.debug_ranges'
 .L233:
@@ -23433,14 +23418,14 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('edge_smooth_filter')
 	.sect	'.debug_line'
 .L237:
-	.word	.L933-.L932
-.L932:
+	.word	.L930-.L929
+.L929:
 	.half	3
-	.word	.L935-.L934
-.L934:
+	.word	.L932-.L931
+.L931:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L935:
+.L932:
 	.byte	5,12,7,0,5,2
 	.word	.L192
 	.byte	3,195,3,1,5,33,9
@@ -23448,133 +23433,133 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,9,9
 	.half	.L116-.L498
 	.byte	3,2,1,5,20,9
-	.half	.L936-.L116
+	.half	.L933-.L116
 	.byte	1,5,26,9
-	.half	.L937-.L936
+	.half	.L934-.L933
 	.byte	1,5,48,9
-	.half	.L938-.L937
+	.half	.L935-.L934
 	.byte	1,5,24,9
-	.half	.L939-.L938
+	.half	.L936-.L935
 	.byte	1,5,9,9
-	.half	.L940-.L939
+	.half	.L937-.L936
 	.byte	3,1,1,5,21,9
-	.half	.L941-.L940
+	.half	.L938-.L937
 	.byte	1,5,27,9
-	.half	.L942-.L941
+	.half	.L939-.L938
 	.byte	1,5,50,9
-	.half	.L943-.L942
+	.half	.L940-.L939
 	.byte	1,5,25,9
-	.half	.L944-.L943
+	.half	.L941-.L940
 	.byte	1,5,36,9
-	.half	.L945-.L944
+	.half	.L942-.L941
 	.byte	3,125,1,5,21,9
-	.half	.L115-.L945
+	.half	.L115-.L942
 	.byte	1,5,33,9
-	.half	.L946-.L115
+	.half	.L943-.L115
 	.byte	1,5,12,7,9
-	.half	.L947-.L946
+	.half	.L944-.L943
 	.byte	3,7,1,5,37,9
-	.half	.L948-.L947
+	.half	.L945-.L944
 	.byte	1,5,13,9
-	.half	.L118-.L948
+	.half	.L118-.L945
 	.byte	3,3,1,5,27,9
-	.half	.L949-.L118
+	.half	.L946-.L118
 	.byte	1,5,13,9
-	.half	.L950-.L949
+	.half	.L947-.L946
 	.byte	1,5,39,7,9
-	.half	.L951-.L950
+	.half	.L948-.L947
 	.byte	1,5,53,9
-	.half	.L952-.L951
+	.half	.L949-.L948
 	.byte	1,5,59,9
-	.half	.L953-.L952
+	.half	.L950-.L949
 	.byte	1,5,67,7,9
-	.half	.L954-.L953
+	.half	.L951-.L950
 	.byte	1,5,81,9
-	.half	.L955-.L954
+	.half	.L952-.L951
 	.byte	1,5,87,9
-	.half	.L956-.L955
+	.half	.L953-.L952
 	.byte	1,5,13,7,9
-	.half	.L957-.L956
+	.half	.L954-.L953
 	.byte	3,2,1,5,35,9
-	.half	.L958-.L957
+	.half	.L955-.L954
 	.byte	1,5,42,9
-	.half	.L959-.L958
+	.half	.L956-.L955
 	.byte	1,5,53,9
-	.half	.L960-.L959
+	.half	.L957-.L956
 	.byte	1,5,61,9
-	.half	.L961-.L960
+	.half	.L958-.L957
 	.byte	1,5,72,9
-	.half	.L962-.L961
+	.half	.L959-.L958
 	.byte	1,5,59,9
-	.half	.L963-.L962
+	.half	.L960-.L959
 	.byte	1,5,78,9
-	.half	.L964-.L963
+	.half	.L961-.L960
 	.byte	1,5,89,9
-	.half	.L965-.L964
+	.half	.L962-.L961
 	.byte	1,5,76,9
-	.half	.L966-.L965
+	.half	.L963-.L962
 	.byte	1,5,98,9
-	.half	.L967-.L966
+	.half	.L964-.L963
 	.byte	1,5,96,9
-	.half	.L968-.L967
+	.half	.L965-.L964
 	.byte	1,5,39,9
-	.half	.L969-.L968
+	.half	.L966-.L965
 	.byte	1,5,13,9
-	.half	.L119-.L969
+	.half	.L119-.L966
 	.byte	3,3,1,5,28,9
-	.half	.L970-.L119
+	.half	.L967-.L119
 	.byte	1,5,13,9
-	.half	.L971-.L970
+	.half	.L968-.L967
 	.byte	1,5,40,7,9
-	.half	.L972-.L971
+	.half	.L969-.L968
 	.byte	1,5,55,9
-	.half	.L973-.L972
+	.half	.L970-.L969
 	.byte	1,5,61,9
-	.half	.L974-.L973
+	.half	.L971-.L970
 	.byte	1,5,69,7,9
-	.half	.L975-.L974
+	.half	.L972-.L971
 	.byte	1,5,84,9
-	.half	.L976-.L975
+	.half	.L973-.L972
 	.byte	1,5,90,9
-	.half	.L977-.L976
+	.half	.L974-.L973
 	.byte	1,5,13,7,9
-	.half	.L978-.L977
+	.half	.L975-.L974
 	.byte	3,2,1,5,36,9
-	.half	.L979-.L978
+	.half	.L976-.L975
 	.byte	1,5,43,9
-	.half	.L980-.L979
+	.half	.L977-.L976
 	.byte	1,5,55,9
-	.half	.L981-.L980
+	.half	.L978-.L977
 	.byte	1,5,63,9
-	.half	.L982-.L981
+	.half	.L979-.L978
 	.byte	1,5,75,9
-	.half	.L983-.L982
+	.half	.L980-.L979
 	.byte	1,5,61,9
-	.half	.L984-.L983
+	.half	.L981-.L980
 	.byte	1,5,81,9
-	.half	.L985-.L984
+	.half	.L982-.L981
 	.byte	1,5,93,9
-	.half	.L986-.L985
+	.half	.L983-.L982
 	.byte	1,5,79,9
-	.half	.L987-.L986
+	.half	.L984-.L983
 	.byte	1,5,102,9
-	.half	.L988-.L987
+	.half	.L985-.L984
 	.byte	1,5,100,9
-	.half	.L989-.L988
+	.half	.L986-.L985
 	.byte	1,5,40,9
-	.half	.L990-.L989
+	.half	.L987-.L986
 	.byte	1,9
-	.half	.L122-.L990
+	.half	.L122-.L987
 	.byte	3,118,1,5,34,9
 	.half	.L117-.L122
 	.byte	1,5,37,9
-	.half	.L991-.L117
+	.half	.L988-.L117
 	.byte	1,5,1,7,9
-	.half	.L992-.L991
+	.half	.L989-.L988
 	.byte	3,13,1,7,9
-	.half	.L239-.L992
+	.half	.L239-.L989
 	.byte	0,1,1
-.L933:
+.L930:
 	.sdecl	'.debug_ranges',debug,cluster('edge_smooth_filter')
 	.sect	'.debug_ranges'
 .L238:
@@ -23651,14 +23636,14 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('centerline_least_square_fit')
 	.sect	'.debug_line'
 .L242:
-	.word	.L994-.L993
-.L993:
+	.word	.L991-.L990
+.L990:
 	.half	3
-	.word	.L996-.L995
-.L995:
+	.word	.L993-.L992
+.L992:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L996:
+.L993:
 	.byte	5,17,7,0,5,2
 	.word	.L196
 	.byte	3,174,4,1,5,28,9
@@ -23676,83 +23661,83 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,13,9
 	.half	.L146-.L517
 	.byte	3,2,1,5,37,9
-	.half	.L997-.L146
+	.half	.L994-.L146
 	.byte	1,5,44,9
-	.half	.L998-.L997
+	.half	.L995-.L994
 	.byte	1,5,13,9
-	.half	.L999-.L998
+	.half	.L996-.L995
 	.byte	1,5,63,7,9
-	.half	.L1000-.L999
+	.half	.L997-.L996
 	.byte	1,5,87,9
-	.half	.L1001-.L1000
+	.half	.L998-.L997
 	.byte	1,5,94,9
-	.half	.L1002-.L1001
+	.half	.L999-.L998
 	.byte	1,5,91,9
-	.half	.L1003-.L1002
+	.half	.L1000-.L999
 	.byte	1,5,29,7,9
-	.half	.L360-.L1003
+	.half	.L360-.L1000
 	.byte	3,2,1,5,51,9
-	.half	.L1004-.L360
+	.half	.L1001-.L360
 	.byte	1,5,57,9
-	.half	.L1005-.L1004
+	.half	.L1002-.L1001
 	.byte	1,5,80,9
-	.half	.L1006-.L1005
+	.half	.L1003-.L1002
 	.byte	1,5,55,9
-	.half	.L1007-.L1006
+	.half	.L1004-.L1003
 	.byte	1,5,87,9
-	.half	.L1008-.L1007
+	.half	.L1005-.L1004
 	.byte	1,5,85,9
-	.half	.L1009-.L1008
+	.half	.L1006-.L1005
 	.byte	1,5,22,9
-	.half	.L519-.L1009
+	.half	.L519-.L1006
 	.byte	3,1,1,5,19,9
-	.half	.L1010-.L519
+	.half	.L1007-.L519
 	.byte	1,9
-	.half	.L1011-.L1010
+	.half	.L1008-.L1007
 	.byte	3,1,1,5,23,9
+	.half	.L1009-.L1008
+	.byte	3,1,1,5,20,9
+	.half	.L1010-.L1009
+	.byte	1,5,25,9
+	.half	.L1011-.L1010
+	.byte	3,1,1,5,20,9
 	.half	.L1012-.L1011
-	.byte	3,1,1,5,20,9
+	.byte	1,5,25,9
 	.half	.L1013-.L1012
-	.byte	1,5,25,9
-	.half	.L1014-.L1013
-	.byte	3,1,1,5,20,9
-	.half	.L1015-.L1014
-	.byte	1,5,25,9
-	.half	.L1016-.L1015
 	.byte	3,1,1,5,48,9
-	.half	.L147-.L1016
+	.half	.L147-.L1013
 	.byte	3,119,1,5,34,9
 	.half	.L145-.L147
 	.byte	1,5,45,9
-	.half	.L1017-.L145
+	.half	.L1014-.L145
 	.byte	1,5,25,7,9
-	.half	.L1018-.L1017
+	.half	.L1015-.L1014
 	.byte	3,14,1,5,5,9
-	.half	.L518-.L1018
+	.half	.L518-.L1015
 	.byte	1,5,29,7,9
 	.half	.L362-.L518
 	.byte	3,2,1,5,42,9
-	.half	.L1019-.L362
+	.half	.L1016-.L362
 	.byte	1,5,51,9
-	.half	.L1020-.L1019
+	.half	.L1017-.L1016
 	.byte	1,5,25,9
-	.half	.L521-.L1020
+	.half	.L521-.L1017
 	.byte	3,1,1,5,9,9
-	.half	.L1021-.L521
+	.half	.L1018-.L521
 	.byte	1,5,18,7,9
-	.half	.L1022-.L1021
+	.half	.L1019-.L1018
 	.byte	3,2,1,5,31,9
-	.half	.L1023-.L1022
+	.half	.L1020-.L1019
 	.byte	1,5,40,9
-	.half	.L1024-.L1023
+	.half	.L1021-.L1020
 	.byte	1,5,57,9
-	.half	.L1025-.L1024
+	.half	.L1022-.L1021
 	.byte	1,5,24,9
-	.half	.L523-.L1025
+	.half	.L523-.L1022
 	.byte	3,1,1,5,39,9
-	.half	.L1026-.L523
+	.half	.L1023-.L523
 	.byte	1,5,37,9
-	.half	.L522-.L1026
+	.half	.L522-.L1023
 	.byte	1,5,20,9
 	.half	.L524-.L522
 	.byte	3,3,1,5,53,9
@@ -23760,77 +23745,77 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,21,9
 	.half	.L152-.L525
 	.byte	3,2,1,5,45,9
-	.half	.L1027-.L152
+	.half	.L1024-.L152
 	.byte	1,5,52,9
-	.half	.L1028-.L1027
+	.half	.L1025-.L1024
 	.byte	1,5,21,9
-	.half	.L1029-.L1028
+	.half	.L1026-.L1025
 	.byte	1,5,71,7,9
-	.half	.L1030-.L1029
+	.half	.L1027-.L1026
 	.byte	1,5,95,9
-	.half	.L1031-.L1030
+	.half	.L1028-.L1027
 	.byte	1,5,102,9
-	.half	.L1032-.L1031
+	.half	.L1029-.L1028
 	.byte	1,5,99,9
-	.half	.L1033-.L1032
+	.half	.L1030-.L1029
 	.byte	1,5,47,7,9
-	.half	.L364-.L1033
+	.half	.L364-.L1030
 	.byte	3,2,1,5,49,9
-	.half	.L1034-.L364
+	.half	.L1031-.L364
 	.byte	1,5,46,9
-	.half	.L526-.L1034
+	.half	.L526-.L1031
 	.byte	3,2,1,5,68,9
-	.half	.L1035-.L526
+	.half	.L1032-.L526
 	.byte	1,5,74,9
-	.half	.L1036-.L1035
+	.half	.L1033-.L1032
 	.byte	1,5,97,9
-	.half	.L1037-.L1036
+	.half	.L1034-.L1033
 	.byte	1,5,72,9
-	.half	.L1038-.L1037
+	.half	.L1035-.L1034
 	.byte	1,5,104,9
-	.half	.L1039-.L1038
+	.half	.L1036-.L1035
 	.byte	1,5,102,9
-	.half	.L1040-.L1039
+	.half	.L1037-.L1036
 	.byte	1,5,48,9
-	.half	.L528-.L1040
+	.half	.L528-.L1037
 	.byte	3,1,1,5,32,9
 	.half	.L530-.L528
 	.byte	3,1,1,5,30,9
-	.half	.L1041-.L530
+	.half	.L1038-.L530
+	.byte	1,5,25,9
+	.half	.L1039-.L1038
+	.byte	1,5,46,7,9
+	.half	.L1040-.L1039
+	.byte	1,5,44,9
+	.half	.L1041-.L1040
 	.byte	1,5,25,9
 	.half	.L1042-.L1041
-	.byte	1,5,46,7,9
-	.half	.L1043-.L1042
-	.byte	1,5,44,9
-	.half	.L1044-.L1043
-	.byte	1,5,25,9
-	.half	.L1045-.L1044
 	.byte	3,3,1,5,49,9
-	.half	.L1046-.L1045
+	.half	.L1043-.L1042
 	.byte	1,5,79,9
-	.half	.L1047-.L1046
+	.half	.L1044-.L1043
 	.byte	1,5,104,9
-	.half	.L1048-.L1047
+	.half	.L1045-.L1044
 	.byte	1,5,102,9
-	.half	.L1049-.L1048
+	.half	.L1046-.L1045
 	.byte	1,5,84,9
-	.half	.L529-.L1049
+	.half	.L529-.L1046
 	.byte	1,5,55,9
-	.half	.L1050-.L529
+	.half	.L1047-.L529
 	.byte	1,5,53,9
-	.half	.L527-.L1050
+	.half	.L527-.L1047
 	.byte	1,5,56,9
 	.half	.L153-.L527
 	.byte	3,117,1,5,42,9
 	.half	.L151-.L153
 	.byte	1,5,53,9
-	.half	.L1051-.L151
+	.half	.L1048-.L151
 	.byte	1,5,1,7,9
-	.half	.L149-.L1051
+	.half	.L149-.L1048
 	.byte	3,17,1,7,9
 	.half	.L244-.L149
 	.byte	0,1,1
-.L994:
+.L991:
 	.sdecl	'.debug_ranges',debug,cluster('centerline_least_square_fit')
 	.sect	'.debug_ranges'
 .L243:
@@ -23893,14 +23878,14 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('lost_line_repair')
 	.sect	'.debug_line'
 .L247:
-	.word	.L1053-.L1052
-.L1052:
+	.word	.L1050-.L1049
+.L1049:
 	.half	3
-	.word	.L1055-.L1054
-.L1054:
+	.word	.L1052-.L1051
+.L1051:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L1055:
+.L1052:
 	.byte	5,25,7,0,5,2
 	.word	.L194
 	.byte	3,226,3,1,5,26,9
@@ -23920,207 +23905,207 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,13,9
 	.half	.L126-.L506
 	.byte	3,3,1,5,27,9
-	.half	.L1056-.L126
+	.half	.L1053-.L126
 	.byte	1,5,9,9
-	.half	.L1057-.L1056
+	.half	.L1054-.L1053
 	.byte	1,5,17,7,9
-	.half	.L1058-.L1057
+	.half	.L1055-.L1054
 	.byte	3,3,1,5,55,7,9
-	.half	.L1059-.L1058
+	.half	.L1056-.L1055
 	.byte	1,5,43,9
-	.half	.L1060-.L1059
+	.half	.L1057-.L1056
 	.byte	1,7,9
-	.half	.L376-.L1060
+	.half	.L376-.L1057
 	.byte	3,2,1,5,65,9
-	.half	.L1061-.L376
+	.half	.L1058-.L376
 	.byte	1,5,69,9
-	.half	.L1062-.L1061
+	.half	.L1059-.L1058
 	.byte	1,5,35,9
-	.half	.L1063-.L1062
+	.half	.L1060-.L1059
 	.byte	1,5,46,9
-	.half	.L507-.L1063
+	.half	.L507-.L1060
 	.byte	3,2,1,5,31,9
 	.half	.L500-.L507
 	.byte	1,5,21,9
-	.half	.L1064-.L500
+	.half	.L1061-.L500
 	.byte	1,5,78,7,9
-	.half	.L1065-.L1064
+	.half	.L1062-.L1061
 	.byte	1,5,64,9
-	.half	.L1066-.L1065
+	.half	.L1063-.L1062
 	.byte	1,5,48,9
-	.half	.L1067-.L1066
+	.half	.L1064-.L1063
 	.byte	3,2,1,5,65,9
-	.half	.L1068-.L1067
+	.half	.L1065-.L1064
 	.byte	1,5,98,9
-	.half	.L508-.L1068
+	.half	.L508-.L1065
 	.byte	1,5,78,9
-	.half	.L1069-.L508
+	.half	.L1066-.L508
 	.byte	1,5,37,9
-	.half	.L1070-.L1069
+	.half	.L1067-.L1066
 	.byte	3,1,1,5,21,9
-	.half	.L1071-.L1070
+	.half	.L1068-.L1067
 	.byte	3,1,1,5,64,7,9
-	.half	.L1072-.L1071
+	.half	.L1069-.L1068
 	.byte	1,5,31,9
-	.half	.L128-.L1072
+	.half	.L128-.L1069
 	.byte	3,3,1,5,53,9
-	.half	.L1073-.L128
+	.half	.L1070-.L128
 	.byte	1,5,56,9
-	.half	.L509-.L1073
+	.half	.L509-.L1070
 	.byte	1,5,13,9
 	.half	.L127-.L509
 	.byte	3,5,1,5,35,9
-	.half	.L1074-.L127
+	.half	.L1071-.L127
 	.byte	1,5,59,9
-	.half	.L1075-.L1074
+	.half	.L1072-.L1071
 	.byte	1,5,57,9
+	.half	.L1073-.L1072
+	.byte	1,5,39,9
+	.half	.L1074-.L1073
+	.byte	1,9
+	.half	.L1075-.L1074
+	.byte	3,2,1,5,13,9
 	.half	.L1076-.L1075
-	.byte	1,5,39,9
-	.half	.L1077-.L1076
-	.byte	1,9
-	.half	.L1078-.L1077
-	.byte	3,2,1,5,13,9
-	.half	.L1079-.L1078
 	.byte	1,5,48,7,9
-	.half	.L1080-.L1079
+	.half	.L1077-.L1076
 	.byte	1,5,70,9
-	.half	.L1081-.L1080
+	.half	.L1078-.L1077
 	.byte	1,5,76,9
-	.half	.L1082-.L1081
+	.half	.L1079-.L1078
 	.byte	1,5,74,9
-	.half	.L1083-.L1082
+	.half	.L1080-.L1079
 	.byte	1,5,17,9
-	.half	.L134-.L1083
+	.half	.L134-.L1080
 	.byte	3,1,1,5,39,9
-	.half	.L1084-.L134
+	.half	.L1081-.L134
 	.byte	1,5,46,9
-	.half	.L1085-.L1084
+	.half	.L1082-.L1081
 	.byte	1,5,13,9
-	.half	.L1086-.L1085
+	.half	.L1083-.L1082
 	.byte	1,5,57,7,9
-	.half	.L1087-.L1086
+	.half	.L1084-.L1083
 	.byte	1,5,79,9
-	.half	.L1088-.L1087
+	.half	.L1085-.L1084
 	.byte	1,5,95,9
-	.half	.L1089-.L1088
+	.half	.L1086-.L1085
 	.byte	1,5,83,9
-	.half	.L1090-.L1089
+	.half	.L1087-.L1086
 	.byte	1,5,13,9
-	.half	.L133-.L1090
+	.half	.L133-.L1087
 	.byte	3,4,1,5,28,9
-	.half	.L1091-.L133
+	.half	.L1088-.L133
 	.byte	1,5,9,9
-	.half	.L1092-.L1091
+	.half	.L1089-.L1088
 	.byte	1,5,47,7,9
-	.half	.L1093-.L1092
+	.half	.L1090-.L1089
 	.byte	3,3,1,5,17,9
-	.half	.L1094-.L1093
+	.half	.L1091-.L1090
 	.byte	1,5,68,7,9
-	.half	.L1095-.L1094
+	.half	.L1092-.L1091
 	.byte	1,5,56,9
-	.half	.L1096-.L1095
+	.half	.L1093-.L1092
 	.byte	1,5,43,7,9
-	.half	.L378-.L1096
+	.half	.L378-.L1093
 	.byte	3,2,1,5,66,9
-	.half	.L1097-.L378
+	.half	.L1094-.L378
 	.byte	1,5,70,9
-	.half	.L1098-.L1097
+	.half	.L1095-.L1094
 	.byte	1,5,35,9
-	.half	.L1099-.L1098
+	.half	.L1096-.L1095
 	.byte	1,5,46,9
-	.half	.L510-.L1099
+	.half	.L510-.L1096
 	.byte	3,2,1,5,31,9
-	.half	.L1100-.L510
+	.half	.L1097-.L510
 	.byte	1,5,21,9
-	.half	.L1101-.L1100
+	.half	.L1098-.L1097
 	.byte	1,5,78,7,9
-	.half	.L1102-.L1101
+	.half	.L1099-.L1098
 	.byte	1,5,64,9
-	.half	.L1103-.L1102
+	.half	.L1100-.L1099
 	.byte	1,5,50,9
-	.half	.L1104-.L1103
+	.half	.L1101-.L1100
 	.byte	3,2,1,5,68,9
-	.half	.L1105-.L1104
+	.half	.L1102-.L1101
 	.byte	1,5,102,9
-	.half	.L511-.L1105
+	.half	.L511-.L1102
 	.byte	1,5,81,9
-	.half	.L1106-.L511
+	.half	.L1103-.L511
 	.byte	1,5,38,9
-	.half	.L1107-.L1106
+	.half	.L1104-.L1103
 	.byte	3,1,1,5,21,9
-	.half	.L1108-.L1107
+	.half	.L1105-.L1104
 	.byte	3,1,1,5,66,7,9
-	.half	.L1109-.L1108
+	.half	.L1106-.L1105
 	.byte	1,5,32,9
-	.half	.L137-.L1109
+	.half	.L137-.L1106
 	.byte	3,3,1,5,55,9
-	.half	.L1110-.L137
+	.half	.L1107-.L137
 	.byte	1,5,58,9
-	.half	.L1111-.L1110
+	.half	.L1108-.L1107
 	.byte	1,5,13,9
-	.half	.L136-.L1111
+	.half	.L136-.L1108
 	.byte	3,5,1,5,36,9
-	.half	.L1112-.L136
+	.half	.L1109-.L136
 	.byte	1,5,61,9
-	.half	.L1113-.L1112
+	.half	.L1110-.L1109
 	.byte	1,5,59,9
-	.half	.L1114-.L1113
+	.half	.L1111-.L1110
 	.byte	1,5,40,9
-	.half	.L1115-.L1114
+	.half	.L1112-.L1111
 	.byte	1,9
-	.half	.L1116-.L1115
+	.half	.L1113-.L1112
 	.byte	3,2,1,5,13,9
-	.half	.L1117-.L1116
+	.half	.L1114-.L1113
 	.byte	1,5,49,7,9
-	.half	.L1118-.L1117
+	.half	.L1115-.L1114
 	.byte	1,5,72,9
-	.half	.L1119-.L1118
+	.half	.L1116-.L1115
 	.byte	1,5,78,9
-	.half	.L1120-.L1119
+	.half	.L1117-.L1116
 	.byte	1,5,76,9
-	.half	.L1121-.L1120
+	.half	.L1118-.L1117
 	.byte	1,5,17,9
-	.half	.L143-.L1121
+	.half	.L143-.L1118
 	.byte	3,1,1,5,40,9
-	.half	.L1122-.L143
+	.half	.L1119-.L143
 	.byte	1,5,47,9
-	.half	.L1123-.L1122
+	.half	.L1120-.L1119
 	.byte	1,5,13,9
-	.half	.L1124-.L1123
+	.half	.L1121-.L1120
 	.byte	1,5,58,7,9
-	.half	.L1125-.L1124
+	.half	.L1122-.L1121
 	.byte	1,5,81,9
-	.half	.L1126-.L1125
+	.half	.L1123-.L1122
 	.byte	1,5,97,9
-	.half	.L1127-.L1126
+	.half	.L1124-.L1123
 	.byte	1,5,85,9
-	.half	.L1128-.L1127
+	.half	.L1125-.L1124
 	.byte	1,5,9,9
-	.half	.L142-.L1128
+	.half	.L142-.L1125
 	.byte	3,4,1,5,33,9
-	.half	.L1129-.L142
+	.half	.L1126-.L142
 	.byte	1,5,39,9
-	.half	.L1130-.L1129
+	.half	.L1127-.L1126
 	.byte	1,5,62,9
-	.half	.L1131-.L1130
+	.half	.L1128-.L1127
 	.byte	1,5,68,9
-	.half	.L1132-.L1131
+	.half	.L1129-.L1128
 	.byte	1,5,90,9
-	.half	.L1133-.L1132
+	.half	.L1130-.L1129
 	.byte	1,5,66,9
-	.half	.L1134-.L1133
+	.half	.L1131-.L1130
 	.byte	1,5,37,9
-	.half	.L1135-.L1134
+	.half	.L1132-.L1131
 	.byte	1,5,38,9
-	.half	.L1136-.L1135
+	.half	.L1133-.L1132
 	.byte	3,73,1,5,35,9
-	.half	.L125-.L1136
+	.half	.L125-.L1133
 	.byte	1,5,1,7,9
-	.half	.L1137-.L125
+	.half	.L1134-.L125
 	.byte	3,57,1,7,9
-	.half	.L249-.L1137
+	.half	.L249-.L1134
 	.byte	0,1,1
-.L1053:
+.L1050:
 	.sdecl	'.debug_ranges',debug,cluster('lost_line_repair')
 	.sect	'.debug_ranges'
 .L248:
@@ -24225,24 +24210,24 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('my_adapt_threshold')
 	.sect	'.debug_line'
 .L252:
-	.word	.L1139-.L1138
-.L1138:
+	.word	.L1136-.L1135
+.L1135:
 	.half	3
-	.word	.L1141-.L1140
-.L1140:
+	.word	.L1138-.L1137
+.L1137:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L1141:
+.L1138:
 	.byte	5,6,7,0,5,2
 	.word	.L178
 	.byte	3,35,1,5,26,9
 	.half	.L417-.L178
 	.byte	3,8,1,5,35,9
-	.half	.L1142-.L417
+	.half	.L1139-.L417
 	.byte	1,5,34,9
-	.half	.L1143-.L1142
+	.half	.L1140-.L1139
 	.byte	1,5,19,9
-	.half	.L418-.L1143
+	.half	.L418-.L1140
 	.byte	3,1,1,5,12,9
 	.half	.L420-.L418
 	.byte	3,2,1,5,30,9
@@ -24250,83 +24235,83 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,19,9
 	.half	.L3-.L421
 	.byte	3,2,1,5,25,9
-	.half	.L1144-.L3
+	.half	.L1141-.L3
 	.byte	1,5,23,9
-	.half	.L1145-.L1144
+	.half	.L1142-.L1141
 	.byte	1,5,17,9
-	.half	.L1146-.L1145
+	.half	.L1143-.L1142
 	.byte	3,1,1,5,23,9
-	.half	.L1147-.L1146
+	.half	.L1144-.L1143
 	.byte	1,5,21,9
-	.half	.L1148-.L1147
+	.half	.L1145-.L1144
 	.byte	1,5,33,9
-	.half	.L1149-.L1148
+	.half	.L1146-.L1145
 	.byte	3,125,1,5,21,9
-	.half	.L2-.L1149
+	.half	.L2-.L1146
 	.byte	1,5,30,9
-	.half	.L1150-.L2
+	.half	.L1147-.L2
 	.byte	1,5,20,7,9
-	.half	.L395-.L1150
+	.half	.L395-.L1147
 	.byte	3,5,1,5,12,9
 	.half	.L422-.L395
 	.byte	3,2,1,5,27,9
-	.half	.L1151-.L422
+	.half	.L1148-.L422
 	.byte	1,5,16,9
-	.half	.L5-.L1151
+	.half	.L5-.L1148
 	.byte	3,2,1,5,30,9
 	.half	.L423-.L5
 	.byte	1,5,44,9
 	.half	.L7-.L423
 	.byte	3,2,1,5,33,9
-	.half	.L1152-.L7
+	.half	.L1149-.L7
+	.byte	1,5,23,9
+	.half	.L1150-.L1149
+	.byte	1,5,44,9
+	.half	.L1151-.L1150
+	.byte	1,5,33,9
+	.half	.L1152-.L1151
 	.byte	1,5,23,9
 	.half	.L1153-.L1152
-	.byte	1,5,44,9
-	.half	.L1154-.L1153
-	.byte	1,5,33,9
-	.half	.L1155-.L1154
-	.byte	1,5,23,9
-	.half	.L1156-.L1155
 	.byte	1,5,49,9
-	.half	.L1157-.L1156
+	.half	.L1154-.L1153
 	.byte	1,5,43,9
-	.half	.L1158-.L1157
+	.half	.L1155-.L1154
 	.byte	3,1,1,5,32,9
-	.half	.L1159-.L1158
+	.half	.L1156-.L1155
 	.byte	1,5,21,9
-	.half	.L1160-.L1159
+	.half	.L1157-.L1156
 	.byte	1,5,33,9
-	.half	.L1161-.L1160
+	.half	.L1158-.L1157
 	.byte	3,125,1,5,30,9
-	.half	.L6-.L1161
+	.half	.L6-.L1158
 	.byte	1,7,9
-	.half	.L1162-.L6
+	.half	.L1159-.L6
 	.byte	3,126,1,5,27,9
-	.half	.L4-.L1162
+	.half	.L4-.L1159
 	.byte	1,5,12,7,9
-	.half	.L1163-.L4
+	.half	.L1160-.L4
 	.byte	3,9,1,5,30,9
-	.half	.L1164-.L1163
+	.half	.L1161-.L1160
 	.byte	1,5,17,9
-	.half	.L9-.L1164
+	.half	.L9-.L1161
 	.byte	3,2,1,5,40,9
-	.half	.L1165-.L9
+	.half	.L1162-.L9
 	.byte	1,5,23,9
-	.half	.L1166-.L1165
+	.half	.L1163-.L1162
 	.byte	1,5,46,9
-	.half	.L1167-.L1166
+	.half	.L1164-.L1163
 	.byte	1,5,44,9
-	.half	.L1168-.L1167
+	.half	.L1165-.L1164
 	.byte	1,5,21,9
-	.half	.L1169-.L1168
+	.half	.L1166-.L1165
 	.byte	1,5,33,9
-	.half	.L1170-.L1169
+	.half	.L1167-.L1166
 	.byte	3,126,1,5,21,9
-	.half	.L8-.L1170
+	.half	.L8-.L1167
 	.byte	1,5,30,9
-	.half	.L1171-.L8
+	.half	.L1168-.L8
 	.byte	1,5,63,7,9
-	.half	.L397-.L1171
+	.half	.L397-.L1168
 	.byte	3,5,1,5,43,9
 	.half	.L425-.L397
 	.byte	3,1,1,5,8,9
@@ -24338,23 +24323,23 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,23,9
 	.half	.L11-.L428
 	.byte	3,2,1,5,12,9
-	.half	.L1172-.L11
+	.half	.L1169-.L11
 	.byte	1,5,18,9
-	.half	.L1173-.L1172
+	.half	.L1170-.L1169
 	.byte	3,1,1,5,30,9
-	.half	.L431-.L1173
+	.half	.L431-.L1170
 	.byte	1,5,15,9
 	.half	.L432-.L431
 	.byte	1,5,12,9
-	.half	.L1174-.L432
+	.half	.L1171-.L432
 	.byte	3,1,1,5,13,9
-	.half	.L1175-.L1174
+	.half	.L1172-.L1171
 	.byte	1,5,23,9
-	.half	.L436-.L1175
+	.half	.L436-.L1172
 	.byte	3,1,1,5,32,9
-	.half	.L1176-.L436
+	.half	.L1173-.L436
 	.byte	1,5,20,9
-	.half	.L438-.L1176
+	.half	.L438-.L1173
 	.byte	3,1,1,9
 	.half	.L442-.L438
 	.byte	3,1,1,5,19,9
@@ -24362,43 +24347,43 @@ _999004_right_buffer:	.type	object
 	.byte	3,1,1,5,57,9
 	.half	.L433-.L441
 	.byte	3,1,1,5,63,9
-	.half	.L1177-.L433
+	.half	.L1174-.L433
 	.byte	1,5,47,9
-	.half	.L439-.L1177
+	.half	.L439-.L1174
 	.byte	1,5,33,9
 	.half	.L437-.L439
 	.byte	1,5,39,9
-	.half	.L1178-.L437
+	.half	.L1175-.L437
 	.byte	1,5,42,9
-	.half	.L1179-.L1178
+	.half	.L1176-.L1175
 	.byte	1,5,22,9
-	.half	.L444-.L1179
+	.half	.L444-.L1176
 	.byte	3,1,1,5,9,9
-	.half	.L1180-.L444
+	.half	.L1177-.L444
 	.byte	1,5,22,7,9
-	.half	.L1181-.L1180
+	.half	.L1178-.L1177
 	.byte	3,2,1,5,23,9
-	.half	.L1182-.L1181
+	.half	.L1179-.L1178
 	.byte	3,1,1,5,22,9
-	.half	.L12-.L1182
+	.half	.L12-.L1179
 	.byte	3,2,1,5,9,9
-	.half	.L1183-.L12
+	.half	.L1180-.L12
 	.byte	1,5,13,7,9
-	.half	.L1184-.L1183
+	.half	.L1181-.L1180
 	.byte	3,2,1,5,33,9
-	.half	.L13-.L1184
+	.half	.L13-.L1181
 	.byte	3,111,1,5,21,9
 	.half	.L10-.L13
 	.byte	1,5,30,9
-	.half	.L1185-.L10
+	.half	.L1182-.L10
 	.byte	1,5,5,7,9
-	.half	.L14-.L1185
+	.half	.L14-.L1182
 	.byte	3,20,1,5,1,9
 	.half	.L15-.L14
 	.byte	3,1,1,7,9
 	.half	.L254-.L15
 	.byte	0,1,1
-.L1139:
+.L1136:
 	.sdecl	'.debug_ranges',debug,cluster('my_adapt_threshold')
 	.sect	'.debug_ranges'
 .L253:
@@ -24442,14 +24427,14 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('morphology_erode')
 	.sect	'.debug_line'
 .L257:
-	.word	.L1187-.L1186
-.L1186:
+	.word	.L1184-.L1183
+.L1183:
 	.half	3
-	.word	.L1189-.L1188
-.L1188:
+	.word	.L1186-.L1185
+.L1185:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L1189:
+.L1186:
 	.byte	5,14,7,0,5,2
 	.word	.L182
 	.byte	3,153,1,1,5,37,9
@@ -24461,115 +24446,115 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,23,9
 	.half	.L32-.L468
 	.byte	3,2,1,5,13,9
-	.half	.L1190-.L32
+	.half	.L1187-.L32
 	.byte	1,5,23,9
-	.half	.L1191-.L1190
+	.half	.L1188-.L1187
 	.byte	1,5,28,9
-	.half	.L1192-.L1191
+	.half	.L1189-.L1188
 	.byte	1,5,46,9
-	.half	.L1193-.L1192
+	.half	.L1190-.L1189
 	.byte	1,5,36,9
-	.half	.L1194-.L1193
+	.half	.L1191-.L1190
 	.byte	1,5,46,9
-	.half	.L1195-.L1194
+	.half	.L1192-.L1191
 	.byte	1,5,51,9
-	.half	.L1196-.L1195
+	.half	.L1193-.L1192
 	.byte	1,5,34,9
-	.half	.L1197-.L1196
+	.half	.L1194-.L1193
 	.byte	1,5,45,9
-	.half	.L1198-.L1197
+	.half	.L1195-.L1194
 	.byte	3,126,1,5,29,9
-	.half	.L31-.L1198
+	.half	.L31-.L1195
 	.byte	1,5,40,9
-	.half	.L1199-.L31
+	.half	.L1196-.L31
 	.byte	1,5,42,7,9
-	.half	.L1200-.L1199
+	.half	.L1197-.L1196
 	.byte	3,126,1,5,25,9
-	.half	.L29-.L1200
+	.half	.L29-.L1197
 	.byte	1,5,37,9
-	.half	.L1201-.L29
+	.half	.L1198-.L29
 	.byte	1,5,14,7,9
-	.half	.L1202-.L1201
+	.half	.L1199-.L1198
 	.byte	3,9,1,5,41,9
-	.half	.L1203-.L1202
+	.half	.L1200-.L1199
 	.byte	1,5,18,9
-	.half	.L34-.L1203
+	.half	.L34-.L1200
 	.byte	3,2,1,5,44,9
 	.half	.L469-.L34
 	.byte	1,5,31,9
 	.half	.L36-.L469
 	.byte	3,3,1,5,27,9
-	.half	.L1204-.L36
+	.half	.L1201-.L36
+	.byte	1,5,17,9
+	.half	.L1202-.L1201
+	.byte	1,5,27,9
+	.half	.L1203-.L1202
+	.byte	1,5,34,9
+	.half	.L1204-.L1203
 	.byte	1,5,17,9
 	.half	.L1205-.L1204
-	.byte	1,5,27,9
-	.half	.L1206-.L1205
-	.byte	1,5,34,9
-	.half	.L1207-.L1206
-	.byte	1,5,17,9
-	.half	.L1208-.L1207
 	.byte	1,5,62,7,9
+	.half	.L1206-.L1205
+	.byte	1,5,58,9
+	.half	.L1207-.L1206
+	.byte	1,5,48,9
+	.half	.L1208-.L1207
+	.byte	1,5,58,9
 	.half	.L1209-.L1208
-	.byte	1,5,58,9
-	.half	.L1210-.L1209
-	.byte	1,5,48,9
-	.half	.L1211-.L1210
-	.byte	1,5,58,9
-	.half	.L1212-.L1211
 	.byte	1,5,65,9
-	.half	.L1213-.L1212
+	.half	.L1210-.L1209
 	.byte	1,5,71,9
-	.half	.L1214-.L1213
+	.half	.L1211-.L1210
 	.byte	1,5,27,7,9
-	.half	.L1215-.L1214
+	.half	.L1212-.L1211
 	.byte	3,1,1,5,17,9
+	.half	.L1213-.L1212
+	.byte	1,5,27,9
+	.half	.L1214-.L1213
+	.byte	1,5,32,9
+	.half	.L1215-.L1214
+	.byte	1,5,40,9
 	.half	.L1216-.L1215
-	.byte	1,5,27,9
-	.half	.L1217-.L1216
-	.byte	1,5,32,9
-	.half	.L1218-.L1217
-	.byte	1,5,40,9
-	.half	.L1219-.L1218
 	.byte	1,5,58,7,9
-	.half	.L1220-.L1219
+	.half	.L1217-.L1216
 	.byte	1,5,48,9
-	.half	.L1221-.L1220
+	.half	.L1218-.L1217
 	.byte	1,5,58,9
-	.half	.L1222-.L1221
+	.half	.L1219-.L1218
 	.byte	1,5,63,9
-	.half	.L1223-.L1222
+	.half	.L1220-.L1219
 	.byte	1,5,71,9
-	.half	.L1224-.L1223
+	.half	.L1221-.L1220
 	.byte	1,5,27,7,9
-	.half	.L37-.L1224
+	.half	.L37-.L1221
 	.byte	3,2,1,5,17,9
-	.half	.L1225-.L37
+	.half	.L1222-.L37
 	.byte	1,5,27,9
-	.half	.L1226-.L1225
+	.half	.L1223-.L1222
 	.byte	1,5,32,9
-	.half	.L1227-.L1226
+	.half	.L1224-.L1223
 	.byte	1,5,40,9
-	.half	.L1228-.L1227
+	.half	.L1225-.L1224
 	.byte	1,5,38,9
-	.half	.L1229-.L1228
+	.half	.L1226-.L1225
 	.byte	1,5,49,9
-	.half	.L40-.L1229
+	.half	.L40-.L1226
 	.byte	3,122,1,5,41,9
 	.half	.L35-.L40
 	.byte	1,5,44,9
-	.half	.L1230-.L35
+	.half	.L1227-.L35
 	.byte	1,5,46,7,9
-	.half	.L1231-.L1230
+	.half	.L1228-.L1227
 	.byte	3,126,1,5,38,9
-	.half	.L33-.L1231
+	.half	.L33-.L1228
 	.byte	1,5,41,9
-	.half	.L1232-.L33
+	.half	.L1229-.L33
 	.byte	1,5,1,7,9
-	.half	.L1233-.L1232
+	.half	.L1230-.L1229
 	.byte	3,12,1,7,9
-	.half	.L259-.L1233
+	.half	.L259-.L1230
 	.byte	0,1,1
-.L1187:
+.L1184:
 	.sdecl	'.debug_ranges',debug,cluster('morphology_erode')
 	.sect	'.debug_ranges'
 .L258:
@@ -24613,14 +24598,14 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_line',debug,cluster('morphology_dilate')
 	.sect	'.debug_line'
 .L262:
-	.word	.L1235-.L1234
-.L1234:
+	.word	.L1232-.L1231
+.L1231:
 	.half	3
-	.word	.L1237-.L1236
-.L1236:
+	.word	.L1234-.L1233
+.L1233:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/vision_track.c',0,0,0,0,0
-.L1237:
+.L1234:
 	.byte	5,14,7,0,5,2
 	.word	.L184
 	.byte	3,187,1,1,5,37,9
@@ -24632,37 +24617,37 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,23,9
 	.half	.L44-.L472
 	.byte	3,2,1,5,13,9
-	.half	.L1238-.L44
+	.half	.L1235-.L44
 	.byte	1,5,23,9
-	.half	.L1239-.L1238
+	.half	.L1236-.L1235
 	.byte	1,5,28,9
-	.half	.L1240-.L1239
+	.half	.L1237-.L1236
 	.byte	1,5,46,9
-	.half	.L1241-.L1240
+	.half	.L1238-.L1237
 	.byte	1,5,36,9
-	.half	.L1242-.L1241
+	.half	.L1239-.L1238
 	.byte	1,5,46,9
-	.half	.L1243-.L1242
+	.half	.L1240-.L1239
 	.byte	1,5,51,9
-	.half	.L1244-.L1243
+	.half	.L1241-.L1240
 	.byte	1,5,34,9
-	.half	.L1245-.L1244
+	.half	.L1242-.L1241
 	.byte	1,5,45,9
-	.half	.L1246-.L1245
+	.half	.L1243-.L1242
 	.byte	3,126,1,5,29,9
-	.half	.L43-.L1246
+	.half	.L43-.L1243
 	.byte	1,5,40,9
-	.half	.L1247-.L43
+	.half	.L1244-.L43
 	.byte	1,5,42,7,9
-	.half	.L1248-.L1247
+	.half	.L1245-.L1244
 	.byte	3,126,1,5,25,9
-	.half	.L41-.L1248
+	.half	.L41-.L1245
 	.byte	1,5,37,9
-	.half	.L1249-.L41
+	.half	.L1246-.L41
 	.byte	1,5,14,7,9
-	.half	.L1250-.L1249
+	.half	.L1247-.L1246
 	.byte	3,9,1,5,41,9
-	.half	.L471-.L1250
+	.half	.L471-.L1247
 	.byte	1,5,18,9
 	.half	.L46-.L471
 	.byte	3,2,1,5,44,9
@@ -24670,85 +24655,85 @@ _999004_right_buffer:	.type	object
 	.byte	1,5,31,9
 	.half	.L48-.L473
 	.byte	3,3,1,5,27,9
-	.half	.L1251-.L48
+	.half	.L1248-.L48
 	.byte	1,5,17,9
-	.half	.L1252-.L1251
+	.half	.L1249-.L1248
 	.byte	1,5,27,9
-	.half	.L1253-.L1252
+	.half	.L1250-.L1249
 	.byte	1,5,34,9
-	.half	.L1254-.L1253
+	.half	.L1251-.L1250
 	.byte	1,5,43,9
-	.half	.L1255-.L1254
+	.half	.L1252-.L1251
 	.byte	1,5,17,9
-	.half	.L1256-.L1255
+	.half	.L1253-.L1252
 	.byte	1,5,64,7,9
+	.half	.L1254-.L1253
+	.byte	1,5,60,9
+	.half	.L1255-.L1254
+	.byte	1,5,50,9
+	.half	.L1256-.L1255
+	.byte	1,5,60,9
 	.half	.L1257-.L1256
-	.byte	1,5,60,9
-	.half	.L1258-.L1257
-	.byte	1,5,50,9
-	.half	.L1259-.L1258
-	.byte	1,5,60,9
-	.half	.L1260-.L1259
 	.byte	1,5,67,9
+	.half	.L1258-.L1257
+	.byte	1,5,76,9
+	.half	.L1259-.L1258
+	.byte	1,5,73,9
+	.half	.L1260-.L1259
+	.byte	1,5,27,7,9
 	.half	.L1261-.L1260
-	.byte	1,5,76,9
-	.half	.L1262-.L1261
-	.byte	1,5,73,9
-	.half	.L1263-.L1262
-	.byte	1,5,27,7,9
-	.half	.L1264-.L1263
 	.byte	3,1,1,5,17,9
-	.half	.L1265-.L1264
+	.half	.L1262-.L1261
 	.byte	1,5,27,9
-	.half	.L1266-.L1265
+	.half	.L1263-.L1262
 	.byte	1,5,32,9
-	.half	.L1267-.L1266
+	.half	.L1264-.L1263
 	.byte	1,5,43,9
-	.half	.L1268-.L1267
+	.half	.L1265-.L1264
 	.byte	1,5,40,9
-	.half	.L1269-.L1268
+	.half	.L1266-.L1265
 	.byte	1,5,60,7,9
-	.half	.L1270-.L1269
+	.half	.L1267-.L1266
 	.byte	1,5,50,9
-	.half	.L1271-.L1270
+	.half	.L1268-.L1267
 	.byte	1,5,60,9
-	.half	.L1272-.L1271
+	.half	.L1269-.L1268
 	.byte	1,5,65,9
-	.half	.L1273-.L1272
+	.half	.L1270-.L1269
 	.byte	1,5,76,9
-	.half	.L1274-.L1273
+	.half	.L1271-.L1270
 	.byte	1,5,73,9
-	.half	.L1275-.L1274
+	.half	.L1272-.L1271
 	.byte	1,5,27,7,9
-	.half	.L49-.L1275
+	.half	.L49-.L1272
 	.byte	3,2,1,5,17,9
-	.half	.L1276-.L49
+	.half	.L1273-.L49
 	.byte	1,5,27,9
-	.half	.L1277-.L1276
+	.half	.L1274-.L1273
 	.byte	1,5,32,9
-	.half	.L1278-.L1277
+	.half	.L1275-.L1274
 	.byte	1,5,40,9
-	.half	.L1279-.L1278
+	.half	.L1276-.L1275
 	.byte	1,5,38,9
-	.half	.L1280-.L1279
+	.half	.L1277-.L1276
 	.byte	1,5,49,9
-	.half	.L52-.L1280
+	.half	.L52-.L1277
 	.byte	3,122,1,5,41,9
 	.half	.L47-.L52
 	.byte	1,5,44,9
-	.half	.L1281-.L47
+	.half	.L1278-.L47
 	.byte	1,5,46,7,9
-	.half	.L1282-.L1281
+	.half	.L1279-.L1278
 	.byte	3,126,1,5,38,9
-	.half	.L45-.L1282
+	.half	.L45-.L1279
 	.byte	1,5,41,9
-	.half	.L1283-.L45
+	.half	.L1280-.L45
 	.byte	1,5,1,7,9
-	.half	.L1284-.L1283
+	.half	.L1281-.L1280
 	.byte	3,12,1,7,9
-	.half	.L264-.L1284
+	.half	.L264-.L1281
 	.byte	0,1,1
-.L1235:
+.L1232:
 	.sdecl	'.debug_ranges',debug,cluster('morphology_dilate')
 	.sect	'.debug_ranges'
 .L263:
@@ -25717,7 +25702,7 @@ _999004_right_buffer:	.type	object
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L1285:
+.L1282:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -25725,7 +25710,7 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('my_adapt_threshold')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L1285,.L178,.L380-.L178
+	.word	.L1282,.L178,.L380-.L178
 	.byte	4
 	.word	(.L417-.L178)/2
 	.byte	19,144,16,22,26,4,19,138,144,16,4
@@ -25734,7 +25719,7 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('otsu_threshold')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L1285,.L180,.L325-.L180
+	.word	.L1282,.L180,.L325-.L180
 	.byte	4
 	.word	(.L449-.L180)/2
 	.byte	19,136,8,22,26,4,19,138,136,8,4
@@ -25743,46 +25728,46 @@ _999004_right_buffer:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('morphology_erode')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L1285,.L182,.L407-.L182
+	.word	.L1282,.L182,.L407-.L182
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('morphology_dilate')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L1285,.L184,.L411-.L184
+	.word	.L1282,.L184,.L411-.L184
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('image_binarization')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L1285,.L186,.L343-.L186
+	.word	.L1282,.L186,.L343-.L186
 	.sdecl	'.debug_frame',debug,cluster('vision_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L1285,.L188,.L297-.L188
+	.word	.L1282,.L188,.L297-.L188
 	.sdecl	'.debug_frame',debug,cluster('vision_find_track_edge')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L1285,.L190,.L301-.L190
+	.word	.L1282,.L190,.L301-.L190
 	.sdecl	'.debug_frame',debug,cluster('edge_smooth_filter')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L1285,.L192,.L347-.L192
+	.word	.L1282,.L192,.L347-.L192
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('lost_line_repair')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L1285,.L194,.L368-.L194
+	.word	.L1282,.L194,.L368-.L194
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('centerline_least_square_fit')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L1285,.L196,.L350-.L196
+	.word	.L1282,.L196,.L350-.L196
 	.sdecl	'.debug_frame',debug,cluster('vision_get_deviation')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L1285,.L198,.L310-.L198
+	.word	.L1282,.L198,.L310-.L198
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('vision_image_process')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L1285,.L200,.L298-.L200
+	.word	.L1282,.L200,.L298-.L200
 	; Module end

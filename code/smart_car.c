@@ -106,8 +106,8 @@ void smart_car_control(void)
     car.base_speed = (int16)smart_car.pid_configs[smart_car.current_pid_scene].base_speed;
     int16 target_speed_left = car.base_speed;
     int16 target_speed_right = car.base_speed;
-    int16 manual_steer_angle = 1;       // 手动控制方向角度
-    int8 use_manual_steer = 45;         // 是否使用手动方向控制
+    int16 manual_steer_angle = 0;       // 手动控制方向角度
+    uint8 use_manual_steer = 0;         // 是否使用手动方向控制
     // 默认状态，保持当前速度和方向
     
     // ========== 速度PID设置 ==========
@@ -127,7 +127,7 @@ void smart_car_control(void)
     if (use_manual_steer)
     {
         // 手动控制方向，直接使用手动转向角度
-        steer_angle = manual_steer_angle;
+        steer_angle = (float)manual_steer_angle;
     }
     else
     {
@@ -135,13 +135,13 @@ void smart_car_control(void)
         int16 deviation = vision_get_deviation();
         pid_set_target(&smart_car.direction_pid, 0);  // 设置方向PID目标为0，表示期望偏差为0
         steer_angle = pid_calculate(&smart_car.direction_pid, (float)deviation);
+        printf("%d",deviation);
     }
-    
     // ========== 方向PWM输出 ==========
     // 设置方向PWM输出
     motor_set_duty(&car.left_motor, (int32)left_pwm);
     motor_set_duty(&car.right_motor, (int32)right_pwm);
-    car_set_angle((int16)steer_angle);
+    servo_set_angle(&car.steering_servo, (int16)steer_angle);
 }
 
 /**

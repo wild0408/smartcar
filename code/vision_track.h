@@ -86,7 +86,7 @@ extern uint8 Left_Island_Flag;              // 左环岛标志
 extern uint8 Island_State;                  // 环岛状态
 
 // 二值化图像数组（用于双最长白列算法）
-extern uint8 image_two_value[IMAGE_HEIGHT][IMAGE_WIDTH];
+extern uint8 image_data[IMAGE_HEIGHT][IMAGE_WIDTH];
 
 //====================================================视觉图像处理====================================================
 void vision_init(void);                                     // 视觉初始化

@@ -45,7 +45,7 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
     interrupt_global_enable(0);                     // ¿ªÆôÖÐ¶ÏÇ¶Ì×
     
     smart_car_control();
-    show_speed_by_uart();
+    //show_speed_by_uart();
     //controller_by_uart();
     pit_clear_flag(CCU60_CH0);
 

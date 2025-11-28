@@ -81,7 +81,7 @@ void motor_init(void)
     car.left_motor.target_speed  = 0;
     car.left_motor.current_speed = 0;
     car.left_motor.pwm_duty      = 0;
-    car.left_motor.direction     = 0;
+    car.left_motor.direction     = 1;
     
     // ========== 右电机左电机初始化，DRV8701驱动模式 ==========
     car.right_motor.pwm_pin       = MOTOR_RIGHT_PWM;
@@ -91,7 +91,7 @@ void motor_init(void)
     car.right_motor.target_speed  = 0;
     car.right_motor.current_speed = 0;
     car.right_motor.pwm_duty      = 0;
-    car.right_motor.direction     = 0;
+    car.right_motor.direction     = 1;
     
     // ========== 转向舵机初始化 ==========
     car.steering_servo.pwm_pin      = SERVO_PWM_PIN;
@@ -135,14 +135,14 @@ void motor_set_duty(motor_t *motor, int32 duty)
     if (duty > 0)
     {
         // 正转: DIR=0, PWM=duty
-        gpio_set_level(motor->dir_pin, GPIO_HIGH);
+        gpio_set_level(motor->dir_pin, GPIO_LOW);
         motor->direction = 0;
         pwm_set_duty(motor->pwm_pin, (uint32)duty);
     }
     else if (duty < 0)
     {
         // 反转: DIR=1, PWM=abs(duty)
-        gpio_set_level(motor->dir_pin, GPIO_LOW);
+        gpio_set_level(motor->dir_pin, GPIO_HIGH);
         motor->direction = 1;
         pwm_set_duty(motor->pwm_pin, (uint32)(-duty));
     }

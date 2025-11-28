@@ -682,10 +682,10 @@ void vision_image_process(void)
     
     // 计算阈值
     //uint8 threshold = otsu_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH * IMAGE_HEIGHT);
-    uint8 threshold = my_adapt_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH, IMAGE_HEIGHT);
+    //uint8 threshold = my_adapt_threshold((uint8 *)mt9v03x_image, IMAGE_WIDTH, IMAGE_HEIGHT);
     
     // 使用固定阈值
-    //threshold = THRESHOLD_VALUE;
+    uint8 threshold = THRESHOLD_VALUE;
     
     // 图像二值化处理
     image_binarization(threshold);

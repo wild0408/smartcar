@@ -7,7 +7,7 @@
 #include "vision_track.h"
 #include "element_recognition.h"
 
-#define BASE_SPEED              200        // 基础速度/10ms
+#define BASE_SPEED              600        // 基础速度/10ms
 #define MAX_STEER_ANGLE         45          // 最大转向角度
 
 //====================================================PID参数配置====================================================
@@ -42,11 +42,11 @@ typedef struct
 } pid_scene_config_t;
 
 //========================================================================================================
-#define SPEED_PID_KP_NORMAL         2.0f       // 正常场景速度PID比例系数
+#define SPEED_PID_KP_NORMAL         3.0f       // 正常场景速度PID比例系数
 #define SPEED_PID_KI_NORMAL         0.0f        // 正常场景速度PID积分系数
 #define SPEED_PID_KD_NORMAL         0.0f        // 正常场景速度PID微分系数
 
-#define DIRECTION_PID_KP_NORMAL     0.5f        // 正常场景方向PID比例系数
+#define DIRECTION_PID_KP_NORMAL     1.0f        // 正常场景方向PID比例系数
 #define DIRECTION_PID_KI_NORMAL     0.0f       // 正常场景方向PID积分系数
 #define DIRECTION_PID_KD_NORMAL     0.0f        // 正常场景方向PID微分系数
 // 直线场景PID参数配置

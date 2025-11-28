@@ -27,9 +27,9 @@
 #define MOTOR_MIN_DUTY      500                 // 最小启动占空比，防止低速时电机停止
 // 舵机参数
 #define SERVO_PWM_FREQ      50                  // 舵机PWM频率 50Hz (20ms周期)
-#define SERVO_CENTER_DUTY   750-25                 // 舵机中心占空比 (1.5ms/20ms * 10000 = 750)
-#define SERVO_LEFT_MAX      630-25                 // 舵机最左最大占空比 (1.0ms)
-#define SERVO_RIGHT_MAX     870-25                // 舵机最右最大占空比 (2.0ms)
+#define SERVO_CENTER_DUTY   715                 // 舵机中心占空比 (1.5ms/20ms * 10000 = 750)
+#define SERVO_LEFT_MAX      630                 // 舵机最左最大占空比 (1.0ms)
+#define SERVO_RIGHT_MAX     800                // 舵机最右最大占空比 (2.0ms)
 #define SERVO_MAX_ANGLE     45                  // 舵机最大转角 (+-45度)
 
 // 车辆几何参数 (单位: mm)
